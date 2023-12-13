@@ -1,0 +1,133 @@
+
+.scrolly_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    
+
+    .items{
+        display: flex;
+        margin: 20px;
+        flex-direction: column;
+        justify-content: center;
+
+        
+        .item_img{
+            width: 380px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 30px 200px;
+            border: 2px solid #FFF;
+            margin-top: 0;
+            margin-left: 40px;
+        }
+
+        .img_container{
+            width: 359px;
+            height: 260px;
+            flex-shrink: 0;
+            border-radius: 30px 200px;
+            border: 2px solid #fff;
+            position: relative;
+            top: 17em;
+            left: 0.5em;
+            margin-left: 40px;
+        }
+
+        .img_containerr{
+            width: 359px;
+            height: 260px;
+            flex-shrink: 0;
+            border-radius: 200px 25px;
+            border: 2px solid #fff;
+            position: relative;
+            top: 17em;
+            left: 1.5em;
+            margin-right: 30px;
+            
+
+        }
+
+        .item_imgr{
+            width: 380px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 200px 25px;
+            border: 2px solid #FFF;
+            margin-right: 30px;
+            
+
+        }
+        .item_text{
+            color: #0E5205;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin: 40px;
+        }
+
+        .item_righttext{
+            color: #0E5205;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-right: 30px;
+            position: relative;
+            top:2em;
+
+        } 
+        
+        .item_description{
+        color: #0E5205;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 153.699%;
+         margin-left: 40px; 
+        }
+        .item_descriptionn{
+            color: #0E5205;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 153.699%;
+         margin-right: 30px;
+         position: relative;
+         top: 6em;
+
+        }
+
+ 
+   
+    }
+
+    .middle_items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        .scrolly_line{
+            width: 1px;
+            height: 10vh;
+            border: 2px solid  #0E5205 ;
+        }
+
+        .borderShape{
+            width: 70px;
+            height: 43px;
+            flex-shrink: 0;
+            border-radius: 25px 5px;
+            background: #0A4102;
+        }
+    }
+
+
+}

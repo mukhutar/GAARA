@@ -88,9 +88,6 @@ button > img{
     background: #FFF;
     width: 150px;
     height: 45px;
-    color: #0E5205;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -99,6 +96,13 @@ button > img{
     position: relative;
     top: 6em;
     margin-left: 5%;
+
+    .productLink{
+        text-decoration: none;
+        color: #0E5205;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+    }
 }
 
 h1{
