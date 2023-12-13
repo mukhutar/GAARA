@@ -1,0 +1,105 @@
+.rotating-words-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    position: relative;
+    max-width: 100%; 
+    max-height: 100vh;
+    overflow: hidden; 
+  }
+  
+  .rotating-word {
+  
+    animation: rotateWords 4s ease-in-out infinite;
+    position: relative;
+    max-width: 360px; 
+    max-height: 100vh;
+    overflow: hidden; 
+    right:4.7em;
+    bottom: 3em;
+    color: #0E5205;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+  }
+  
+  @keyframes rotateWords {
+    0%, 100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    10%, 90% {
+      opacity: 1;
+      transform: translateY(30px);
+      
+    }
+  
+    100% {
+      opacity: 0;
+      transform: translatY(100px);
+      transition-duration: 12s;
+    }
+  }
+
+  .img{
+    position: relative;
+    right: 15em;
+    
+  }
+
+  .h1{
+    position: relative;
+    bottom: 10em;
+    color: #0E5205;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 5;
+  }
+  
+  .plants{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .plants > .plant_img{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .plant_img > img{
+    object-fit: cover;
+    width: 121px;
+    height: 128px;
+    flex-shrink: 0;
+  }
+
+  .plant_img > h1{
+    color: #0E5205;
+
+    text-align: center;
+     font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  h1 > .countUp{
+    color: #0E5205;
+    text-align: center;
+     font-family: 'Noto Sans JP', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
