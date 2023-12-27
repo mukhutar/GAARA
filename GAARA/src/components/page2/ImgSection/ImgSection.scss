@@ -1,0 +1,237 @@
+
+.ImgSection::-webkit-scrollbar{
+    // width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 10px;
+    margin: auto;
+  
+}
+
+.ImgSection::-webkit-scrollbar-thumb{
+    background: #093802;
+    border-radius: 20px;
+    width: 12px;
+    margin: 30px;
+}
+.ImgSection{
+    height: 100vh;
+    width: 97%;
+    margin: auto;
+    display: flex;
+    margin-top: -25%;
+    justify-content: center;
+    margin-bottom: -40%;
+    overflow-x: scroll;
+    position: relative;
+    bottom: 14em;
+    outline: none;
+    
+   
+    
+    .imgCards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+     
+
+        .imgCard{
+            width: 119.034px;
+            height: 396.779px;
+            // padding: 2rem 1rem;
+            margin: 2px;
+            position: relative;
+            background: url("assets/oldwoman.png");
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+
+            align-items: flex-start;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0px 7px 10px  rgba(0,0,0,0.5);
+            transition: 0.5s ease-in-out;
+            .oter{
+                background-color: #0e52058a;
+                // width: 119.034px;
+                height: 396.779px;
+                border-radius: 15px;
+                .card_number{
+                    background-color: white;
+                    border: 1px solid #0e5205a4;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100px;
+                    position: relative;
+                    left: 2em;
+                    bottom: 1em;
+                    
+                    .number{
+                        color: #0E5205;
+                        font-family: 'Noto Sans JP', sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                       
+                    }
+                }
+               
+                .front_text{
+                    width: 352px;
+                    height: 42px;
+                    transform: rotate(-90deg);
+                    flex-shrink: 0;
+                    color: #FFF;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    position: relative;
+                    right: 3em;
+                    top: 3.5em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    justify-items: center;
+                }
+
+
+                
+             
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 15px;
+                
+    
+            }
+
+            .more_details {
+                position: relative;
+                z-index: 3;
+                color: white;
+                opacity: 0;
+                transform: translateX(30px);
+                transition: 0.5s all;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                flex-direction: column;
+                
+                .info_number{
+                    width: 197.022px;
+                    height: 42.607px;
+                    transform: rotate(0.697deg);
+                    flex-shrink: 0;
+                    color: #FFF;
+
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    position: relative;
+                    bottom: 1.7em;
+                    left: 1.2em;
+                    transition: all 0.2s ease-in;
+                }
+
+                .info_text{
+                    width: 230.018px;
+                    height: 100.904px;
+                    transform: rotate(0.697deg);
+                    flex-shrink: 0;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    text-align: center;
+                    line-height: 132%; 
+                }
+
+            }
+        }
+
+
+
+          .imgCard:hover{ 
+                transform: translateX(20px);
+                border-radius: 10px;
+                width: 300px;
+                margin-left: 5px;
+                z-index: 9;
+
+                 }
+            .imgCard:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient( #0E5205  );
+                z-index: 2;
+                transition: 0.5s all;
+                opacity: 0;
+            }
+            .imgCard:before{
+                opacity: 1;
+
+            }
+
+            .imgCard:hover .more_details{
+                opacity: 1;
+                background: linear-gradient(to right ,transparent ,#0b4204) ;
+                width: 80%;
+               border-radius: 4px;
+                height: 399px;
+                position: relative;
+                bottom: 7.5em;
+                left: 2.9em;
+                transform: translateX(10px);
+                outline: none;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .imgCard:hover .card_number {
+                position: relative;
+                left: 6em;
+                bottom: 2em;
+                z-index: 9;
+                width: 80px;
+                height: 80px;
+            }
+            .imgCard:hover .front_text{
+                opacity: 0;
+            }
+
+            .imgCard:hover .info_text{
+                // font-size: 9px;
+                text-align: center;
+            }
+
+
+
+
+    }
+
+  
+
+
+}

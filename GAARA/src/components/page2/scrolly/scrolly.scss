@@ -1,10 +1,13 @@
 
 .scrolly_section{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     margin-top: 150px;
     justify-content: space-around;
+    position: relative;
+    bottom: 3.3em;
+    // margin: 0;
     
 
     .items{
@@ -20,8 +23,10 @@
             object-fit: cover;
             border-radius: 30px 200px;
             border: 2px solid #FFF;
-            margin-top: 0;
             margin-left: 40px;
+            position: relative;
+            bottom: 30em;
+            
         }
 
         .img_container{
@@ -31,8 +36,10 @@
             border-radius: 30px 200px;
             border: 2px solid #fff;
             position: relative;
-            top: 17em;
+            z-index: 2;
+            // top: 17em;
             left: 0.5em;
+            bottom: 13em;
             margin-left: 40px;
         }
 
@@ -43,9 +50,11 @@
             border-radius: 200px 25px;
             border: 2px solid #fff;
             position: relative;
-            top: 17em;
-            left: 1.5em;
-            margin-right: 30px;
+            // top: 17em;
+            left: 4.5em;
+            bottom: 13em;
+            margin-right: 50px;
+            z-index: 2;
             
 
         }
@@ -55,8 +64,10 @@
             height: 280px;
             object-fit: cover;
             border-radius: 200px 25px;
-            border: 2px solid #FFF;
-            margin-right: 30px;
+            position: relative;
+            left: 3.9em;
+            position: relative;
+            bottom: 30em;
             
 
         }
@@ -67,7 +78,9 @@
             font-style: normal;
             font-weight: 900;
             line-height: normal;
-            margin: 40px;
+            margin-left: 40px;
+            position: relative;
+            bottom: 11em;
         }
 
         .item_righttext{
@@ -79,30 +92,50 @@
             line-height: normal;
             margin-right: 30px;
             position: relative;
-            top:2em;
+            bottom:8.2em;
+            left: 1.4em;
 
         } 
         
         .item_description{
-        color: #0E5205;
-        font-family: 'Noto Sans JP', sans-serif;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 153.699%;
-         margin-left: 40px; 
+            color: #0E5205;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 153.699%;
+            margin-left: 40px; 
+            position: relative;
+            bottom: 16em;
         }
         .item_descriptionn{
             color: #0E5205;
-        font-family: 'Noto Sans JP', sans-serif;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 153.699%;
-         margin-right: 30px;
-         position: relative;
-         top: 6em;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 153.699%;
+            margin-left: 54px;
+            position: relative;
+            bottom: 12.5em;
+            text-align: start;
 
+        }
+
+        .end_text{
+            .word{
+                color: #0E5205;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                text-align: start;
+                position: relative;
+                right: 230px;
+                margin-top: -29%;
+                bottom: 2em;
+            }
         }
 
  
@@ -113,12 +146,37 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 30px;
+        position: relative;
+        left: 1em;
+        .item_icon{
+            object-fit: cover;
+            position: relative;
+            left: 0.2em;
+            bottom: 75.5em;
+
+        }
+
+        .item_icon2{
+            position: relative;
+            bottom: 62.5em;
+            left: 0.2em;
+        }
+
+        .item_icon3{
+            position: relative;
+            bottom: 44em;
+            left: 0.2em;
+        }
         .scrolly_line{
             width: 1px;
-            height: 10vh;
-            border: 2px solid  #0E5205 ;
+            height: 1200px;
+            border: 1px dashed #0E5205 ;
+            position: relative;
+            left: 0.2em;
+            bottom: 11em;
         }
+
 
         .borderShape{
             width: 70px;
@@ -126,7 +184,33 @@
             flex-shrink: 0;
             border-radius: 25px 5px;
             background: #0A4102;
+            position: relative;
+            left: 0.2em;
+            bottom: 75.5em;
+
         }
+        .borderShape2{
+            width: 70px;
+            height: 43px;
+            flex-shrink: 0;
+            border-radius: 25px 5px;
+            background: #0A4102;
+            position: relative;
+            bottom: 62.5em;
+            left: 0.2em;
+        }
+
+        .borderShape3{
+            width: 70px;
+            height: 43px;
+            flex-shrink: 0;
+            border-radius: 25px 5px;
+            background: #0A4102;
+            position: relative;
+            bottom: 44em;
+            left: 0.2em;
+        }
+
     }
 
 

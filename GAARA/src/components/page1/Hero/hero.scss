@@ -44,6 +44,7 @@ body{
 
 .nav ul li{
     list-style: none;
+    position: relative;
 
 }
 
@@ -55,13 +56,76 @@ body{
     font-style: normal;
     font-weight: 100;
     line-height: normal;
+    transition: all 0.5s ;
+
 }
 
-.nav > li > a:active{
+ li > .activeLink:active{
     color: white;
-    font-weight: bold;
+    font-weight: 900;
 }   
 
+
+
+.productDrop{
+    
+        .productList{
+            
+            background-color: #0e5205bd;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(2px);
+            width: 283px;
+            height: 320px;
+            display: none;
+            position: absolute;
+            left: -46%;
+            z-index: 9;
+            border-radius: 15px;
+            
+            
+
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 10px;
+
+                li{
+                    text-align: center;
+                    font-size: 12px;
+
+                .listItem{
+                        font-size: 22px;
+                        font-weight: 300;
+                    }
+
+                    .listItem:hover{
+                        font-weight: 400;
+                    
+                    }
+                }
+            
+            
+            
+
+            }
+        }
+
+    }
+
+    .productDrop:hover img{
+        transform: translateY(2px);
+        transition: all 0.4s;
+    }
+    
+    .productDrop:hover .productList{
+        display: block;
+        // transform: translateY(20px);
+    
+    }
+
+    
 a  > button{
     border-radius: 40px;
     background: #FFF;

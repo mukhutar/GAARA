@@ -31,20 +31,17 @@ function Scrolly() {
 
 
       <div className='middle_items'>
-        <hr className='scrolly_line' /> <br />
+       <span className='scrolly_line'></span>
         
         <img className='item_icon' src={leaftree} alt="" />
-        <span className='borderShape'></span>
+        <span className='borderShape'></span> 
 
-        <hr className='scrolly_line' />
+        <img className='item_icon2' src={leaftree} alt="" />
+        <span className='borderShape2'></span>
 
-        <img className='item_icon' src={leaftree} alt="" />
-        <span className='borderShape'></span>
-
-        <hr className='scrolly_line' />
-
-        <img className='item_icon' src={leaftree} alt="" />
-        <span className='borderShape'></span>
+        <img className='item_icon3' src={leaftree} alt="" />
+      
+        <span className='borderShape3'></span>
 
       </div>
 
@@ -73,6 +70,10 @@ function Scrolly() {
                We're committed to reversing the trend where only 4.3% of loans are allocated to agriculture in Africa, empowering the 69% of Rwanda's population who farm, to invest in sustainable and profitable agroforestry.
 
             </p>
+
+            <section className='end_text'>
+              <h2 className='word'>How it works</h2>
+            </section>
       </div>
     </section>
   )

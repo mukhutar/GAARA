@@ -1,16 +1,15 @@
 import React from 'react'
+import "./SectionOne.scss"
 import icon from '/assets/GaaraLogo.png'
 import Arrow from '/assets/WhiteArrow.svg'
 import DropDown from "/assets/greenDrop.svg";
 import { Link } from 'react-router-dom';
-import './page2hero.scss';
 
-function Page2hero() {
+function SectionOne() {
   return (
-    <section className='Page2Hero'>
-
-        <div className="heropage2">
-                <header className='nav'>
+    <section className='SectionOne' >
+        <div className="mainSct">
+        <header className='nav'>
                 <img src={icon} alt="comapany's logo" srcset="" />
                 <ul>
 
@@ -30,7 +29,7 @@ function Page2hero() {
                                     <Link className='listItem' to='/product/Carbon Program'> Carbon Program</Link>
                                 </li>
                                 <li>
-                                    <Link className='listItem' to='/product/Carbon foresty leasing' >Carbon foresty leasing </Link>
+                                    <Link className='listItem' to= '/product/Carbon foresty leasing'  >Carbon foresty leasing </Link>
                                 </li>
                                 <li>
                                     <Link className='listItem' >Farmer's Digital monital</Link>
@@ -46,39 +45,22 @@ function Page2hero() {
                 </li>
 
                 <li>
-                    <Link className='activeLink' href="#">How it works</Link>
+                    <Link className='activeLink' to='#'>How it works</Link>
                 </li>
 
                 <li>
-                    <Link className='activeLink' href="#">About Us</Link>
+                    <Link className='activeLink' to='#'>About Us</Link>
                 </li>
 
                 <li>
-                    <Link href="#"><button>Estimate Income <img src={Arrow} alt="arrow svg" srcset="" /></button></Link>
+                    <Link to='#'><button>Estimate Income <img src={Arrow} alt="arrow svg" srcset="" /></button></Link>
                 </li>
                 </ul>
             </header>
-
         </div>
-
-       <div className="hero_body">
-            <div className="page2texts">
-                <h2 className="head_text">Trees Loan</h2>
-                <h2 className="head_paragraph">Simply Empowering Digital Finance as the Key to <br /> Growth for Africa's Sustainable Farmers.</h2>
-            </div>
-
-            <div className="words">
-                <span className='word1'>Who</span>
-                <span className='word2'>How</span>
-                <span className='word3'>Why</span>
-                <span className='word4'>Matters?</span>
-            </div>
-
-
-       </div>
       
-    </section>
+    </section >
   )
 }
 
-export default Page2hero
+export default SectionOne

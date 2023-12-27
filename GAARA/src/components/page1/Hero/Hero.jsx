@@ -6,6 +6,7 @@ import parIcon1 from '/assets/partn1.png';
 import parIcon2 from '/assets/partn2.png';
 import parIcon3 from '/assets/partner3.png';
 import parIcon4 from '/assets/partn4.png';
+import DropDown from "/assets/DropIcon.svg";
 import { Link } from 'react-router-dom';
 function Hero() {
 
@@ -16,24 +17,47 @@ function Hero() {
          <img src={icon} alt="comapany's logo" srcset="" />
         <ul>
 
-            <li>
-                <Link to='/'>Home</Link>
+            <li >
+                <Link className='activeLink' to='/'>Home</Link>
+            </li>
+
+            <li >
+                <Link  className='productDrop' >Products <img src={DropDown} alt="Dro" srcset="" />
+                
+                 <div className="productList">
+                        <ul>
+                            <li>
+                                <Link className='listItem' to='/product/tree loan'>Tree loan</Link>
+                            </li>
+                            <li>
+                                <Link className='listItem' to='/product/Carbon Program' > Carbon Program</Link>
+                            </li>
+                            <li>
+                                <Link className='listItem' to= '/product/Carbon foresty leasing' >Carbon foresty leasing </Link>
+                            </li>
+                            <li>
+                                <Link className='listItem' >Farmer's Digital monital</Link>
+                            </li>
+
+                            <li>
+                                <Link className='listItem' >Agribussiness Consulting </Link>
+                            </li>
+                         </ul>
+
+                     </div>
+                </Link>
             </li>
 
             <li>
-                <Link to='/product'>Products</Link>
+                <Link className='activeLink' href="#">How it works</Link>
             </li>
 
             <li>
-                <a href="#">How it works</a>
+                <Link className='activeLink' href="#">About Us</Link>
             </li>
 
             <li>
-                <a href="#">About Us</a>
-            </li>
-
-            <li>
-                <a href="#"><button>Estimate Income <img src={Arrow} alt="arrow svg" srcset="" /></button></a>
+                <Link href="#"><button>Estimate Income <img src={Arrow} alt="arrow svg" srcset="" /></button></Link>
             </li>
         </ul>
       </header>

@@ -1,0 +1,53 @@
+.FinalSection{
+    background: url("assets/DALLE2.png");
+    background-size: cover;
+    height: 129vh;
+    width: 100%;
+    margin-top: 22%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    .FinalSectionText{
+     
+        h2{
+            width: 522px;
+            height: 109px;
+            flex-shrink: 0;
+            color: #0E5205;
+            text-align: center;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            position: relative;
+            bottom: 1.5em;
+            left: 1em;
+        }
+
+    
+    }
+
+    .SectionDescription{
+          
+        p{
+            width: 670px;
+            height: 390px;
+            flex-shrink: 0;
+            color: #0E5205;
+            text-shadow: 4px 4px 4px #FFF;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            text-align: start;
+            position: relative;
+            top: 3.2em;
+            right: 1.5em;
+        }
+    }
+    
+
+}

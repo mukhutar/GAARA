@@ -1,0 +1,79 @@
+.Section2Texts{
+    width: 100%;
+    height: 100vh;
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+
+        .first_par{
+            color: #0E5205;
+            text-align: center;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 29px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            width: 980px;
+            height: 207px;
+            flex-shrink: 0;
+            position: relative;
+            top:2em;
+
+            .bold{
+                color: #0E5205;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .dail{
+            // position: relative;
+            // bottom: 4em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            margin-top: 6%;
+            .dail_text{
+                color: #0E5205;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 40px;
+                font-weight: 300;
+               
+            }
+
+            .USSD{
+                color: #FFF;
+                text-align: center;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 100;
+                line-height: normal;
+                background-color: #0E5205;
+                border-radius: 10px;
+                padding: 6px;
+            }
+        }
+    }
+
+    .second_par{
+        width: 703px;
+        height: 105px;
+        flex-shrink: 0;
+        color: #0E5205;
+        text-align: center;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 2%;
+    }
+}
