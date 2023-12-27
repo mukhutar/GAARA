@@ -1,10 +1,14 @@
-
+@import "../../../App.scss";
 .ImgSection::-webkit-scrollbar{
     // width: 10px;
     height: 10px;
     background: gray;
     border-radius: 10px;
     margin: auto;
+
+    @include mobile{
+        display: none;
+    }
   
 }
 
@@ -13,6 +17,10 @@
     border-radius: 20px;
     width: 12px;
     margin: 30px;
+    @include mobile{
+        display: none;
+    }
+  
 }
 .ImgSection{
     height: 100vh;
@@ -26,6 +34,19 @@
     position: relative;
     bottom: 14em;
     outline: none;
+
+    @include mobile{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        top: 20em;
+        overflow-x: scroll;
+        margin-top: -400px;
+
+        left: 2em;
+        height: 470vh;
+    }
     
    
     
@@ -161,7 +182,12 @@
                     font-style: normal;
                     font-weight: 400;
                     text-align: center;
-                    line-height: 132%; 
+                    line-height: 132%;
+                    
+                    @include mobile{
+                        font-size: 28px;
+                        font-weight: 100;
+                    }
                 }
 
             }
@@ -175,6 +201,10 @@
                 width: 300px;
                 margin-left: 5px;
                 z-index: 9;
+
+                @include mobile{
+                    width: 120%;
+                }
 
                  }
             .imgCard:before{

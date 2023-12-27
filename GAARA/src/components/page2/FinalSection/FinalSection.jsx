@@ -1,6 +1,6 @@
 import React from 'react';
 import "./FinalSection.scss";
-import ForestImg from "/assets/DALLE2.png";
+
 
 
 const FinalSection = () => {

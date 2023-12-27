@@ -26,3 +26,24 @@
     }
 
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .VideoContainer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        overflow-y: hidden;
+       position: relative;
+       bottom: 5em;
+
+        .video{
+            width: 90%;
+            // height: 400px;
+        }
+    }
+    
+}

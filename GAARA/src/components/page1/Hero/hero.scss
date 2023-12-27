@@ -2,15 +2,20 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    // overflow-x: hidden;
+   
 }
 
 body{
     width: 100%;
     height: auto;
+   max-width: 100%;
+
 }
 
 .section{
       width: 100%;
+      max-width: 100%;
     height: 100vh;
     flex-shrink: 0;
     background-image: url("assets/IMG_0258 1.png");
@@ -241,3 +246,141 @@ hr{
     position: relative;
     top: 9em;
 }
+
+@media screen and (max-width: 769px) {
+    
+    // body{
+    //     overflow-x: hidden;
+    // }
+   
+   .section{
+    width: 105%;
+    background-size:cover;
+    background-position: center;
+    height: 104vh;
+   }
+   .Hero_section{
+    height: 105vh;
+    background-color: #0e52059d;
+    background-size: 50% auto;
+}
+
+.nav > ul{
+    display: none;
+}
+
+.nav > img{
+   margin: auto;
+   position: relative;
+   left: 5rem;
+} 
+
+h1{
+    font-size: 25px;
+    position: relative;
+    top: 4em;
+}
+
+h4{
+    font-size: 20px;
+    position: relative;
+    top: 5.5em;
+    right: 0.5em;
+ 
+}
+h4 > span{
+    font-size: 20px; 
+   
+    
+  
+}
+
+hr{
+    width: 300px;
+    opacity: 1;
+    position: relative;
+    top: 18em;
+}
+
+.hero_footer{
+    display: block;
+    position: relative;
+    top: 10em;
+}
+
+.Hero_section > button {
+    border-radius: 40px;
+    background: #FFF;
+    width: 150px;
+    height: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 14em;
+    margin-left: 5%;
+
+    .productLink{
+        text-decoration: none;
+        color: #0E5205;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+    }
+}
+
+
+
+.hero_footer > .partnership{
+    margin: auto;
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    top: 9em;
+}
+
+    
+}
+
+@media screen and (max-width:375px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .section{
+        width: 100%;
+        background-size:cover;
+        background-position: center;
+        height: 104vh;
+        overflow-y: hidden;
+       }
+}
+
+
+@media screen and (max-width:414px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .section{
+        width: 100%;
+        background-size:cover;
+        background-position: center;
+        height: 104vh;
+        overflow-y: hidden;
+       }
+}
+
+
+
+
+
+
+
+
+
+
+

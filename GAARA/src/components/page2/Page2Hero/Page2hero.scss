@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .Page2Hero{
     width: 100%;
     height: 100vh;
@@ -5,6 +7,14 @@
     background-image: url("assets/DALLE.png");
     background-size: cover;
     background-position: center;
+
+    @include mobile{
+       
+        background-size:cover;
+        background-position: center;
+        height: 104vh;
+        width: 100%;
+    }
 
     .heropage2{
         .nav{
@@ -14,14 +24,26 @@
             align-items: center;
             position: relative;
             bottom: 2em;
+
+
             img{
                 margin-left: 5%;
+
+                @include mobile{
+                    width: 170px;
+                    position: relative;
+                    left: 18em;
+                }
             }
 
             ul{
                 display: flex;
                 gap: 20px;
                 margin-right: 5%;
+
+                @include mobile{
+                    display: none;
+                }
 
                 li{
                     list-style: none;
@@ -53,6 +75,8 @@
                                 position: relative;
                                 top: 4px;
                                 left: 1;
+
+
                             }
                         }
                     }
@@ -146,8 +170,18 @@
         position: relative;
         bottom: 5em;
 
+     
+
         .page2texts{
             text-align: center;
+
+            @include mobile{
+                text-align: center;
+                position: relative;
+                top: 8em;
+                left: 3em;
+            }
+
 
             .head_text{
                 color: #0E5205;
@@ -156,6 +190,11 @@
                 font-style: normal;
                 font-weight: 900;
                 line-height: normal;
+
+                @include mobile{
+                    text-align: center;
+                    font-size: 60px;
+                }
             }
 
             .head_paragraph{
@@ -175,6 +214,14 @@
             gap: 10px;
             position: relative;
             top: 14em;
+
+            @include mobile{
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                position: relative;
+                left: 1.2em;
+            }
 
             .word1{
                 width: 101px;
@@ -239,3 +286,4 @@
         }
     }
 }
+

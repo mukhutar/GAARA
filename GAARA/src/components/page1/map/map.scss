@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .MapContainer{
     width: 100%;
     height: 100%;
@@ -9,6 +11,17 @@
     // bottom: 4em;
     margin: auto;
     gap: 20px;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 12em;
+
+
+    }
 
     .map{
         display: flex;
@@ -27,6 +40,14 @@
             position: relative;
             left: 3em;
             bottom: 0.8em;
+
+            @include mobile{
+                font-size: 25px;
+                position: relative;
+                left: 3em;
+                bottom: 2em;
+                line-height: 32px;
+            }
         }
 
         img{
@@ -35,6 +56,14 @@
             position: relative;
             right: 4em;
             bottom: 8em;
+
+            @include mobile{
+                width: 302px;
+                height: 320px;
+                object-fit: cover;
+                position: relative;
+                right: 2.3em;
+            }
         }
     }
 
@@ -42,12 +71,23 @@
         position: relative;
         right: 5em;
         bottom: 4em;
+
+        @include mobile{
+            // text-align: center;
+        }
         
 
         p{
             color: #0E5205;
             text-align: end;
 
+            @include mobile{
+                text-align: center;
+                font-size: 16px;
+                position: relative;
+                left: 4em;
+            }
+          
           
 
             .spn{
@@ -57,6 +97,14 @@
                 font-weight: 300;
                 line-height: normal;
                 text-align: end;
+
+                @include mobile{
+                    font-size: 22px;
+                    margin: auto;
+                    text-align: center;
+                }
+
+
                 
                 
 
@@ -70,12 +118,25 @@
                 font-style: normal;
                 font-weight: 900;
                 line-height: normal;
+
+                @include mobile{
+                    text-align: center;
+                    font-size: 30px;
+                }
             }
 
             h2{
                 position: relative;
                 right: 1em;
                 bottom: 2em;
+
+                @include mobile{
+                    text-align: center;
+                    font-size: 14px;
+                    position: relative;
+                    left: 1em;
+
+                }
             }
 
             .pargraph{
@@ -85,6 +146,17 @@
                 position: relative;
                 right: 1em;
                 bottom: 3em;
+
+                @include mobile{
+                    position: relative;
+                    left: 1em;
+                    text-align: center;
+                
+                    top: -1rem;
+                    right: 1em;
+                    // font-size: 25px;
+                    // margin: 50px 20px;
+                }
 
             }
 

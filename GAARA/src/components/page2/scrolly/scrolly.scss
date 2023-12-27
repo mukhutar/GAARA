@@ -1,4 +1,4 @@
-
+@import "../../../App.scss";
 .scrolly_section{
     width: 100%;
     height: auto;
@@ -7,7 +7,14 @@
     justify-content: space-around;
     position: relative;
     bottom: 3.3em;
-    // margin: 0;
+    
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+        top: 1px;
+    }
     
 
     .items{
@@ -26,6 +33,10 @@
             margin-left: 40px;
             position: relative;
             bottom: 30em;
+
+            @include mobile{
+                display: none;
+            }
             
         }
 
@@ -41,6 +52,10 @@
             left: 0.5em;
             bottom: 13em;
             margin-left: 40px;
+
+            @include mobile{
+                display: none;
+            }
         }
 
         .img_containerr{
@@ -55,6 +70,11 @@
             bottom: 13em;
             margin-right: 50px;
             z-index: 2;
+
+
+            @include mobile{
+                display: none;
+            }
             
 
         }
@@ -68,6 +88,10 @@
             left: 3.9em;
             position: relative;
             bottom: 30em;
+
+            @include mobile{
+                display: none;
+            }
             
 
         }
@@ -81,7 +105,16 @@
             margin-left: 40px;
             position: relative;
             bottom: 11em;
+
+            @include mobile{
+                position: relative;
+                top: -8em;
+
+              
+            }
         }
+
+        // ffjsnfs
 
         .item_righttext{
             color: #0E5205;
@@ -95,6 +128,10 @@
             bottom:8.2em;
             left: 1.4em;
 
+            @include mobile{
+                margin-top: 40px;
+            }
+
         } 
         
         .item_description{
@@ -107,6 +144,14 @@
             margin-left: 40px; 
             position: relative;
             bottom: 16em;
+
+            @include mobile{
+                font-size: 24px;
+                font-weight: 400;
+                position: relative;
+                bottom: 12em;
+                
+            }
         }
         .item_descriptionn{
             color: #0E5205;
@@ -120,9 +165,17 @@
             bottom: 12.5em;
             text-align: start;
 
+            @include mobile{
+                font-size: 24px;
+                font-weight: 400;
+                position: relative;
+                
+            }
+
         }
 
         .end_text{
+          
             .word{
                 color: #0E5205;
                 font-family: 'Noto Sans JP', sans-serif;
@@ -135,6 +188,14 @@
                 right: 230px;
                 margin-top: -29%;
                 bottom: 2em;
+
+                @include mobile{
+                    text-align: center;
+                    position: relative;
+                    left: 1em;
+                    bottom: 3em;
+                    font-size: 50px;
+                }
             }
         }
 
@@ -149,6 +210,10 @@
         margin-top: 30px;
         position: relative;
         left: 1em;
+
+        @include mobile{
+            display: none;
+        }
         .item_icon{
             object-fit: cover;
             position: relative;

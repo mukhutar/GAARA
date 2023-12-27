@@ -1,13 +1,13 @@
 import React from 'react'
 import SectionOne from '../../components/page4/SectionOne/SectionOne'
 
-function ProductIem3() {
+function ProductItem3() {
   return (
     <div>
-        <SectionOne/>
-      
+        
+      <SectionOne/>
     </div>
   )
 }
 
-export default ProductIem3
+export default ProductItem3

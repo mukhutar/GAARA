@@ -8,14 +8,18 @@ import parIcon3 from '/assets/partner3.png';
 import parIcon4 from '/assets/partn4.png';
 import DropDown from "/assets/DropIcon.svg";
 import { Link } from 'react-router-dom';
+import {motion} from "framer-motion"
+
+
 function Hero() {
+
 
   return (
    <section className='section'>
       <div className='Hero_section '>
-          <header className='nav'>
+          <motion.header className='nav'>
          <img src={icon} alt="comapany's logo" srcset="" />
-        <ul>
+        <motion.ul>
 
             <li >
                 <Link className='activeLink' to='/'>Home</Link>
@@ -59,13 +63,17 @@ function Hero() {
             <li>
                 <Link href="#"><button>Estimate Income <img src={Arrow} alt="arrow svg" srcset="" /></button></Link>
             </li>
-        </ul>
-      </header>
+        </motion.ul>
+
+        
+        
+        
+      </motion.header>
 
       <h1>Digital Trees Loans</h1> <br />
       <h4>The new root of Rewarding for <span>African farmers.</span></h4>
 
-      <button>  <Link className='productLink' to='/product'> Products <img src={Arrow} alt="arrow svg" srcset="" /> </Link> </button>   <hr /> 
+      <button >  <Link className='productLink' to='/product'> Products <img src={Arrow} alt="arrow svg" srcset="" /> </Link> </button>   <hr /> 
       <div className="hero_footer"> 
         <h4>In Partnership With</h4>  <br /> 
          <div className="partnership">

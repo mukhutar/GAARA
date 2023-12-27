@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .reason{
     background: url("assets/upforest.png");
     width: 100%;
@@ -11,8 +13,21 @@
     justify-items: center;
     margin-bottom: -10%;
 
+    @include mobile{
+        max-width: 100%;
+        max-height: 100vh;
+        background-size: contain;
+        position: relative;
+        top: 22em;
+        margin-bottom: -420%;
+       
+    }
+
     .reasonText{
         margin-bottom: 50%;
+
+
+       
         .Rtext{
             color: #0E5205;
             font-family: 'Noto Sans JP', sans-serif;
@@ -26,6 +41,14 @@
             position: relative;
             bottom: 15em;
             left: 2em;
+
+            @include mobile{
+                margin-bottom: 120px;
+                font-size: 35px;
+                position: relative;
+                left: 10.9em;
+                top: -4em;
+            }
         }
     }
 
@@ -34,10 +57,20 @@
         flex-direction: column;
         margin-top: 25%;
         position: relative;
-        right: 16em;
-        // top: 1em;
+        right: 14.5em;
+        @include mobile{
+            margin-top: 0;
+      
+        }
         
         .one{
+
+            @include mobile{
+                margin: auto;
+                position: relative;
+                top: 7em;
+                right: 8em;
+            }
 
             p{
                 width: 494px;
@@ -50,6 +83,13 @@
                 font-weight: 400;
                 line-height: 145.8%;
 
+                @include mobile{
+                    margin: auto;
+                    font-size: 21px;
+                    max-width: 330px;
+                    font-weight: 300;
+                }
+
                 span{
                  color: #0E5205;
                 text-shadow: 4px 4px 4px #FFF;
@@ -59,6 +99,9 @@
                 font-weight: 600;
                 line-height: 145.8%; /* 72.9px */
                 text-transform: uppercase;
+                @include mobile {
+                    font-size: 25px;
+                }
                 }
             }
         }
@@ -67,6 +110,12 @@
             position: relative;
             right: 20em;
 
+            @include mobile{
+                position: relative;
+                right: 8em;
+                top: 7em;
+            }
+
             p{
                 width: 494px;
                 // height: 390px;
@@ -78,6 +127,13 @@
                 font-weight: 400;
                 line-height: 145.8%;
 
+                @include mobile{
+                    margin: auto;
+                    font-size: 20px;
+                    max-width: 330px;
+                    font-weight: 300;
+                }
+
                 span{
                  color: #0E5205;
                 text-shadow: 4px 4px 4px #FFF;
@@ -87,6 +143,10 @@
                 font-weight: 600;
                 line-height: 145.8%; /* 72.9px */
                 text-transform: uppercase;
+
+                @include mobile {
+                    font-size: 25px;
+                }
                 }
             }
         }

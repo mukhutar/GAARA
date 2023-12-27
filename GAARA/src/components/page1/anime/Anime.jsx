@@ -29,7 +29,7 @@ function Anime() {
     }, [paragraphs.length]);
   
   return (
-   <section>
+   <section className='hell'>
       <motion.div className="rotating-words-container">
          <motion.div className="img"
           initial={{ rotate: 0, originX: 0.5, originY: 0.5 }}
@@ -41,7 +41,7 @@ function Anime() {
             ease: 'easeInOut', 
           }}
            >
-           <img src={image} alt="animeImg" srcset="" />
+           <img className='rotate_Img' src={image} alt="animeImg" srcset="" />
          </motion.div>
        
       <motion.span

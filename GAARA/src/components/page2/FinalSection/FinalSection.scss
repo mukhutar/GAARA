@@ -1,3 +1,6 @@
+@import "../../../App.scss";
+
+
 .FinalSection{
     background: url("assets/DALLE2.png");
     background-size: cover;
@@ -8,6 +11,15 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+
+    @include mobile{
+        background-size: contain;
+        height: 10vh;
+        position: relative;
+        top: 55em;
+
+        margin-bottom: -1000px;
+    }
 
     .FinalSectionText{
      
@@ -25,6 +37,16 @@
             position: relative;
             bottom: 1.5em;
             left: 1em;
+
+
+            @include mobile{
+                height: 100vh;
+                position: relative;
+                left:4em;
+                font-size: 50px;
+                margin-bottom: -120px;
+                
+            }
         }
 
     
@@ -46,6 +68,17 @@
             position: relative;
             top: 3.2em;
             right: 1.5em;
+
+            @include mobile{
+                height: 100vh;
+                font-size: 30px;
+                position: relative;
+                text-align: center;
+                right: 8em;
+                top: 9em;
+                margin: auto;
+                width: 410px;
+            }
         }
     }
     

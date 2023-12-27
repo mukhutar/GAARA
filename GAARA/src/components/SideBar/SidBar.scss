@@ -1,0 +1,210 @@
+
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: white;
+    display: none;
+    position: sticky;
+    top: 0;
+    left:0;
+    bottom: 0;
+    
+    .bg {
+      z-index: 999;
+      
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      width: 400px;
+      background-color: #0e5205b7;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(2px);
+      
+
+  
+    //   @include mobile {
+    //     width: 200px;
+    //   }
+
+    
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 40px;
+        position: relative;
+        top: 20em;
+
+        li{
+            list-style: none;
+
+            .activeLink{
+                text-decoration: none;
+                color: white;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                button{
+                    border-radius: 40px;
+                   
+                    background-color: #0e5205b7;
+                    backdrop-filter: blur(8px);
+                    -webkit-backdrop-filter: blur(2px);
+                    width: 200px;
+                    height: 45px;
+                    color: #FFF   ;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    border: none;
+                    position: relative;
+                    margin-right: 3.2em;
+
+                    img{
+                        position: relative;
+                        top: 4px;
+                        left: 1;
+                       
+                    }
+                }
+            }
+            a:active{
+                color: white;
+                font-weight: bold;
+            }
+
+            
+        
+        }
+        
+        .productDrop{
+            text-decoration: none;
+                color: white;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+            .activeLink{
+                display:flex;
+            }
+
+                .productList{
+                    
+                    background-color: #0e5205b7;
+                    backdrop-filter: blur(8px);
+                    -webkit-backdrop-filter: blur(2px);
+                    width: 342px;
+                    height: 510px;
+                    display: none;
+                    position: absolute;
+                    left: 1em;
+                    top:4.7em;
+                    z-index: 999;
+                    border-radius: 15px;
+                 
+                    
+                    
+        
+        
+                    .unchanged{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 10px;
+                        
+                        
+        
+                        li{
+                            text-align: center;
+                            font-size: 12px;
+                            position: relative;
+                            
+                            bottom: 35em;
+                            margin-right: 10px;
+                            
+        
+                        .listItem{
+                                 color:white;
+                                font-size: 30px;
+                                font-weight: 100;
+                                text-decoration: none;
+                                margin: auto;
+                                
+                            }
+        
+                            .listItem:hover{
+                                font-weight: 400;
+                            
+                            }
+                        }
+                    
+                    
+                    
+        
+                    }
+                }
+        
+            }
+            img{
+                position:relative;
+                // top:16px
+            }
+        
+            .productDrop:hover img{
+               
+                transform: translateY(2px);
+                transition: all 0.4s;
+            }
+            
+            .productDrop:hover .productList{
+                display: block;
+                margin-bottom: 120px;
+                
+            
+            }
+
+
+        
+    }
+  
+     
+    }
+  
+    button {
+      z-index: 999;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: fixed;
+      top: 25px;
+      left: 25px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+
+    .sideBar{
+        display: block;
+    }
+    
+  }

@@ -9,6 +9,7 @@ import Partenership from '../../components/page1/partenership/Partenership.jsx'
 import Footer from '../../components/page1/footer/Footer.jsx'
 
 
+
 function Home() {
   return (
     <div>

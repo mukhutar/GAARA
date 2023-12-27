@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .CardContainer{
     height: 100vh;
     width: 100%;
@@ -10,6 +12,19 @@
     margin: 20px 10px;
     overflow: hidden;
     margin-bottom: 120px;
+
+    @include mobile{
+        margin-bottom: 0%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       justify-content:space-evenly;
+        justify-items: center;
+
+     
+        
+    }
     
 
     .card{
@@ -27,6 +42,19 @@
             margin: 30px;
             // text-align: center;
 
+            @include mobile{
+                width: 300px;
+                height: 36vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-top: 3px solid #0E5205;
+                border-bottom: 3px solid #0E5205;
+                padding: 50px;
+                z-index: 999;
+            }
+
             h2{
                 color: #0E5205;
                 text-align: center;
@@ -35,6 +63,12 @@
                 font-style: normal;
                 font-weight: 800;
                 line-height: normal;
+
+                @include mobile{
+                    font-size: 14px;
+                    font-weight: 900;
+                    
+                }
 
 
             }
@@ -46,6 +80,18 @@
                 font-size: 20px;
                 font-weight: 350;
                 // line-height: 140%;
+
+                @include mobile{
+                    font-size: 12px;
+                    font-weight: 400;
+                    width: 120%;
+                }   
+            }
+
+            img{
+                @include mobile{
+                   height: 120px;
+                }
             }
 
     }
@@ -57,9 +103,16 @@
         margin-bottom: 39px;
         font-size: 42px;
 
+        
+
         .icon{
             width: 227px;
             height: 170px;
+
+            @include mobile{
+                width: 92px;
+                height: 70px;
+            }
         }
 
         h2{
@@ -71,10 +124,25 @@
             font-style: normal;
             font-weight: 400;
 
+            @include mobile{
+                font-size: 16px;
+            }
+
             span{
                 font-weight: 900;
             }
 
         }
+    }
+}
+
+@media screen and (max-width:414px){
+
+    .CardContainer{
+        height: 120vh;
+    }
+    .card{
+        height: 100vh;
+        padding: 20px;
     }
 }
