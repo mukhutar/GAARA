@@ -1,0 +1,36 @@
+.sectionThree {
+    height: 100vh;
+    background-image: url("/assets/page4dbg.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -20%;
+ 
+
+    .SctH{
+        color: #0E5205;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 333px;
+        height: 66px;
+        flex-shrink: 0;
+        margin-left: 10%;
+
+    }
+
+    .links{
+        color: #0E5205;
+        width: 982px;
+        text-align: justify;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin-left: 12%;
+    }
+
+}

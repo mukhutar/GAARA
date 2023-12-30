@@ -3,9 +3,9 @@ import icon from '/assets/GaaraLogo.png'
 import Arrow from '/assets/WhiteArrow.svg'
 import DropDown from "/assets/greenDrop.svg";
 import { Link } from 'react-router-dom';
-import './page2hero.scss';
+import "./SectionI.scss"
 
-function Page2hero() {
+function SectionI() {
   return (
     <section className='Page2Hero'>
 
@@ -33,7 +33,7 @@ function Page2hero() {
                                     <Link className='listItem' to='/product/Carbon foresty leasing' >Carbon foresty leasing </Link>
                                 </li>
                                 <li>
-                                <Link className='listItem' to= '/product/Famers digital monital' >Farmer's Digital monital</Link>
+                                    <Link className='listItem' to= '/product/Famers digital monital' >Farmer's Digital monital</Link>
                                 </li>
 
                                 <li>
@@ -60,25 +60,9 @@ function Page2hero() {
             </header>
 
         </div>
-
-       <div className="hero_body">
-            <div className="page2texts">
-                <h2 className="head_text">Trees Loan</h2>
-                <h2 className="head_paragraph">Simply Empowering Digital Finance as the Key to <br /> Growth for Africa's Sustainable Farmers.</h2>
-            </div>
-
-            <div className="words">
-                <span className='word1'>Who</span>
-                <span className='word2'>How</span>
-                <span className='word3'>Why</span>
-                <span className='word4'>Matters?</span>
-            </div>
-
-
-       </div>
       
     </section>
   )
 }
 
-export default Page2hero
+export default SectionI

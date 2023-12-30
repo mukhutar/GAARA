@@ -40,7 +40,7 @@ function Hero() {
                                 <Link className='listItem' to= '/product/Carbon foresty leasing' >Carbon foresty leasing </Link>
                             </li>
                             <li>
-                                <Link className='listItem' >Farmer's Digital monital</Link>
+                                <Link className='listItem' to= '/product/Famers digital monital' >Farmer's Digital monital</Link>
                             </li>
 
                             <li>
