@@ -39,7 +39,7 @@ function Section() {
                                 </li>
 
                                 <li>
-                                    <Link className='listItem' >Agribussiness Consulting </Link>
+                                    <Link className='listItem'  to='/product/agribussiness consulting'  >Agribussiness Consulting </Link>
                                 </li>
                             </ul>
 
@@ -47,9 +47,7 @@ function Section() {
                     </Link>
                 </li>
 
-                <li>
-                    <Link className='activeLink' to='#'>How it works</Link>
-                </li>
+               
 
                 <li>
                     <Link className='activeLink' to='#'>About Us</Link>

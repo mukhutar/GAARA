@@ -1,21 +1,16 @@
 import React from 'react'
-import './hero.scss';
+import "./Section6A.scss";
+import footer5 from "/assets/Footer5.png";
 import icon from '/assets/GaaraFundWhitePNG1.png'
 import Arrow from '/assets/Arrow.svg'
-import parIcon1 from '/assets/partn1.png';
-import parIcon2 from '/assets/partn2.png';
-import parIcon3 from '/assets/partner3.png';
-import parIcon4 from '/assets/partn4.png';
 import DropDown from "/assets/DropIcon.svg";
 import { Link } from 'react-router-dom';
 import {motion} from "framer-motion"
+import whiteArrw from "/assets/ArrowWhite.svg";
 
-
-function Hero() {
-
-
+function Section6A() {
   return (
-   <section className='section'>
+    <section className='Section6A'>
       <div className='Hero_section '>
           <motion.header className='nav'>
          <img src={icon} alt="comapany's logo" srcset="" />
@@ -68,23 +63,39 @@ function Hero() {
         
       </motion.header>
 
-      <h1>Digital Trees Loans</h1> <br />
-      <h4>The new root of Rewarding for <span>African farmers.</span></h4>
+      <h1 className="page5Heading">
+      Agribusiness Consultancy For <br /> Fruit Tree Farming
+      </h1>
 
-      <button >  <Link className='productLink' to='/product'> Products <img src={Arrow} alt="arrow svg" srcset="" /> </Link> </button>   <hr /> 
-      <div className="hero_footer"> 
-        <h4>In Partnership With</h4>  <br /> 
-         <div className="partnership">
-            <img src={parIcon1} alt="parnicon" srcset="" />
-            <img src={parIcon2} alt="parnicon" srcset="" />
-            <img src={parIcon3} alt="parnicon" srcset="" />
-            <img src={parIcon4} alt="parnicon" srcset="" />
-         </div>
       </div>
-     </div>
-    
-   </section>
+
+      <div className="footer5">
+        <img src={footer5} alt="" />
+      </div>
+
+      <div className="page6Texts">
+
+        <div className="p">
+          <p>
+          <span>Discover</span> the vibrant world of fruit tree farming with our <span>expert</span> Agribusiness Consultancy. Whether you're dreaming of <span>lush orchards</span> or are a fruit farming veteran, we're here to turn those <span>dreams </span>into <span>bountiful</span> realities.
+          </p>
+        </div>
+        
+        <div className="contct">
+
+          <h3>Embark on a Fruitful Journey!</h3>
+
+          <button>
+            Contact Us
+            <img src={whiteArrw} alt="" />
+          </button>
+
+        </div>
+      </div>
+
+      
+    </section>
   )
 }
 
-export default Hero
+export default Section6A

@@ -4,13 +4,14 @@ import Arrow from '/assets/WhiteArrow.svg'
 import DropDown from "/assets/greenDrop.svg";
 import { Link } from 'react-router-dom';
 import "./SectionI.scss"
+import bg from "/assets/pg5Bbg.png";
 
 function SectionI() {
   return (
-    <section className='Page2Hero'>
+    <section className='Page5Hero'>
 
-        <div className="heropage2">
-                <header className='nav'>
+        <div className="heropage5">
+                <header className='nav5'>
                 <img src={icon} alt="comapany's logo" srcset="" />
                 <ul>
 
@@ -37,7 +38,7 @@ function SectionI() {
                                 </li>
 
                                 <li>
-                                    <Link className='listItem' >Agribussiness Consulting </Link>
+                                    <Link className='listItem'  to='/product/agribussiness consulting' >Agribussiness Consulting </Link>
                                 </li>
                             </ul>
 
@@ -59,6 +60,16 @@ function SectionI() {
                 </ul>
             </header>
 
+        </div>
+
+        <div className="imgSection">
+              <img src={bg} alt="" srcset="" />
+        </div> 
+
+        <div className="page5texts">
+            <h3 className='page5H'>Virtual Forest & Impact Analytics</h3>
+
+            <p className='page5P'>Latest digital technology  to revolutionize how we interact with and understand our forests. Our innovative platform is designed for forest owners, environmental agencies, and nature enthusiasts who are committed to preserving and enhancing the health of forest.</p>
         </div>
       
     </section>

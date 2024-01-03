@@ -1,0 +1,251 @@
+.Section6C{
+    width: 100%;
+
+   margin-bottom: -100%;
+ 
+    .page6Heading{
+        color: #0E5205;
+        margin-left: 10%;
+        font-family: Lato , sans-serif;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .svg{
+        object-fit: cover;
+        z-index: 3;
+        opacity: 999;
+    }
+    .Section6Sides{
+        display: flex;
+        margin-top: -80%;
+        margin-left: 10%;
+
+        .Side{
+            .img_container{
+                
+
+                .img1{
+                    width: 409px;
+                    height: 309px;
+                    flex-shrink: 0;
+                    border-radius: 25px 200px;
+                    position: relative;
+                    bottom: 28.5em;
+                    left: 8em;
+                }
+
+                .border1{
+                    width: 419px;
+                    height: 317px;
+                    flex-shrink: 0;
+                    border-radius: 200px 25px;
+                    border: 2px solid #fff;
+                    position: relative;
+                    bottom: 15em;
+                    left: 10em;
+                    z-index: 2;
+                }
+
+                .img2{
+                    width: 413px;
+                    height: 314px;
+                    flex-shrink: 0;
+                    border-radius: 200px 25px;
+                    position: relative;
+                    bottom: 30em;
+                    left: 7em;
+                    z-index: 2;
+                
+                }
+
+                .border2{
+                    width: 277.296px;
+                    height: 209.792px;
+                    transform: rotate(-85.365deg);
+                    flex-shrink: 0;
+                    border-radius: 100px 25px;
+                    border: 2px solid #fff;
+                    position: relative;
+                    bottom: 42em;
+                    left: 28em;
+                    z-index: 2;
+                }
+
+                .img3{
+                    width: 413px;
+                    height: 314px;
+                    flex-shrink: 0;
+                    border-radius: 25px 200px;
+                    position: relative;
+                    bottom: 18em;
+                    right: 2em;
+                }
+
+                .border3{
+                    width: 419px;
+                    height: 317px;
+                    flex-shrink: 0; 
+                    border-radius: 200px 25px;
+                    border: 2px solid #fff;
+                    position: relative;
+                    top: 8em;
+                    z-index: 2;
+                }
+
+                .img4{
+                    width: 413px;
+                    height: 314px;
+                    flex-shrink: 0;
+                    border-radius: 200px 25px;
+                    position: relative;
+                    right: 6em;
+                    bottom: 40em;
+                }
+
+                .border4{
+                    width: 419px;
+                    height: 317px;
+                    flex-shrink: 0;
+                    border-radius: 200px 25px;
+                    border: 2px solid #fff;
+                    position: relative;
+                    right: 22em;
+                    bottom: 14em;
+                    z-index: 2;
+                }
+
+                .borderN{
+                    width: 419px;
+                    height: 317px;
+                    transform: rotate(67.299deg);
+                    flex-shrink: 0;
+                    border-radius: 200px 25px;
+                    border: 2px solid #fff;
+                    position: relative;
+                    bottom: 41em;
+                    z-index: 2;
+                }
+            }
+
+            .section_text1{
+                text-align: start;
+                position: relative;
+                bottom: 25em;
+                right: 1em;
+                z-index: 2;
+               
+
+                h3{
+                    color: #0E5205;
+
+                    font-family: Lato , sans-serif;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+                p{
+                    color: #0E5205;
+
+                    font-family: Inter , sans-serif;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 125%;
+                }
+            }
+
+            .section_text2{
+                position: relative;
+                bottom: 20em;
+                right: 4em;
+                z-index: 2;
+
+                h3{
+                    color: #0E5205;
+
+                    font-family: Lato , sans-serif;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    text-transform: uppercase;
+
+                }
+
+                p{
+                    color: #0E5205;
+
+                    font-family: Inter , sans-serif;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 125%;
+                }
+
+            }
+
+            .section_text3{
+                position: relative;
+                bottom: 8em;
+                left: 8em;
+
+                h3{
+                    color: #0E5205;
+
+                    font-family: Lato , sans-serif;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    text-transform: uppercase;
+
+                }
+
+                p{
+                    color: #0E5205;
+
+                    font-family: Inter , sans-serif;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 125%;
+                }
+            }
+
+            .section_text4{
+                position: relative;
+                bottom:57em;
+                left: 10em;
+
+                
+                h3{
+                    color: #0E5205;
+
+                    font-family: Lato , sans-serif;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    text-transform: uppercase;
+
+                }
+
+                p{
+                    color: #0E5205;
+
+                    font-family: Inter , sans-serif;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 125%;
+                }
+
+            }
+        }
+
+    }
+}

@@ -37,7 +37,7 @@ function Page2hero() {
                                 </li>
 
                                 <li>
-                                    <Link className='listItem' >Agribussiness Consulting </Link>
+                                    <Link className='listItem'  to='/product/agribussiness consulting'  >Agribussiness Consulting </Link>
                                 </li>
                             </ul>
 
@@ -45,9 +45,7 @@ function Page2hero() {
                     </Link>
                 </li>
 
-                <li>
-                    <Link className='activeLink' href="#">How it works</Link>
-                </li>
+       
 
                 <li>
                     <Link className='activeLink' href="#">About Us</Link>

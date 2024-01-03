@@ -8,10 +8,10 @@ import "./SectionOne.scss";
 
 function SectionOne() {
   return (
-    <section className='Page2Hero'>
+    <section className='Page4Hero'>
 
-          <div className="heropage2">
-                <header className='nav'>
+          <div className="heropage4">
+                <header className='nav4'>
                 <img src={icon} alt="comapany's logo" srcset="" />
                 <ul>
 
@@ -38,7 +38,7 @@ function SectionOne() {
                                 </li>
 
                                 <li>
-                                    <Link className='listItem' >Agribussiness Consulting </Link>
+                                    <Link className='listItem'  to='/product/agribussiness consulting'  >Agribussiness Consulting </Link>
                                 </li>
                             </ul>
 
@@ -46,9 +46,7 @@ function SectionOne() {
                     </Link>
                 </li>
 
-                <li>
-                    <Link className='activeLink' href="#">How it works</Link>
-                </li>
+             
 
                 <li>
                     <Link className='activeLink' href="#">About Us</Link>

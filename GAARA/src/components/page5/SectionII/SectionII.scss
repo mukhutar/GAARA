@@ -1,0 +1,104 @@
+@import "../../../App.scss";
+
+.Page5II{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin-top: 30%;
+    // margin-left: 5%;
+    // margin-right: 5%;
+    justify-content: space-around;
+    justify-items: center;
+
+    .sideOne{
+        margin-top: 10%;
+        margin-left: 3%;
+      
+        .Rimage{
+            width: 350px;
+            height: 250px;
+            position: relative;
+            bottom: 1em;
+           margin: 20px;
+           border-radius: 200px 25px;            border: 2px solid #8d8d8d4b;
+           padding: 10px;
+
+
+        }
+
+       
+
+        .Limage{
+            width: 350px;
+            height: 250px;
+            position: relative;
+            bottom: 6em;
+            margin: 20px;
+            border-radius: 30px 200px;
+            border: 2px solid #8d8d8d4b;
+            padding: 10px;
+
+
+        }
+
+        .textcontainer {
+            position: relative;
+            bottom: 3em;
+            h3{
+                color: #0E5205;
+
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                width: 433px;
+                height: 42px;
+                flex-shrink: 0;
+            }
+
+            p{
+                color: #0E5205;
+                font-family: Inter;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 125%;
+                width: 483px;
+                height: 202px;
+                flex-shrink: 0;
+                margin: 20px;
+
+                li{
+                    color: #0E5205;
+
+                    font-family: Inter;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 125%;
+                }
+            }
+        }
+
+        
+    }
+
+    .mddle{
+        // position: relative;
+        // top: 14em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+
+        .treeBlock{
+            border-radius: 25px 5px;
+            background: #0A4102;
+            width: 70px;
+            height: 43px;
+            flex-shrink: 0;
+        }
+    }
+}
