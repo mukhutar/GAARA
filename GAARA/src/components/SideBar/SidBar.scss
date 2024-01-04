@@ -101,6 +101,10 @@
 
             .activeLink{
                 display:flex;
+
+                button{
+                    background-color: #FFF;
+                }
             }
 
                 .productList{
@@ -116,6 +120,7 @@
                     top:4.7em;
                     z-index: 999;
                     border-radius: 15px;
+                    opacity: 99;
                  
                     
                     
@@ -198,6 +203,10 @@
       border: none;
       cursor: pointer;
     }
+  }
+
+  .bb{
+    background-color: #FFF;
   }
   
 

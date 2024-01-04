@@ -5,14 +5,28 @@
     height: 100vh;
     width: 100%;
     margin-top: 30%;
-    // margin-left: 5%;
-    // margin-right: 5%;
     justify-content: space-around;
     justify-items: center;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 180%;
+        margin-bottom: 100%;
+    }
+
 
     .sideOne{
         margin-top: 10%;
         margin-left: 3%;
+
+        @include mobile{
+            margin: auto;
+        }
       
         .Rimage{
             width: 350px;
@@ -22,6 +36,12 @@
            margin: 20px;
            border-radius: 200px 25px;            border: 2px solid #8d8d8d4b;
            padding: 10px;
+
+           @include mobile{
+            margin: auto;
+            position: relative;
+            top: 2em;
+           }
 
 
         }
@@ -37,6 +57,12 @@
             border-radius: 30px 200px;
             border: 2px solid #8d8d8d4b;
             padding: 10px;
+
+            @include mobile{
+            margin: auto;
+          
+           }
+
 
 
         }
@@ -55,11 +81,16 @@
                 width: 433px;
                 height: 42px;
                 flex-shrink: 0;
+
+                @include mobile{
+                    font-size: 25px;
+                    text-align: center;
+                }
             }
 
             p{
                 color: #0E5205;
-                font-family: Inter;
+                font-family: Inter , sans-serif;
                 font-size: 21px;
                 font-style: normal;
                 font-weight: 300;
@@ -69,6 +100,12 @@
                 flex-shrink: 0;
                 margin: 20px;
 
+                @include mobile{
+                    width: 323px;
+                    margin: auto;
+                    padding: 20px;
+                }
+
                 li{
                     color: #0E5205;
 
@@ -77,6 +114,10 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: 125%;
+
+                    @include mobile {
+                        margin: 2px;
+                    }
                 }
             }
         }
@@ -92,6 +133,10 @@
         align-items: center;
         justify-content: center;
         justify-items: center;
+
+        @include mobile{
+            padding: 90px;
+        }
 
         .treeBlock{
             border-radius: 25px 5px;

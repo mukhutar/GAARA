@@ -46,9 +46,7 @@ function SectionI() {
                     </Link>
                 </li>
 
-                <li>
-                    <Link className='activeLink' href="#">How it works</Link>
-                </li>
+                
 
                 <li>
                     <Link className='activeLink' href="#">About Us</Link>

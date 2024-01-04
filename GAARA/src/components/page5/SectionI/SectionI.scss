@@ -8,6 +8,11 @@
     background-image: url("assets/pg5bg.png");
     background-size: cover;
     background-position: center;
+
+    @include mobile{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     
     .heropage5{
         .nav5{
@@ -25,7 +30,7 @@
                 @include mobile{
                     width: 170px;
                     position: relative;
-                    left: 18em;
+                    left: 13em;
                 }
             }
 
@@ -86,6 +91,11 @@
                     .activeLink{
                         display:flex;
                     }
+
+                    .activeLink:hover .productList{
+                        display: block;
+
+                    }
     
                         .productList{
                             
@@ -96,8 +106,8 @@
                             height: 320px;
                             display: none;
                             position: absolute;
-                            left: -46%;
-                            top:2em;
+                            left: 55%;
+                            top:4.3em;
                             z-index: 9;
                             border-radius: 15px;
                             
@@ -132,7 +142,7 @@
                             }
                         }
                 
-                    }
+                }
                     img{
                         position:relative;
                         top:6px
@@ -150,9 +160,7 @@
                     
                     }
 
-
-                
-            }
+                }
         }
     }
 
@@ -163,12 +171,30 @@
         height: 40vh;
         position: relative;
         top: 12em;
+
+        @include mobile{
+            position: relative;
+            top: 15em;
+        }
+
+        img{
+               @include mobile {
+            width: 100%;
+            background-position: center;
+            background-size: contain;
+        }
+        }
+     
        
     }
 
     .page5texts{
         margin-top: 13%;
         margin-left: 10%;
+
+        @include mobile{
+            margin: auto;
+        }
 
         .page5H{
             color: #0E5205;
@@ -181,6 +207,13 @@
             width: 552px;
             height: 215px;
             flex-shrink: 0;
+
+            @include mobile{
+                font-size: 43px;
+                width: 420px;
+                margin-top: 20px;
+                text-align: center;
+            }
         }
 
         .page5P{
@@ -194,6 +227,12 @@
             font-weight: 400;
             line-height: normal;
             margin-right: 10%;
+
+            @include mobile{
+                margin: 10px;
+                text-align: start;
+
+            }
         }
 
     }

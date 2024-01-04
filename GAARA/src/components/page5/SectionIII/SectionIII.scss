@@ -1,8 +1,13 @@
-
+@import "../../../App.scss";
 
 .Section5{
     height: 90vh;
     width: 100%;
+
+    @include mobile{
+        max-width: 100%;
+        margin-bottom: -320%;
+    }
 
     .Section5Heading{
         color: #0E5205;
@@ -14,6 +19,15 @@
         position: relative;
         left: 2.5em;
         top: 1em;
+
+        @include mobile{
+            margin: auto;
+            text-align: center;
+            font-size: 45px;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
     }
 
     .Reasons{
@@ -21,6 +35,12 @@
         justify-content: center;
         gap: 100px;
         margin: 10%;
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
 
         .Rone{
             
@@ -64,6 +84,11 @@
         width: 140px;
         position: relative;
         bottom: 6em;
+
+        @include mobile{
+            position: relative;
+            top: 2em;
+        }
 
        .Wicon{
          left: 1em;

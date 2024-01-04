@@ -38,7 +38,7 @@ function Anime() {
             duration: 20,
             repeat: 4,
             repeatDelay: 1,
-            ease: 'easeInOut', 
+            // ease: 'easeInOut', 
           }}
            >
            <img className='rotate_Img' src={image} alt="animeImg" srcset="" />
