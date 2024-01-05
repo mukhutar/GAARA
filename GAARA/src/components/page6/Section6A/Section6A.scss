@@ -288,3 +288,57 @@ p > span{
     transition: all 0.4s ease ;
     color: #0E5205;
 }
+
+@media screen and (max-width: 768px){
+
+    .Section6A{
+        max-width: 100%;
+    }
+    .nav > ul{
+        display: none;
+    }
+    .nav > img{
+        margin: auto;
+        position: relative;
+        right: 2em;
+        
+    }
+
+    .page5Heading{
+        font-size: 25px;
+        margin: auto;
+    }
+
+    .footer5 > img{
+        width: 99.9%;
+    }
+
+    .page6Texts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-top: -30%;
+       width:100%;
+    }
+
+    .p > p{
+        width: 90%;
+        text-align: start;
+        margin: auto;
+    }
+
+    .contct > h3{
+        width: 420px;
+    }
+
+    .contct > button{
+        position: relative;
+        top: 4.5em;
+    }
+
+    .contct > button:hover{
+        display: none;
+    }
+}
