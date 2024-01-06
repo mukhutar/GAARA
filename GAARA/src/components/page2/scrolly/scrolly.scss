@@ -15,8 +15,6 @@
         position: relative;
         top: 1px;
     }
-    
-
     .items{
         display: flex;
         margin: 20px;
@@ -75,8 +73,6 @@
             @include mobile{
                 display: none;
             }
-            
-
         }
 
         .item_imgr{
@@ -92,8 +88,6 @@
             @include mobile{
                 display: none;
             }
-            
-
         }
         .item_text{
             color: #0E5205;
@@ -109,12 +103,9 @@
             @include mobile{
                 position: relative;
                 top: -8em;
-
-              
+                margin: auto;  
             }
         }
-
-        // ffjsnfs
 
         .item_righttext{
             color: #0E5205;
@@ -129,7 +120,8 @@
             left: 1.4em;
 
             @include mobile{
-                margin-top: 40px;
+                margin: auto;
+                left: 0;
             }
 
         } 
@@ -146,11 +138,15 @@
             bottom: 16em;
 
             @include mobile{
-                font-size: 24px;
+                font-size: 16px;
+                padding: 10px;
                 font-weight: 400;
-                position: relative;
-                bottom: 12em;
-                
+                margin: auto;
+                bottom: 19em;
+                background: #0e52057c; 
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px 1px #0e52056c;
+      
             }
         }
         .item_descriptionn{
@@ -166,15 +162,24 @@
             text-align: start;
 
             @include mobile{
-                font-size: 24px;
+                font-size: 16px;
+                padding: 10px;
                 font-weight: 400;
-                position: relative;
-                
+                margin: auto;
+                bottom: 20em;
+                background: #0e52057c; 
+                border-radius: 10px;
+                margin-bottom: 12px;
+                box-shadow: 0px 0px 20px 1px #0e52056c;           
             }
 
         }
 
         .end_text{
+
+            @include mobile{
+                margin: auto;
+            }
           
             .word{
                 color: #0E5205;
@@ -192,15 +197,13 @@
                 @include mobile{
                     text-align: center;
                     position: relative;
-                    left: 1em;
+                    left: 0;
                     bottom: 3em;
                     font-size: 50px;
+                   
                 }
             }
         }
-
- 
-   
     }
 
     .middle_items{
@@ -242,7 +245,6 @@
             bottom: 11em;
         }
 
-
         .borderShape{
             width: 70px;
             height: 43px;
@@ -275,8 +277,5 @@
             bottom: 44em;
             left: 0.2em;
         }
-
     }
-
-
 }

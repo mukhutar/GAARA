@@ -16,9 +16,8 @@
         background-size: contain;
         height: 10vh;
         position: relative;
-        top: 55em;
-
-        margin-bottom: -1000px;
+        top: 50em;
+        margin-bottom: -1220px;
     }
 
     .FinalSectionText{
@@ -42,7 +41,7 @@
             @include mobile{
                 height: 100vh;
                 position: relative;
-                left:4em;
+                left:3.2em;
                 font-size: 50px;
                 margin-bottom: -120px;
                 
@@ -71,13 +70,12 @@
 
             @include mobile{
                 height: 100vh;
-                font-size: 30px;
+                font-size: 20px;
                 position: relative;
                 text-align: center;
-                right: 8em;
+                right:13em;
                 top: 9em;
-                margin: auto;
-                width: 410px;
+                width: 310px;
             }
         }
     }

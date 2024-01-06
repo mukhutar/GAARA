@@ -71,7 +71,7 @@ function Hero() {
       <h1>Digital Trees Loans</h1> <br />
       <h4>The new root of Rewarding for <span>African farmers.</span></h4>
 
-      <button >  <Link className='productLink' to='/product'> Products <img src={Arrow} alt="arrow svg" srcset="" /> </Link> </button>   <hr /> 
+      <button className='changed' >  <Link className='productLink' to='/product'> Products <img src={Arrow} alt="arrow svg" srcset="" /> </Link> </button>   <hr /> 
       <div className="hero_footer"> 
         <h4>In Partnership With</h4>  <br /> 
          <div className="partnership">

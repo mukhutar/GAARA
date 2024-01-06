@@ -32,7 +32,7 @@
                 @include mobile{
                     width: 170px;
                     position: relative;
-                    left: 18em;
+                    left: 12em;
                 }
             }
 
@@ -176,8 +176,8 @@
             @include mobile{
                 text-align: center;
                 position: relative;
-                top: 8em;
-                left: 3em;
+                top: 6em;
+                margin: auto;
             }
 
 
@@ -204,6 +204,11 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+
+                @include mobile{
+                    
+                    font-size: 15px;
+                }
             }
         }
 
@@ -215,10 +220,9 @@
 
             @include mobile{
                 display: flex;
-                justify-content: center;
                 margin: auto;
-                position: relative;
-                left: 1.2em;
+               
+               
             }
 
             .word1{
@@ -234,6 +238,11 @@
                 position: relative;
                 left: 0.5em;
 
+                @include mobile{
+                   font-size: 30px;
+                   left: 0.7em;
+                }
+
             }
 
             .word2{
@@ -247,6 +256,11 @@
                 font-weight: 275;
                 position: relative;
                 top: 0.4em;
+
+                @include mobile{
+                    font-size: 30px;
+                    right: 0.4em;
+                 }
             }
 
 
@@ -263,6 +277,11 @@
                 position: relative;
                 right: 0.4em;
                 top: 0.1em;
+
+                @include mobile{
+                    font-size: 30px;
+                    right: 1.4em;
+                 }
             }
 
             .word4{
@@ -278,6 +297,11 @@
                 position: relative;
                 bottom: 0.4em;
                 right: 1em;
+
+                @include mobile{
+                    font-size: 30px;
+                    right: 2.7em;
+                 }
             }
 
 

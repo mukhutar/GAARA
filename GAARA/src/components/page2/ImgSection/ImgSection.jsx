@@ -10,7 +10,7 @@ const ImgSection = () => {
             <div className="imgCard">
 
                 
-                {/* <img src={oldwoman} alt="" /> */}
+                
                <div className="oter">
                     <div className="card_number">
                             <span className='number'>01</span>
@@ -51,7 +51,7 @@ const ImgSection = () => {
         </div>
 
         <div className="imgCards">
-            <div className="imgCard">
+            <div className="imgCardB">
                 <div className="oter">
                     <div className="card_number">
                             <span className='number'>03</span>
@@ -73,7 +73,7 @@ const ImgSection = () => {
 
 
         <div className="imgCards">
-            <div className="imgCard">
+            <div className="imgCardB">
             <div className="oter">
                     <div className="card_number">
                             <span className='number'>04</span>
@@ -93,9 +93,9 @@ const ImgSection = () => {
             </div>
         </div>
 
-
-        <div className="imgCards">
-            <div className="imgCard">
+{/* this */}
+        <div className="imgCards"> 
+            <div className="imgCardA">
             <div className="oter">
                     <div className="card_number">
                             <span className='number'>05</span>
@@ -115,9 +115,9 @@ const ImgSection = () => {
             </div>
         </div>
 
-
+{/* and this */}
         <div className="imgCards">
-            <div className="imgCard">
+            <div className="imgCardA">
             <div className="oter">
                     <div className="card_number">
                             <span className='number'>06</span>
@@ -139,7 +139,7 @@ const ImgSection = () => {
 
 
         <div className="imgCards">
-            <div className="imgCard">
+            <div className="imgCardB">
             <div className="oter">
                     <div className="card_number">
                             <span className='number'>07</span>
@@ -161,7 +161,7 @@ const ImgSection = () => {
 
 
         <div className="imgCards">
-            <div className="imgCard">
+            <div className="imgCardB">
             <div className="oter">
                     <div className="card_number">
                             <span className='number'>08</span>
@@ -203,7 +203,7 @@ const ImgSection = () => {
             </div>
         </div>
 
-        {/* <div className="imgCards">
+        <div className="imgCards">
             <div className="imgCard">
             <div className="oter">
                     <div className="card_number">
@@ -221,7 +221,7 @@ const ImgSection = () => {
                         </div>
                </div>
             </div>
-        </div> */}
+        </div>
       
     </section>
   )

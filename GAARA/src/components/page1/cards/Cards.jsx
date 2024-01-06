@@ -13,7 +13,7 @@ function Cards() {
                 
             <section className='Wrapper'>
             
-            <div className="card">
+            <div className="cardII">
                 <img src={personImg} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
@@ -25,7 +25,7 @@ function Cards() {
                 </div>
             </div>
 
-            <div className="card">
+            <div className="card" >
                 <img src={personImg} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
@@ -37,20 +37,7 @@ function Cards() {
                 </div>
             </div>
 
-            <div className="card">
-                <img src={personImg} alt="personImg" />
-                <div className="info">
-                    <span><BsQuote className='quote_icon'/></span>
-                    <p>
-                    Before the GAARA Fund, I couldn’t get a loan to finance new plantings. Now, I've expanded my farm, and the USSD code system makes it simple to manage my loan.
-                    </p>
-
-                    <h3 >Donath MUKASHAYA <span>Farmer, Rwanda</span></h3>
-                </div>
-            </div>
-
-
-            <div className="card">
+            <div className="card" >
                 <img src={personImg} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
@@ -63,7 +50,7 @@ function Cards() {
             </div>
 
 
-            <div className="card">
+            <div className="cardII">
                 <img src={personImg} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
@@ -89,7 +76,7 @@ function Cards() {
             </div>
 
 
-            <div className="card">
+            <div className="cardII">
                 <img src={personImg} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
@@ -101,7 +88,20 @@ function Cards() {
                 </div>
             </div>
 
-            <div className="card">
+
+            <div className="cardI">
+                <img src={personImg} alt="personImg" />
+                <div className="info">
+                    <span><BsQuote className='quote_icon'/></span>
+                    <p>
+                    Before the GAARA Fund, I couldn’t get a loan to finance new plantings. Now, I've expanded my farm, and the USSD code system makes it simple to manage my loan.
+                    </p>
+
+                    <h3 >Donath MUKASHAYA <span>Farmer, Rwanda</span></h3>
+                </div>
+            </div>
+
+            <div className="cardII">
                 <img src={personImg} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
