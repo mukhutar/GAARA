@@ -245,10 +245,10 @@ hr{
     display: flex;
     align-items: center;
     position: relative;
-    top: 9em;
+    top: 18em;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     
    
    
@@ -277,14 +277,14 @@ hr{
 h1{
     font-size: 25px;
     position: relative;
-    top: 4em;
+    top: 1em;
 }
 
 h4{
     font-size: 20px;
     position: relative;
-    top: 5.5em;
-    right: 0.5em;
+    top: 1em;
+    right: 1em;
  
 }
 h4 > span{

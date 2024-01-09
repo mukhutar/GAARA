@@ -4,6 +4,14 @@
     height: 90vh;
     width: 100%;
 
+    @include tablet{
+        margin-top: -120%;
+        position: relative;
+        bottom: 35em;
+        right: 1em;
+
+    }
+
     @include mobile{
         max-width: 100%;
         margin-bottom: -320%;
@@ -35,7 +43,7 @@
         justify-content: center;
         gap: 100px;
         margin: 10%;
-
+        
         @include mobile{
             display: flex;
             flex-direction: column;
@@ -43,6 +51,13 @@
         }
 
         .Rone{
+
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+             
+            }
 
             
             
@@ -110,6 +125,8 @@
         position: relative;
         bottom: 6em;
 
+      
+
         @include mobile{
             position: relative;
             top: 2em;
@@ -117,8 +134,8 @@
 
        .Wicon{
          left: 1em;
-        position: relative;
-        top: -0.1px;
+         position: relative;
+         top: -0.1px;
        }
     }
 

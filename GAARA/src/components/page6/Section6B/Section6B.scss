@@ -4,6 +4,11 @@
     height: 100vh;
     margin-top: 40%;
 
+    @include tablet{
+        margin-top: 20%;
+        margin-bottom: -40%;
+    }
+
     @include mobile{
         max-width: 100%;
         position: relative;
@@ -50,6 +55,8 @@
                 margin: 20px;
                 padding: 10px;
 
+               
+
                 @include mobile{
                     background: #0e52057c;
                      height: auto;
@@ -67,6 +74,12 @@
                     font-weight: 900;
                     line-height: normal;
 
+                    @include tablet{
+                        margin: 10px;
+                        padding: 10px;
+                    
+                    }
+
                 }
 
                 li{
@@ -81,6 +94,7 @@
                     margin: 5px;
                     flex-shrink: 0;
 
+                  
                     @include mobile{
                         width: 310px;
                         font-size: 19px;
@@ -104,11 +118,11 @@
 
     .horizontalline{
         background-color: #0E5205;
-        width: 3px;
+        width: 2px;
         height: 80vh;
         position: relative;
         bottom: 35em;
-        left: 79.6em;
+        left: 88.6em;
 
         @include mobile{
             display: none;

@@ -34,12 +34,11 @@
     justify-items: center;
     align-items: center;
 
-    // @include tablet{
-    //     display: flex;
-    //     flex-shrink: initial;
-    //     flex-wrap: wrap;
-    //     // flex-direction: column;
-    // }
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:10px;
+    }
 
     @include mobile{
         height: 100vh;

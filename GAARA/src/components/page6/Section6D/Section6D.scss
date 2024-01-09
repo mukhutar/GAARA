@@ -8,12 +8,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include tablet{
+        height: 4vh;
+        gap: 100px;
+      
+    }
     
 
     @include mobile{
         position: relative;
         top: 160em;
-         max-width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         margin-bottom: 202%;
@@ -22,6 +28,10 @@
 
     .first{
         display: flex;
+
+        @include tablet{
+            gap: 5em;
+        }
 
         @include mobile{
             display: flex;

@@ -8,6 +8,13 @@
     justify-content: space-around;
     justify-items: center;
 
+    @include tablet{
+        position: relative;
+        top: -66em;
+
+        
+    }
+
     @include mobile{
         display: flex;
         flex-direction: column;
@@ -23,7 +30,7 @@
     .sideOne{
         margin-top: 10%;
         margin-left: 5%;
-        margin-left: 5%;
+        
 
         @include mobile{
             margin: auto;
@@ -80,6 +87,7 @@
                 position: relative;
                 bottom: 1em;
 
+             
                 @include mobile{
                     font-size: 22px;
                     text-align: center;
@@ -98,6 +106,8 @@
                 height: 202px;
                 flex-shrink: 0;
                 margin: 20px;
+
+              
 
                 @include mobile{
                     width: 323px;
@@ -130,6 +140,11 @@
         align-items: center;
         justify-content: center;
         justify-items: center;
+
+        @include tablet{
+            position: relative;
+            bottom: 3em;
+        }
 
         @include mobile{
             padding: 90px;

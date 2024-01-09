@@ -1,9 +1,9 @@
 @import "../../../App.scss";
 .Section6C{
     width: 100%;
+    margin-bottom: -100%;
 
-   margin-bottom: -100%;
-
+    
    @include mobile{
     width: 100%;
     position: relative;
@@ -44,8 +44,16 @@
     }
     .Section6Sides{
         display: flex;
-        margin-top: -80%;
+        margin-top: -73%;
         margin-left: 10%;
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            position: relative;
+            bottom: 20em;
+        }
 
         @include mobile{
             display: flex;
@@ -209,6 +217,7 @@
                 right: 1em;
                 z-index: 2;
 
+               
                 @include mobile{
                     position: relative;
                     right: 0;
@@ -247,6 +256,8 @@
                 bottom: 20em;
                 right: 4em;
                 z-index: 2;
+
+              
 
                 @include mobile{
                     background: #0e52057c;
@@ -330,6 +341,10 @@
                 position: relative;
                 bottom:57em;
                 left: 10em;
+
+                @include tablet{
+                    bottom: 50em;
+                }
 
                 @include mobile{
                     position: relative;

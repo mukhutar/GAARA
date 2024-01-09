@@ -2,7 +2,6 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    // overflow-x: hidden;
    
 }
 
@@ -340,5 +339,28 @@ p > span{
 
     .contct > button:hover{
         display: none;
+    }
+}
+
+@media screen and (max-width:1024px) {
+   
+    .page5Heading{
+        font-size: 40px;
+        position: relative;
+        top: 8em;
+    }
+    .footer5{
+        position: relative;
+        bottom: 14.7em;
+    }
+
+    .page6Texts{
+        margin-top: -25%;
+       
+    }
+
+    .contct{
+        margin-top: -10%;
+        margin-bottom: -20%;
     }
 }

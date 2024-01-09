@@ -33,6 +33,10 @@
                     position: relative;
                     left: 11em;
                 }
+
+                @include  tablet{
+                    left: 33em;
+                }
             }
 
             ul{
@@ -193,6 +197,10 @@
         margin-top: 13%;
         margin-left: 10%;
 
+        @include tablet{
+            margin: auto;
+        }
+
         @include mobile{
             margin: auto;
         }
@@ -228,6 +236,8 @@
             font-weight: 400;
             line-height: normal;
             margin-right: 10%;
+
+           
 
             @include mobile{
                 margin: 10px;
