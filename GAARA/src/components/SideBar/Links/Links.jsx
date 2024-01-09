@@ -22,7 +22,7 @@ const variants = {
 };
 
 
-const Links = () => {
+const Links = ({ closeSidebar }) => {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -30,10 +30,9 @@ const Links = () => {
         setIsDropdownOpen(!isDropdownOpen);
       };
 
-        const closeSidebar = () => {
-          setIsDropdownOpen(false);
-          
-        };
+      
+
+      
 
   return (
     <motion.div className="links" variants={variants}>
@@ -60,11 +59,11 @@ const Links = () => {
                     <Link className='listItem' onClick={closeSidebar} to= '/product/Carbon foresty leasing' >Carbon foresty leasing </Link>
                 </li>
                 <li>
-                    <Link className='listItem' onClick={closeSidebar} >Farmer's Digital monital</Link>
+                    <Link className='listItem' to='/product/Famers digital monital' onClick={closeSidebar} >Farmer's Digital monital</Link>
                 </li>
 
                 <li>
-                    <Link className='listItem' onClick={closeSidebar} >Agribussiness Consulting </Link>
+                    <Link className='listItem' to='/product/agribussiness consulting' onClick={closeSidebar} >Agribussiness Consulting </Link>
                 </li>
              </ul>
 
@@ -73,16 +72,14 @@ const Links = () => {
     </Link>
 </li>
 
-          <li>
-              <Link className='activeLink'  onClick={closeSidebar} href="#">How it works</Link>
-          </li>
+        
 
           <li>
               <Link className='activeLink'  onClick={closeSidebar} href="#">About Us</Link>
-          </li>
+          </li> <br />
 
           <li>
-              <Link className='activeLink'  onClick={closeSidebar}  href="#"><button >Estimate Income <img src={Arrow} alt="arrow svg" srcset="" /></button></Link>
+              <Link className='activeLink'  onClick={closeSidebar}  href="#"><button className="bb">Estimate Income <img src={Arrow} alt="arrow svg" srcset="" /></button></Link>
           </li>
 </motion.ul>
     </motion.div>

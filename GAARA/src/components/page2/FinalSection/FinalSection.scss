@@ -16,9 +16,16 @@
         background-size: contain;
         height: 10vh;
         position: relative;
-        top: 55em;
+        top: 50em;
+        margin-bottom: -1220px;
+    }
 
-        margin-bottom: -1000px;
+    @include tablet{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+
     }
 
     .FinalSectionText{
@@ -38,11 +45,16 @@
             bottom: 1.5em;
             left: 1em;
 
+            @include tablet{
+                position: relative;
+                top: 1em;
+            }
+
 
             @include mobile{
                 height: 100vh;
                 position: relative;
-                left:4em;
+                left:3.2em;
                 font-size: 50px;
                 margin-bottom: -120px;
                 
@@ -69,15 +81,21 @@
             top: 3.2em;
             right: 1.5em;
 
+            @include tablet{
+                position: relative;
+                top: 10em;
+                margin-top: 180px;
+               text-align: start;
+            }
+
             @include mobile{
                 height: 100vh;
-                font-size: 30px;
+                font-size: 20px;
                 position: relative;
                 text-align: center;
-                right: 8em;
+                right:13em;
                 top: 9em;
-                margin: auto;
-                width: 410px;
+                width: 310px;
             }
         }
     }

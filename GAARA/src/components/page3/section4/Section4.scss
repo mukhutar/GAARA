@@ -6,12 +6,18 @@
     height: 170vh;
     object-fit: cover;
     background-size: cover;
-    margin-top: 5%;
+    margin-top: -20%;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    margin-bottom: -10%;
+    margin-bottom: -120%;
+
+    @include tablet{
+        margin-top: -120%;
+        position: relative;
+
+    }
 
     @include mobile{
         max-width: 100%;
@@ -42,11 +48,12 @@
             bottom: 15em;
             left: 2em;
 
+
             @include mobile{
                 margin-bottom: 120px;
                 font-size: 35px;
                 position: relative;
-                left: 10.9em;
+                left: 10em;
                 top: -4em;
             }
         }
@@ -58,8 +65,12 @@
         margin-top: 25%;
         position: relative;
         right: 14.5em;
+
+    
         @include mobile{
-            margin-top: 0;
+            margin:auto;
+            position: relative;
+            right: 15.5em;
       
         }
         
@@ -70,11 +81,11 @@
                 position: relative;
                 top: 7em;
                 right: 8em;
+                
             }
 
             p{
                 width: 494px;
-                // height: 390px;
                 flex-shrink: 0;
                 color: #0E5205;
                 font-family: 'Noto Sans JP', sans-serif;
@@ -83,11 +94,16 @@
                 font-weight: 400;
                 line-height: 145.8%;
 
+                @include tablet{
+                   width:1024px;
+                    
+                 }  
+
                 @include mobile{
                     margin: auto;
                     font-size: 21px;
                     max-width: 330px;
-                    font-weight: 300;
+                    font-weight: 100;
                 }
 
                 span{

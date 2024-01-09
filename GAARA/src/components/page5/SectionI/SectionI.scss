@@ -1,0 +1,253 @@
+@import "../../../App.scss";
+
+.Page5Hero{
+
+    width: 100%;
+    height: 90vh;
+    flex-shrink: 0;
+    background-image: url("assets/pg5bg.png");
+    background-size: cover;
+    background-position: center;
+
+    @include mobile{
+        background-size: cover;
+        object-fit: contain;
+        height: 100vh;
+    }
+    
+    .heropage5{
+        .nav5{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            align-items: center;
+            position: relative;
+            bottom: 2em;
+
+
+            img{
+                margin-left: 5%;
+
+                @include mobile{
+                    width: 170px;
+                    position: relative;
+                    left: 11em;
+                }
+
+                @include  tablet{
+                    left: 33em;
+                }
+            }
+
+            ul{
+                display: flex;
+                gap: 20px;
+                margin-right: 5%;
+
+                @include mobile{
+                    display: none;
+                }
+
+                li{
+                    list-style: none;
+
+                    a{
+                        text-decoration: none;
+                        color: #0E5205;
+                        font-family: 'Noto Sans JP', sans-serif;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 100;
+                        line-height: normal;
+
+                        button{
+                            border-radius: 40px;
+                            background: #0E5205;
+                            width: 200px;
+                            height: 45px;
+                            color: #FFF   ;
+                            font-family: 'Noto Sans JP', sans-serif;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            border: none;
+                            cursor: pointer;
+
+                            img{
+                                position: relative;
+                                top: 4px;
+                                left: 1;
+
+
+                            }
+                        }
+                    }
+                    a:active{
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                    
+                
+                }
+                
+                .productDrop{
+                    .activeLink{
+                        display:flex;
+                    }
+
+                    .activeLink:hover .productList{
+                        display: block;
+
+                    }
+    
+                        .productList{
+                            
+                            background-color: #0e5205bd;
+                            backdrop-filter: blur(8px);
+                            -webkit-backdrop-filter: blur(2px);
+                            width: 283px;
+                            height: 320px;
+                            display: none;
+                            position: absolute;
+                            left: 55%;
+                            top:4.3em;
+                            z-index: 9;
+                            border-radius: 15px;
+                            
+                            
+                
+                
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin: 10px;
+                
+                                li{
+                                    text-align: center;
+                                    font-size: 12px;
+                
+                                .listItem{
+                                         color:white;
+                                        font-size: 22px;
+                                        font-weight: 300;
+                                    }
+                
+                                    .listItem:hover{
+                                        font-weight: 400;
+                                    
+                                    }
+                                }
+                            
+                            
+                            
+                
+                            }
+                        }
+                
+                }
+                    img{
+                        position:relative;
+                        top:6px
+                    }
+                
+                    .productDrop:hover img{
+                       
+                        transform: translateY(2px);
+                        transition: all 0.4s;
+                    }
+                    
+                    .productDrop:hover .productList{
+                        display: block;
+                        // transform: translateY(20px);
+                    
+                    }
+
+                }
+        }
+    }
+
+
+    .imgSection{
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        position: relative;
+        top: 12em;
+
+        @include mobile{
+            position: relative;
+            top: 20em;
+        }
+
+        img{
+               @include mobile {
+            width: 100%;
+            background-position: center;
+            background-size: contain;
+        }
+        }
+     
+       
+    }
+
+    .page5texts{
+        margin-top: 13%;
+        margin-left: 10%;
+
+        @include tablet{
+            margin: auto;
+        }
+
+        @include mobile{
+            margin: auto;
+        }
+
+        .page5H{
+            color: #0E5205;
+
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 53px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            width: 552px;
+            height: 215px;
+            flex-shrink: 0;
+
+            @include mobile{
+                font-size: 33px;
+                width: 100%;
+                margin-top: 120px;
+                text-align: center;
+            }
+        }
+
+        .page5P{
+            color: #0E5205;
+
+            text-align: justify;
+            text-shadow: 0px 4px 100px #FFF;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-right: 10%;
+
+           
+
+            @include mobile{
+                margin: 10px;
+                text-align: start;
+                position: relative;
+                bottom: 4.2em;
+
+            }
+        }
+
+    }
+
+}

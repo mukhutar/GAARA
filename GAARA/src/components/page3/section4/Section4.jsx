@@ -29,7 +29,7 @@ function Section4() {
        <div className="one">
         <p>
             <span>Our earnings are tied to your success.</span> <br />
-            We receive our fee only when your forest <br /> begins to produce carbon revenue.
+            We receive our fee only when your forest  begins to produce carbon revenue.
           </p>
        </div>
       </div>

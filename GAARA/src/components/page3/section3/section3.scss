@@ -8,12 +8,9 @@
         max-width: 100%;
         position: relative;
         top: 28em;
-        // margin-top: 10%;
-
+        margin-top: -10%;
+        margin-bottom: 70%;
     }
-
-
-
 
    .sides{
       display: flex;
@@ -52,6 +49,8 @@
         
 
         .Side_text{
+
+        
             p{
                 width: 395px;
                 color: #0E5205;
@@ -60,6 +59,10 @@
                 font-style: normal;
                 font-weight: 300;
                 line-height: 144%;
+                @include tablet{
+                    width: 100%;
+            
+                }
 
                 @include mobile{
                     font-size: 20px;
@@ -156,6 +159,11 @@
                 font-weight: 300;
                 line-height: 144%;
                 margin-left: 10%;
+
+                @include tablet{
+                    width: 100%;
+            
+                }
 
                 @include mobile{
                     font-size: 20px;

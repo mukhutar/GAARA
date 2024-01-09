@@ -40,11 +40,11 @@ function Hero() {
                                 <Link className='listItem' to= '/product/Carbon foresty leasing' >Carbon foresty leasing </Link>
                             </li>
                             <li>
-                                <Link className='listItem' >Farmer's Digital monital</Link>
+                                <Link className='listItem' to= '/product/Famers digital monital' >Farmer's Digital monital</Link>
                             </li>
 
                             <li>
-                                <Link className='listItem' >Agribussiness Consulting </Link>
+                                <Link className='listItem' to='/product/agribussiness consulting' >Agribussiness Consulting </Link>
                             </li>
                          </ul>
 
@@ -52,9 +52,7 @@ function Hero() {
                 </Link>
             </li>
 
-            <li>
-                <Link className='activeLink' href="#">How it works</Link>
-            </li>
+           
 
             <li>
                 <Link className='activeLink' href="#">About Us</Link>
@@ -73,7 +71,7 @@ function Hero() {
       <h1>Digital Trees Loans</h1> <br />
       <h4>The new root of Rewarding for <span>African farmers.</span></h4>
 
-      <button >  <Link className='productLink' to='/product'> Products <img src={Arrow} alt="arrow svg" srcset="" /> </Link> </button>   <hr /> 
+      <button className='changed' >  <Link className='productLink' to='/product'> Products <img src={Arrow} alt="arrow svg" srcset="" /> </Link> </button>   <hr /> 
       <div className="hero_footer"> 
         <h4>In Partnership With</h4>  <br /> 
          <div className="partnership">

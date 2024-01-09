@@ -1,5 +1,7 @@
 import React from 'react'
 import'./footer.scss';
+import { Link } from 'react-router-dom';
+
 import footerEnv from "/assets/Footer.png";
 import tweeter from "/assets/tVector.svg";
 import insta from "/assets/iVector.svg";
@@ -20,15 +22,15 @@ function Footer() {
                 <h3 className='link_tittle'>COMPANY</h3>
                 <ul>
                     <li>
-                        <a href="#">About us </a>
+                        <Link className="footer_ancho" to="/">About us </Link>
                     </li>
 
                     <li>
-                        <a href="#">Career </a>
+                        <Link className="footer_ancho" to="/">Career </Link>
                     </li>
 
                     <li>
-                        <a href="#">Contact Us </a>
+                        <Link className="footer_ancho" to="/">Contact Us </Link>
                     </li>
                 </ul>
             </div>
@@ -37,15 +39,15 @@ function Footer() {
                 <h3 className='link_tittle'>FARMERS</h3>
                 <ul>
                     <li>
-                        <a href="#">About us </a>
+                        <Link className="footer_ancho" to="/">About us </Link>
                     </li>
 
                     <li>
-                        <a href="#">Career </a>
+                        <Link className="footer_ancho" to="/">Career </Link>
                     </li>
 
                     <li>
-                        <a href="#">Contact Us </a>
+                        <Link className="footer_ancho" to="/">Contact Us </Link>
                     </li>
                 </ul>
             </div>
@@ -56,24 +58,24 @@ function Footer() {
 
                 <ul>
                     <li>
-                        <a href="#">About us </a>
+                        <Link className="footer_ancho" to="/">About us </Link>
                     </li>
 
                     <li>
-                        <a href="#">Career </a>
+                        <Link className="footer_ancho" to="/">Career </Link>
                     </li>
 
                     <li>
-                        <a href="#">Contact Us </a>
+                        <Link className="footer_ancho" to="/">Contact Us </Link>
                     </li>
                 </ul>
             </div>
 
             <div className="footer_icons">
-                <img src={tweeter} alt="tweeterIcon" />
-                <img src={insta} alt="tweeterIcon" />
-                <img src={facebook} alt="facebookIcon" />
-                <img src={linkedin} alt="LinkedIcon" />
+                <Link to='/'><img src={tweeter} alt="tweeterIcon" /></Link>
+               <Link to="/"> <img src={insta} alt="tweeterIcon" /></Link>
+               <Link to="/"> <img src={facebook} alt="facebookIcon" /></Link>
+               <Link to="/"> <img src={linkedin} alt="LinkedIcon" /></Link>
                 
             </div>
             

@@ -13,6 +13,7 @@
     left:0;
     bottom: 0;
     
+    
     .bg {
       z-index: 999;
       
@@ -26,12 +27,6 @@
       -webkit-backdrop-filter: blur(2px);
       
 
-  
-    //   @include mobile {
-    //     width: 200px;
-    //   }
-
-    
 
     ul{
         display: flex;
@@ -101,6 +96,10 @@
 
             .activeLink{
                 display:flex;
+
+                button{
+                    background-color: #FFF;
+                }
             }
 
                 .productList{
@@ -116,6 +115,7 @@
                     top:4.7em;
                     z-index: 999;
                     border-radius: 15px;
+                    opacity: 99;
                  
                     
                     
@@ -198,6 +198,10 @@
       border: none;
       cursor: pointer;
     }
+  }
+
+  .bb{
+    background-color: #FFF;
   }
   
 

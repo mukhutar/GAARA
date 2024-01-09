@@ -5,6 +5,11 @@ import {motion} from "framer-motion"
 import "./SidBar.scss"
  
 function SideBar() {
+
+  const closeSidebar = () => {
+    setOpen(false);
+    
+  };
   
 
     const[open , setOpen] = useState(false)
@@ -31,7 +36,7 @@ function SideBar() {
   return (
     <motion.div className='sideBar' animate ={open ? "open" :"closed"} >
       <motion.div className="bg" variants={variants}>
-        <Links />
+        <Links  closeSidebar={closeSidebar} />
       </motion.div>
       
       <ToogleButton setOpen = {setOpen}/>

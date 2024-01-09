@@ -35,11 +35,11 @@ function Section() {
                                     <Link className='listItem' to= '/product/Carbon foresty leasing'  >Carbon foresty leasing </Link>
                                 </li>
                                 <li>
-                                    <Link className='listItem' >Farmer's Digital monital</Link>
+                                    <Link className='listItem' to= '/product/Famers digital monital' >Farmer's Digital monital</Link>
                                 </li>
 
                                 <li>
-                                    <Link className='listItem' >Agribussiness Consulting </Link>
+                                    <Link className='listItem'  to='/product/agribussiness consulting'  >Agribussiness Consulting </Link>
                                 </li>
                             </ul>
 
@@ -47,9 +47,7 @@ function Section() {
                     </Link>
                 </li>
 
-                <li>
-                    <Link className='activeLink' to='#'>How it works</Link>
-                </li>
+               
 
                 <li>
                     <Link className='activeLink' to='#'>About Us</Link>

@@ -1,0 +1,177 @@
+@import "../../../App.scss";
+.SectionTwo{
+    .pg4par{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+
+        .F_words{
+            color: #0E5205;
+            text-align: center;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 29px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            width: 980px;
+            height: 207px;
+            flex-shrink: 0;
+            position: relative;
+            
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
+                text-align: start;
+                font-size: 25px;
+                width: 90%;
+
+            }
+
+            .bold1{
+                color: #0E5205;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                @include mobile{
+                    text-align: start;
+                 
+                }
+            }
+
+            .bold{
+                color: #0E5205;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+            } 
+        }
+
+        .dail{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+            .dail_text{
+                color: #0E5205;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 40px;
+                font-weight: 300;         
+            }
+
+            .USSD{
+                color: #FFF;
+                text-align: center;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 100;
+                line-height: normal;
+                background-color: #0E5205;
+                border-radius: 10px;
+                padding: 6px;
+
+                @include mobile{
+                    position: relative;
+                    bottom: 0.7em;
+                }
+            }
+        }
+    }
+
+    .cds{
+        margin-top: 4%;
+        .cdsH{
+            text-align: center;
+            color: #0E5205;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;   
+            
+            @include mobile{
+                font-size: 30px ;
+            }
+        }
+
+        .cads{
+            display: flex;
+            margin-top: 5%;
+            gap: 40px;
+            justify-content: center;
+            justify-items: center;
+
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+            } 
+            .cad{
+                padding: 10px;
+                height: 35vh;
+
+                @include mobile{
+                
+                    height: 40vh;
+                    width: 94%;
+                    background: #0e52057c;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 20px 1px #0e520556; 
+
+                }
+
+                .cdH{
+                    color: #0E5205;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    
+                }
+
+                .li{
+                    color: #0E5205;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 125%;
+                    width: 341px;
+                    height: 97px;
+                    flex-shrink: 0;
+                    margin-top: 25px;
+                    
+                }
+
+            }
+            .cad:hover{
+                transition: all 0.3s ease-in-out;
+                background: #0e52057c;
+          
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px 1px #0e520556;           
+
+            }
+        }
+       
+    }
+}

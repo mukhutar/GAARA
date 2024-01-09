@@ -1,0 +1,147 @@
+@import "../../../App.scss";
+
+.Section5{
+    height: 90vh;
+    width: 100%;
+
+    @include tablet{
+        margin-top: -120%;
+        position: relative;
+        bottom: 35em;
+        right: 1em;
+
+    }
+
+    @include mobile{
+        max-width: 100%;
+        margin-bottom: -320%;
+    }
+
+    .Section5Heading{
+        color: #0E5205;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        position: relative;
+        left: 2.5em;
+        top: 1em;
+
+        @include mobile{
+            margin: auto;
+            text-align: center;
+            font-size: 45px;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .Reasons{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin: 10%;
+        
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .Rone{
+
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+             
+            }
+
+            
+            
+            section{
+                padding: 10px;
+              
+                
+                @include mobile{
+                background: #0e52057c;
+                border-radius: 10px;
+                margin: 5px;
+                width: 110%;
+                position: relative;
+                right: 1.2em;
+                box-shadow: 0px 0px 20px 1px #0e520556; 
+               
+
+              }
+
+                .Rheading{
+                    color: #0E5205;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                }
+
+                .Rlist{
+                    color: #0E5205;
+
+                    font-family: Inter;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 125%;
+                }
+            }
+
+            section:hover{
+                background: #0e52057c;
+                border-radius: 10px;
+                transition: all 0.4s ease-in-out;
+                box-shadow: 0px 0px 20px 1px #0e520556; 
+
+
+               
+            }
+        }
+    }
+
+    .GetInTouch{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+        padding: 15px;
+        border-radius: 40px;
+        background: #0E5205;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 140px;
+        position: relative;
+        bottom: 6em;
+
+      
+
+        @include mobile{
+            position: relative;
+            top: 2em;
+        }
+
+       .Wicon{
+         left: 1em;
+         position: relative;
+         top: -0.1px;
+       }
+    }
+
+    .GetInTouch:hover .Wicon{
+        transition: all 0.2s ease-out ;
+        transform: translateX(5px);
+    }
+
+}

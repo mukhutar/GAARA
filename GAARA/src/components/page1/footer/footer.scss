@@ -10,14 +10,12 @@
     @include mobile{
         position: relative;
         top: 132em;
-        // bottom: -10%; letter
-    
-
     }
 
     img{
         object-fit: cover;
         width: 100%;
+
         @include mobile{
             width: 100%;
         }
@@ -35,6 +33,12 @@
     justify-content: space-around;
     justify-items: center;
     align-items: center;
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:10px;
+    }
 
     @include mobile{
         height: 100vh;
@@ -73,14 +77,19 @@
                 
                 list-style: none;
 
-                a{
+               .footer_ancho{
                     text-decoration: none;
                     color: #e6e6e6;
                     font-family: 'Noto Sans JP', sans-serif;
-                    font-size: 28px;
+                    font-size: 18px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 158.789%;
+                }
+
+                .footer_ancho:hover{
+                    color: #95aa91bb;
+                    transition: all 0.4s ease-in-out;
                 }
             }
             
@@ -93,7 +102,13 @@
         display: flex;
         position: relative;
         bottom: 10em;
-        gap: 10px;
+        gap: 5px;
+
+        img{
+           object-fit: cover;
+           width: 65%;
+           cursor: pointer;
+        }
 
         @include mobile{
             position: relative;
