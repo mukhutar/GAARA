@@ -34,6 +34,10 @@
                     position: relative;
                     left: 12em;
                 }
+
+                @include tablet{
+                    left: 34em;
+                }
             }
 
             ul{
@@ -189,6 +193,13 @@
                 font-weight: 900;
                 line-height: normal;
 
+                @include tablet{
+                    position: relative;
+                    top: 2em;
+                    font-size: 120px;
+
+                }
+
                 @include mobile{
                     text-align: center;
                     font-size: 60px;
@@ -204,6 +215,12 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                @include tablet{
+                     font-size: 60px;
+                     position: relative;
+                     top: 12em;
+                }
+
 
                 @include mobile{
                     
@@ -220,9 +237,14 @@
 
             @include mobile{
                 display: flex;
-                margin: auto;
-               
-               
+                margin: auto; 
+            }
+
+            @include tablet{
+                position: relative;
+                top: 24em;
+                left:3em;
+                
             }
 
             .word1{
@@ -238,6 +260,7 @@
                 position: relative;
                 left: 0.5em;
 
+               
                 @include mobile{
                    font-size: 30px;
                    left: 0.7em;

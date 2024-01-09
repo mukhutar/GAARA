@@ -137,6 +137,12 @@
             position: relative;
             bottom: 16em;
 
+            @include tablet{
+                width: 80%;
+                height: 20vh;
+               
+            }
+
             @include mobile{
                 font-size: 16px;
                 padding: 10px;
@@ -161,6 +167,14 @@
             bottom: 12.5em;
             text-align: start;
 
+            
+            @include tablet{
+                width: 80%;
+                height: 20vh;
+                margin-top: 220px;
+                // margin: 70px;
+            }
+
             @include mobile{
                 font-size: 16px;
                 padding: 10px;
@@ -179,6 +193,11 @@
 
             @include mobile{
                 margin: auto;
+            }
+
+            @include tablet{
+                position: relative;
+                bottom: 2.5em;
             }
           
             .word{

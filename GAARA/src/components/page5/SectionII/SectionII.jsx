@@ -8,12 +8,7 @@ function SectionII() {
   return (
     <section className='Page5II'>
 
-        <div className="sideOne">
-          {/* <div className="imgcontner">
-             
-         
-          </div> */}
-          
+        <div className="sideOne">          
           <img className='Limage' src={leaf} alt="" srcset="" /> <br /> <br />
 
 
@@ -48,16 +43,7 @@ function SectionII() {
 
                </div>
 
-
-          {/* <div className="imgcontnerr">
-             
-          </div> */}
-          
           <img className='Rimage' src={rightleaf} alt="" srcset="" />
-
-
-         
-
         </div>
       
     </section>

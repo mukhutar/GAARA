@@ -1,3 +1,4 @@
+@import "../../../App.scss";
 .SectionTwo{
     .pg4par{
 
@@ -18,7 +19,17 @@
             height: 207px;
             flex-shrink: 0;
             position: relative;
-            // top:2em;
+            
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
+                text-align: start;
+                font-size: 25px;
+                width: 90%;
+
+            }
 
             .bold1{
                 color: #0E5205;
@@ -28,6 +39,10 @@
                 font-weight: 400;
                 line-height: normal;
 
+                @include mobile{
+                    text-align: start;
+                 
+                }
             }
 
             .bold{
@@ -36,30 +51,28 @@
                 font-size: 23px;
                 font-style: normal;
                 font-weight: 600;
-                line-height: normal;
-            }
-
+                line-height: normal; 
+            } 
         }
 
         .dail{
-            // position: relative;
-            // bottom: 4em;
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 30px;
-            // margin-top: 6%;
 
-            // @include mobile{
-            //     display: flex;
-            //     flex-direction: column;
-            // }
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
             .dail_text{
                 color: #0E5205;
                 font-family: 'Noto Sans JP', sans-serif;
                 font-size: 40px;
-                font-weight: 300;
-               
+                font-weight: 300;         
             }
 
             .USSD{
@@ -74,13 +87,11 @@
                 border-radius: 10px;
                 padding: 6px;
 
-                // @include mobile{
-                //     position: relative;
-                //     bottom: 1em;
-                // }
+                @include mobile{
+                    position: relative;
+                    bottom: 0.7em;
+                }
             }
-
-
         }
     }
 
@@ -93,7 +104,11 @@
             font-size: 45px;
             font-style: normal;
             font-weight: 700;
-            line-height: normal;    
+            line-height: normal;   
+            
+            @include mobile{
+                font-size: 30px ;
+            }
         }
 
         .cads{
@@ -102,9 +117,26 @@
             gap: 40px;
             justify-content: center;
             justify-items: center;
-            
+
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+            } 
             .cad{
-               
+                padding: 10px;
+                height: 35vh;
+
+                @include mobile{
+                
+                    height: 40vh;
+                    width: 94%;
+                    background: #0e52057c;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 20px 1px #0e520556; 
+
+                }
 
                 .cdH{
                     color: #0E5205;
@@ -119,7 +151,7 @@
                 .li{
                     color: #0E5205;
                     font-family: 'Noto Sans JP', sans-serif;
-                    font-size: 19px;
+                    font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 125%;
@@ -127,11 +159,18 @@
                     height: 97px;
                     flex-shrink: 0;
                     margin-top: 25px;
+                    
                 }
 
             }
+            .cad:hover{
+                transition: all 0.3s ease-in-out;
+                background: #0e52057c;
+          
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px 1px #0e520556;           
 
-
+            }
         }
        
     }

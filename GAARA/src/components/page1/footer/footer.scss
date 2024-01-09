@@ -10,14 +10,12 @@
     @include mobile{
         position: relative;
         top: 132em;
-        // bottom: -10%; letter
-    
-
     }
 
     img{
         object-fit: cover;
         width: 100%;
+
         @include mobile{
             width: 100%;
         }
@@ -35,6 +33,13 @@
     justify-content: space-around;
     justify-items: center;
     align-items: center;
+
+    // @include tablet{
+    //     display: flex;
+    //     flex-shrink: initial;
+    //     flex-wrap: wrap;
+    //     // flex-direction: column;
+    // }
 
     @include mobile{
         height: 100vh;

@@ -250,9 +250,7 @@ hr{
 
 @media screen and (max-width: 769px) {
     
-    // body{
-    //     overflow-x: hidden;
-    // }
+   
    
    .section{
     width: 105%;
@@ -408,6 +406,52 @@ hr{
     top:42em;  
    }
     
+}
+
+@media screen and (max-width:1024px) {
+    .Hero_section{
+        height: 110vh;
+        background-color: #0e52059d;
+        background-size: 50% auto;
+    }
+
+       
+   .section{
+    width: 105%;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+   }
+
+    .nav > img{
+       position: relative;
+       left: 15em;
+
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h4{
+        margin-top: 60px;
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    hr{
+        width: 310px;
+        opacity: 1;
+        position: relative;
+        top: 21em;
+
+    }
+
+    
+        .Hero_section > .changed{
+            position: relative;
+            top: 16em;
+        }
 }
 
 

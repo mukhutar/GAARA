@@ -8,6 +8,11 @@
      background-position: center;
      height: 100vh;
 
+     @include mobile{
+        background-size: cover;
+        object-fit: contain;
+     }
+
      .heropage4{
         .nav5{
             display: flex;
@@ -24,7 +29,7 @@
                 @include mobile{
                     width: 170px;
                     position: relative;
-                    left: 18em;
+                    left: 12em;
                 }
             }
 
@@ -67,18 +72,13 @@
                                 position: relative;
                                 top: 4px;
                                 left: 1;
-
-
                             }
                         }
                     }
                     a:active{
                         color: white;
                         font-weight: bold;
-                    }
-
-                    
-                
+                    }  
                 }
                 
                 .productDrop{
@@ -106,9 +106,6 @@
                             z-index: 999;
                             border-radius: 15px;
                             
-                            
-                
-                
                             ul{
                                 display: flex;
                                 flex-direction: column;
@@ -130,16 +127,9 @@
                                     
                                     }
                                 }
-                            
-                            
-                            
-                
                             }
                         }
-
-                   
-                
-                   
+        
                     img{
                         position:relative;
                         top:6px
@@ -150,28 +140,35 @@
                         transform: translateY(2px);
                         transition: all 0.4s;
                     }
-                    
-                //   .productDrop:hover .productList{
-                //         display: block;
-                       
-                //     } 
                 }
-             }  
-                
-
-            
+             }         
         }
     }
 
 
 
     .pg4Hero{
+        @include mobile{
+            margin: auto;
+            position: relative;
+            top: 2em;
+        }
+
        
         .hero_dms{
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 20px;
+            
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                justify-items: center;
+                margin: auto;
+            }
 
             .hd{
                 width: 576px;
@@ -186,6 +183,15 @@
                 line-height: 93.6%;
                 position: relative;
                 bottom: 0.5em;
+
+                @include mobile{
+                    font-size: 30px;
+                    width: 420px;
+
+                    top: 2em;
+                    bottom: 0;
+                    text-align: center;
+                }
                
             }
 
@@ -202,32 +208,17 @@
                 line-height: normal;
                 position: relative;
                 top: 3em;
+
+                @include mobile{
+                    margin: auto;
+                    max-width:100%;
+                    font-size: 25px;
+                    top: 4em;
+                    left: 0.4em;
+                }
             }
         }
     }
 
 }
 
-// .productDro{
-//     display: flex;
-   
-
-//     .activeLink{
-//         display: flex;
-       
-//         .productList{
-//             background-color: #0e5205bd;
-//             backdrop-filter: blur(8px);
-//             -webkit-backdrop-filter: blur(2px);
-//             width: 283px;
-//             height: 320px;
-//             // display: none;
-//             position: absolute;
-//             left: -46%;
-//             top:2em;
-//             z-index: 999;
-//             border-radius: 15px;
-//         }
-//     }
-
-// }
