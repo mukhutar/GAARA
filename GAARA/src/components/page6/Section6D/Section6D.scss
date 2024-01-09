@@ -9,11 +9,11 @@
     justify-content: center;
     align-items: center;
 
-    @include tablet{
-        height: 4vh;
-        gap: 100px;
+    // @include tablet{
+    //     height: 4vh;
+    //     gap: 100px;
       
-    }
+    // }
     
 
     @include mobile{
@@ -29,9 +29,9 @@
     .first{
         display: flex;
 
-        @include tablet{
-            gap: 5em;
-        }
+        // @include tablet{
+        //     gap: 5em;
+        // }
 
         @include mobile{
             display: flex;

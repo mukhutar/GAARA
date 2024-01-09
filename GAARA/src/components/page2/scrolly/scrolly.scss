@@ -137,11 +137,11 @@
             position: relative;
             bottom: 16em;
 
-            @include tablet{
-                width: 80%;
-                height: 20vh;
+            // @include tablet{
+            //     width: 80%;
+            //     height: 20vh;
                
-            }
+            // }
 
             @include mobile{
                 font-size: 16px;
@@ -168,12 +168,12 @@
             text-align: start;
 
             
-            @include tablet{
-                width: 80%;
-                height: 20vh;
-                margin-top: 220px;
-                // margin: 70px;
-            }
+            // @include tablet{
+            //     width: 80%;
+            //     height: 20vh;
+            //     margin-top: 220px;
+            //     // margin: 70px;
+            // }
 
             @include mobile{
                 font-size: 16px;
@@ -195,10 +195,10 @@
                 margin: auto;
             }
 
-            @include tablet{
-                position: relative;
-                bottom: 2.5em;
-            }
+            // @include tablet{
+            //     position: relative;
+            //     bottom: 2.5em;
+            // }
           
             .word{
                 color: #0E5205;

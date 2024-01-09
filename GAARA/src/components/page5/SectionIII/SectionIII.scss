@@ -4,13 +4,13 @@
     height: 90vh;
     width: 100%;
 
-    @include tablet{
-        margin-top: -120%;
-        position: relative;
-        bottom: 35em;
-        right: 1em;
+    // @include tablet{
+    //     margin-top: -120%;
+    //     position: relative;
+    //     bottom: 35em;
+    //     right: 1em;
 
-    }
+    // }
 
     @include mobile{
         max-width: 100%;
@@ -52,12 +52,12 @@
 
         .Rone{
 
-            @include tablet{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
+            // @include tablet{
+            //     display: flex;
+            //     flex-direction: column;
+            //     gap: 10px;
              
-            }
+            // }
 
             
             

@@ -13,11 +13,11 @@
     justify-items: center;
     margin-bottom: -120%;
 
-    @include tablet{
-        margin-top: -120%;
-        position: relative;
+    // @include tablet{
+    //     margin-top: -120%;
+    //     position: relative;
 
-    }
+    // }
 
     @include mobile{
         max-width: 100%;
@@ -94,10 +94,10 @@
                 font-weight: 400;
                 line-height: 145.8%;
 
-                @include tablet{
-                   width:1024px;
+                // @include tablet{
+                //    width:1024px;
                     
-                 }  
+                //  }  
 
                 @include mobile{
                     margin: auto;
@@ -151,18 +151,18 @@
                 }
 
                 span{
-                 color: #0E5205;
-                text-shadow: 4px 4px 4px #FFF;
-                font-family: 'Noto Sans JP', sans-serif;
-                font-size: 30px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 145.8%; /* 72.9px */
-                text-transform: uppercase;
+                    color: #0E5205;
+                    text-shadow: 4px 4px 4px #FFF;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 145.8%; /* 72.9px */
+                    text-transform: uppercase;
 
-                @include mobile {
-                    font-size: 25px;
-                }
+                    @include mobile {
+                        font-size: 25px;
+                    }
                 }
             }
         }

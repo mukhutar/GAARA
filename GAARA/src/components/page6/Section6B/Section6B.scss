@@ -4,10 +4,10 @@
     height: 100vh;
     margin-top: 40%;
 
-    @include tablet{
-        margin-top: 20%;
-        margin-bottom: -40%;
-    }
+    // @include tablet{
+    //     margin-top: 20%;
+    //     margin-bottom: -40%;
+    // }
 
     @include mobile{
         max-width: 100%;
@@ -74,11 +74,11 @@
                     font-weight: 900;
                     line-height: normal;
 
-                    @include tablet{
-                        margin: 10px;
-                        padding: 10px;
+                    // @include tablet{
+                    //     margin: 10px;
+                    //     padding: 10px;
                     
-                    }
+                    // }
 
                 }
 

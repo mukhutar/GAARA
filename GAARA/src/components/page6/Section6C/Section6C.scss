@@ -47,13 +47,13 @@
         margin-top: -73%;
         margin-left: 10%;
 
-        @include tablet{
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            position: relative;
-            bottom: 20em;
-        }
+        // @include tablet{
+        //     display: flex;
+        //     flex-direction: column;
+        //     margin: auto;
+        //     position: relative;
+        //     bottom: 20em;
+        // }
 
         @include mobile{
             display: flex;
@@ -342,9 +342,9 @@
                 bottom:57em;
                 left: 10em;
 
-                @include tablet{
-                    bottom: 50em;
-                }
+                // @include tablet{
+                //     bottom: 50em;
+                // }
 
                 @include mobile{
                     position: relative;
