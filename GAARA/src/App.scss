@@ -21,11 +21,11 @@
     }
 }
 
-@mixin tablet{
-    @media (max-width: 1024px) {
-        @content;
-    }
-}
+// @mixin tablet{
+//     @media (max-width: 1024px) {
+//         @content;
+//     }
+// }
 
 @mixin desketop{
     @media (max-width: 1366px) {
