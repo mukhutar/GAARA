@@ -753,9 +753,9 @@
                     width: 80px;
                     height: 80px;
 
-                    @include tablet{
-                        left: 22em;
-                    }
+                        // @include tablet{
+                        //     left: 22em;
+                        // }
                 }
                 .imgCardB:hover .front_text{
                     opacity: 0;
