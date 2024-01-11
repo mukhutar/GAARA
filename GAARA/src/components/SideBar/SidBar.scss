@@ -209,6 +209,51 @@
 
     .sideBar{
         display: block;
+        z-index: 2000;
+
+        .bg{
+
+            ul{
+                top: 12em;
+                gap: 20px;
+
+                li{
+                    .activeLink{
+                        // display: none;
+
+                        button{
+                            position: relative;
+                            bottom: -2em;
+
+                        }
+                    }
+                }
+
+                .productDrop{
+                    .productList{
+
+                        height: auto;
+                        backdrop-filter: blur(8px);
+                        -webkit-backdrop-filter: blur(12px);
+                        z-index: 2000;
+                       
+                        .unchanged{
+                            li{
+                                // font-size: 5px;
+                                position: relative;
+                                top: -24em;
+                               
+
+                                .listItem{
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
     }
     
   }
