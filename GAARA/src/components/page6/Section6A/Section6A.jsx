@@ -8,6 +8,21 @@ import { Link } from 'react-router-dom';
 import {motion} from "framer-motion"
 import whiteArrw from "/assets/ArrowWhite.svg";
 
+const AnimeHead = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 1,
+      delay:0.4,
+      ease:"linear",
+      duration: 2,
+      x: { duration: 1 }
+    }
+  }
+}
+
+
 function Section6A() {
   return (
     <section className='Section6A'>
@@ -63,9 +78,9 @@ function Section6A() {
         
       </motion.header>
 
-      <h1 className="page5Heading">
+      <motion.h1 variants={AnimeHead} initial="hidden" animate="show" className="page5Heading">
       Agribusiness Consultancy For <br /> Fruit Tree Farming
-      </h1>
+      </motion.h1>
 
       </div>
 

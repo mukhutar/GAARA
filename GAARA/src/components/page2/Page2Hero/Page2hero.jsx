@@ -4,8 +4,25 @@ import Arrow from '/assets/WhiteArrow.svg'
 import DropDown from "/assets/greenDrop.svg";
 import { Link } from 'react-router-dom';
 import './page2hero.scss';
+import {motion} from "framer-motion"
+
+const AnimeHead = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 1,
+        delay:0.4,
+        ease:"linear",
+        duration: 2,
+        x: { duration: 1 }
+      }
+    }
+  }
 
 function Page2hero() {
+
+
   return (
     <section className='Page2Hero'>
 
@@ -61,7 +78,7 @@ function Page2hero() {
 
        <div className="hero_body">
             <div className="page2texts">
-                <h2 className="head_text">Trees Loan</h2>
+                <motion.h2 variants={AnimeHead } initial="hidden" animate="show" className="head_text">Trees Loan</motion.h2>
                 <h2 className="head_paragraph">Simply Empowering Digital Finance as the Key to <br /> Growth for Africa's Sustainable Farmers.</h2>
             </div>
 

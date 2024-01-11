@@ -245,7 +245,7 @@ hr{
     display: flex;
     align-items: center;
     position: relative;
-    top: 18em;
+    top: 9em;
 }
 
 @media screen and (max-width: 768px) {
@@ -334,7 +334,9 @@ hr{
     top: 12em;
 }
 
-
+.hero_footer{
+    top: 0;
+}
 
 .hero_footer > .partnership{
     margin: auto;
@@ -386,7 +388,12 @@ hr{
     }
 
     .hero_footer > .partnership{
-        top: 6em;
+        top: 16em;
+    }
+
+    .hero_footer > h4{
+        position: relative;
+        top: 11.5em;
     }
     
 }
@@ -405,6 +412,8 @@ hr{
     position: relative;
     top:42em;  
    }
+
+ 
     
 }
 

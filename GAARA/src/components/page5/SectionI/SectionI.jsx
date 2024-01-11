@@ -6,6 +6,23 @@ import { Link } from 'react-router-dom';
 import "./SectionI.scss"
 import bg from "/assets/pg5Bbg.png";
 
+import {motion} from "framer-motion"
+
+const AnimeHead = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 1,
+        delay:0.4,
+        ease:"linear",
+        duration: 2,
+        x: { duration: 1 }
+      }
+    }
+  }
+
+
 function SectionI() {
   return (
     <section className='Page5Hero'>
@@ -65,7 +82,7 @@ function SectionI() {
         </div> 
 
         <div className="page5texts">
-            <h3 className='page5H'>Virtual Forest & Impact Analytics</h3>
+            <motion.h3 variants={AnimeHead } initial="hidden" animate="show" className='page5H'>Virtual Forest & Impact Analytics</motion.h3>
 
             <p className='page5P'>Latest digital technology  to revolutionize how we interact with and understand our forests. Our innovative platform is designed for forest owners, environmental agencies, and nature enthusiasts who are committed to preserving and enhancing the health of forest.</p>
         </div>

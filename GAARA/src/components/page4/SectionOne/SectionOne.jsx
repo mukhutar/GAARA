@@ -3,8 +3,22 @@ import icon from '/assets/GaaraLogo.png'
 import Arrow from '/assets/WhiteArrow.svg'
 import DropDown from "/assets/greenDrop.svg";
 import { Link } from 'react-router-dom';
-// import {motion} from "framer-motion"
+import {motion} from "framer-motion"
 import "./SectionOne.scss";
+
+const AnimeHead = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 1,
+        delay:0.4,
+        ease:"linear",
+        duration: 2,
+        x: { duration: 1 }
+      }
+    }
+  }
 
 function SectionOne() {
   return (
@@ -62,7 +76,7 @@ function SectionOne() {
 
         <div className="pg4Hero">
           <section className="hero_dms">
-            <h2 className="hd">Carbon Forestry Leasing Model</h2>
+            <motion.h2  variants={AnimeHead } initial="hidden" animate="show" className="hd">Carbon Forestry Leasing Model</motion.h2>
 
             <span className="spang4p">
             Sustain and Earn Keep Your Forests Standing and Profit with Innovative Carbon Forestry Models.

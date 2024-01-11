@@ -10,6 +10,20 @@ import DropDown from "/assets/DropIcon.svg";
 import { Link } from 'react-router-dom';
 import {motion} from "framer-motion"
 
+const AnimeHead = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 1,
+        delay:0.4,
+        ease:"linear",
+        duration: 2,
+        x: { duration: 1 }
+      }
+    }
+  }
+
 
 function Hero() {
 
@@ -68,7 +82,7 @@ function Hero() {
         
       </motion.header>
 
-      <h1>Digital Trees Loans</h1> <br />
+      <motion.h1 variants={AnimeHead} initial="hidden" animate="show" >Digital Trees Loans</motion.h1> <br />
       <h4>The new root of Rewarding for <span>African farmers.</span></h4>
 
       <button className='changed' >  <Link className='productLink' to='/product'> Products <img src={Arrow} alt="arrow svg" srcset="" /> </Link> </button>   <hr /> 
