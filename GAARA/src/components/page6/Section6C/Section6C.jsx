@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./Section6C.scss";
 import leaf from "/assets/leaf.png";
 import rightLeaf from "/assets/leafright.png";
-import {motion} from "framer-motion";
+import { motion , useAnimation} from "framer-motion";
 
 
 const AnimeSvg = {
@@ -24,8 +24,43 @@ const AnimeSvg = {
 
 
 const Section6C = () => {
+
+
+
+  const controls = useAnimation();
+  const ref = useRef();
+  const [visible, setVisible] = useState(false);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          controls.start("visible");
+        } else {
+          setVisible(false);
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1,
+      }
+    );
+  
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+  
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [controls, ref]);
+
   return (
-    <section className=' Section6C'>
+    <motion.section className=' Section6C' ref={ref}>
 
         <h3 className='page6Heading'>Why Your Orchard Will <br /> Thrive with Us</h3>
 
@@ -46,18 +81,40 @@ const Section6C = () => {
                     <img className='img1' src={leaf} alt="" />
                 </div>
 
-                <div className="section_text1">
+                <motion.div className="section_text1"
+                
+                
+                ref={ref}
+                animate={controls}
+                initial="hidden"
+                variants={{
+                    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 , delay:0.8 } },
+                    hidden: { opacity: 0, scale: 0.8 }
+                  }}
+                
+                >
 
                     <h3>Innovative, Eco-Friendly <br /> Techniques</h3>
                     <p>Embrace practices that love the <br /> earth as much as they love profits.</p>
 
-                </div>
+                </motion.div>
 
-                <div className="section_text2">
+                <motion.div className="section_text2"
+                
+                
+                ref={ref}
+                animate={controls}
+                initial="hidden"
+                variants={{
+                    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 , delay:1.2 } },
+                    hidden: { opacity: 0, scale: 0.8 }
+                  }}
+                
+                >
                     <h3>Personalized, Hands-On <br /> Guidance</h3>
                     <p>Your goals, our mission. We walk the <br /> orchard path with you, step by step.</p>
                     
-                </div>
+                </motion.div>
 
                 <div className="img_container">
                     <div className="border2"></div>
@@ -68,12 +125,23 @@ const Section6C = () => {
 
            <div className="Side">
 
-                  <div className="section_text3">
+                  <motion.div className="section_text3"
+                  
+                  
+                  ref={ref}
+                  animate={controls}
+                  initial="hidden"
+                  variants={{
+                      visible: { opacity: 1, scale: 1, transition: { duration: 0.5 , delay:0.4 } },
+                      hidden: { opacity: 0, scale: 0.8 }
+                    }}
+                  
+                  >
 
                     <h3>Expertise That Shines</h3>
                     <p>Dive into our knowledge pool brimming <br /> with cutting-edge agricultural insights.</p>
 
-                  </div>
+                  </motion.div>
 
                   <div className="img_container">
                     <div className="border3"></div>
@@ -87,18 +155,29 @@ const Section6C = () => {
                         <div className="borderN"></div>
                     </div>
 
-                    <div className="section_text4">
+                    <motion.div className="section_text4"
+                    
+                    
+                    ref={ref}
+                    animate={controls}
+                    initial="hidden"
+                    variants={{
+                        visible: { opacity: 1, scale: 1, transition: { duration: 0.5 , delay:1.6 } },
+                        hidden: { opacity: 0, scale: 0.8 }
+                      }}
+                    
+                    >
                         <h3>Results That Speak Volumes</h3>
                         <p>Our legacy? Orchards thriving across <br /> regions, testimonials blooming with <br /> success.</p>
 
-                    </div>
+                    </motion.div>
 
            </div>
 
 
         </div>
       
-    </section >
+    </motion.section >
   )
 }
 
