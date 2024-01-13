@@ -5,9 +5,7 @@
     height: 100vh;
     margin-bottom: 20%;
 
-    @include iphone12{
-       margin-bottom: 50%;
-    }
+   
 
     @include mobile{
         max-width: 100%;

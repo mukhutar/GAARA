@@ -13,6 +13,7 @@
         max-width: 100%;
         position: relative;
         top: 36em;
+        margin-bottom: -60%;
     }
 
     .page6Head{
@@ -49,6 +50,7 @@
             @include mobile{
                 display: flex;
                 flex-direction: column;
+               
             }
 
             .card{
@@ -59,8 +61,10 @@
 
                 @include mobile{
                     background: #0e52057c;
-                     height: auto;
+                     height:auto;
+                     margin: auto;
                     border-radius: 10px;
+                    width: 100%;
 
                 }
                 

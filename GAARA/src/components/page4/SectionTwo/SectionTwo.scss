@@ -19,12 +19,14 @@
             height: 207px;
             flex-shrink: 0;
             position: relative;
+
+            
             
             @include mobile{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-bottom: 30px;
+                margin-bottom: 120px;
                 text-align: start;
                 font-size: 25px;
                 width: 90%;
@@ -130,12 +132,17 @@
 
                 @include mobile{
                 
-                    height: 40vh;
+                    height: 50vh;
                     width: 94%;
                     background: #0e52057c;
                     border-radius: 10px;
                     box-shadow: 0px 0px 20px 1px #0e520556; 
 
+                }
+
+                @include iphone12{
+                    width: 100%;
+                    padding: 35px;
                 }
 
                 .cdH{
@@ -159,6 +166,10 @@
                     height: 97px;
                     flex-shrink: 0;
                     margin-top: 25px;
+
+                    @include iphone12{
+                        font-size: 22px;
+                    }
                     
                 }
 
