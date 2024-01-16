@@ -41,7 +41,7 @@
             width: 350px;
             height: 250px;
             position: relative;
-            bottom: 1em;
+            bottom: 4em;
             margin: 20px;
             border-radius: 200px 25px;         
             border: 2px solid #8d8d8d4b;
@@ -87,6 +87,7 @@
                 flex-shrink: 0;
                 position: relative;
                 bottom: 1em;
+                left: 1em;
 
              
                 @include mobile{
@@ -99,11 +100,75 @@
             p{
                 color: #0E5205;
                 font-family: Inter , sans-serif;
-                font-size: 18px;
+                font-size: 15px;
                 font-style: normal;
                 font-weight: 300;
                 line-height: 125%;
-                width: 483px;
+                width: 433px;
+                height: 202px;
+                flex-shrink: 0;
+                margin: 20px;
+
+              
+
+                @include mobile{
+                    width: 323px;
+                    margin: auto;
+                    padding: 20px;
+                }
+
+                li{
+                    color: #0E5205;
+
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 125%;
+
+                    @include mobile {
+                        margin: 2px;
+                    }
+                }
+            }
+        }
+
+        .textcontainerr {
+            position: relative;
+            bottom: 3em;
+            right: 2em;
+            h3{
+                color: #0E5205;
+
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                width: 433px;
+                height: 42px;
+                flex-shrink: 0;
+                position: relative;
+                bottom: 1em;
+                left: 1em;
+                
+
+             
+                @include mobile{
+                    font-size: 22px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+
+            p{
+                color: #0E5205;
+                font-family: Inter , sans-serif;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 125%;
+                width: 433px;
                 height: 202px;
                 flex-shrink: 0;
                 margin: 20px;

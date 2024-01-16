@@ -33,7 +33,7 @@ function SectionII() {
 
         <div className="sideOne">
 
-              <div className="textcontainer">
+              <div className="textcontainerr">
                   <h3>Virtual Forest Experience</h3>
                     <p>
                        <li>Immersive Visualization:</li> Experience your forest virtually with detailed satellite imagery.
