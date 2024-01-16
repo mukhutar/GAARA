@@ -15,6 +15,7 @@
         
     // }
 
+  
     @include mobile{
         display: flex;
         flex-direction: column;
@@ -22,7 +23,7 @@
         justify-items: center;
         align-items: center;
         height: 100vh;
-        margin-top: 180%;
+        margin-top: 210%;
         margin-bottom: 100%;
     }
 

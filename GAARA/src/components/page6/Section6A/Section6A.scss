@@ -184,6 +184,7 @@ button > img{
     line-height: normal;
     position: relative;
     top: 4em;
+    right: 1em;
     
 }
 
@@ -299,13 +300,17 @@ p > span{
     .nav > img{
         margin: auto;
         position: relative;
-        right: 2em;
+        // right: 2em;
+        left: 7em;
         
     }
 
     .page5Heading{
         font-size: 25px;
         margin: auto;
+        position: relative;
+        left: 0.2em;
+        top: 8em;
     }
 
     .footer5 > img{
@@ -340,6 +345,14 @@ p > span{
     .contct > button:hover{
         display: none;
     }
+}
+
+@media screen and (max-width: 390px) {
+    .page5Heading{
+        top: 12em;
+    }
+
+    
 }
 
 // @media screen and (max-width:1024px) {

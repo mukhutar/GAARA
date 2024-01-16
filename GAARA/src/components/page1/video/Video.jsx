@@ -9,7 +9,7 @@ function Videosction() {
   return (
     <section className=' VideoContainer'>
         <div className="video">
-            <Video  autoPlay loop  poster={thumb}>
+            <Video  loop  poster={thumb}>
                 <source src={Introvideo}  type="video/webm"/>
 
             </Video>

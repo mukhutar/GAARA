@@ -8,6 +8,11 @@
     background-image: url("assets/top.png");
     background-size: cover;
 
+    @include iphone12{
+        margin-bottom: 12%;
+
+    }
+
     @include mobile{      
         background-size:cover;
         background-position: center;
@@ -187,6 +192,11 @@
                 margin-top: -130px;
                 text-align: center;
 
+                @include iphone12{
+                   margin: auto;
+                
+                }
+
                 // @include tablet{
                 //     font-size: 120%;
                 //     position: relative;
@@ -217,6 +227,8 @@
                 height: 157px;
                 flex-shrink: 0;
                 margin-left: 490px;
+
+               
                 
                 // @include tablet{
                 //     position: relative;
@@ -233,6 +245,10 @@
             img{
                 position: relative;
                 top:8em;
+
+                @include iphone12{
+                    top: 12em;
+                }
 
 
                 // @include tablet{
