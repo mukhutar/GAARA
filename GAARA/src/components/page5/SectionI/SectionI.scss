@@ -197,9 +197,9 @@
         margin-top: 13%;
         margin-left: 10%;
 
-        @include tablet{
-            margin: auto;
-        }
+        // @include tablet{
+        //     margin: auto;
+        // }
 
         @include mobile{
             margin: auto;

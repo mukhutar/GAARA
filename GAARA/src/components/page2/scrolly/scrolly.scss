@@ -17,7 +17,7 @@
     }
     .items{
         display: flex;
-        margin: 20px;
+        margin: 60px;
         flex-direction: column;
         justify-content: center;
 
@@ -129,13 +129,13 @@
         .item_description{
             color: #0E5205;
             font-family: 'Noto Sans JP', sans-serif;
-            font-size: 24px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 300;
             line-height: 153.699%;
             margin-left: 40px; 
             position: relative;
-            bottom: 16em;
+            bottom: 20em;
 
             // @include tablet{
             //     width: 80%;
@@ -158,13 +158,13 @@
         .item_descriptionn{
             color: #0E5205;
             font-family: 'Noto Sans JP', sans-serif;
-            font-size: 24px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 300;
             line-height: 153.699%;
             margin-left: 54px;
             position: relative;
-            bottom: 12.5em;
+            bottom: 14.5em;
             text-align: start;
 
             
@@ -209,7 +209,7 @@
                 line-height: normal;
                 text-align: start;
                 position: relative;
-                right: 230px;
+                right: 247px;
                 margin-top: -29%;
                 bottom: 2em;
 

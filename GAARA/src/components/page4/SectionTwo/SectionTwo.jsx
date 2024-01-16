@@ -1,8 +1,43 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 import "./SectionTwo.scss";
 import cloud from "/assets/cloud.svg";
+import { motion , useAnimation} from "framer-motion";
+
 
 function SectionTwo() {
+
+    const controls = useAnimation();
+const ref = useRef();
+const [visible, setVisible] = useState(false);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        controls.start("visible");
+      } else {
+        setVisible(false);
+      }
+    },
+    {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    }
+  );
+
+  if (ref.current) {
+    observer.observe(ref.current);
+  }
+
+  return () => {
+    if (ref.current) {
+      observer.unobserve(ref.current);
+    }
+  };
+}, [controls, ref]);
+
   return (
     <section className='SectionTwo'>
 
@@ -26,9 +61,22 @@ function SectionTwo() {
             Why Carbon Forestry Lease Could Benefit You
             </h3>
 
-            <div className="cads">
+            <motion.div className="cads">
 
-                <div className="cad">
+                <motion.div className="cad"
+
+     
+                    ref={ref}
+                    animate={controls}
+                    initial="hidden"
+                    variants={{
+                        visible: { opacity: 1, scale: 1, transition: { duration: 0.5 , delay:0.1 } },
+                        hidden: { opacity: 0, scale: 0.8 }
+                      }}
+
+                
+                
+                >
                     <img src={cloud} alt="cloudIMG" srcset="" /> <br /> <br />
 
                     <span className="cdH">
@@ -38,9 +86,19 @@ function SectionTwo() {
                     <li className="li">
                     You're exploring innovative income opportunities from your existing forest.
                     </li>
-                </div>
+                </motion.div>
 
-                <div className="cad">
+                <motion.div className="cad"
+                
+                     
+                    ref={ref}
+                    animate={controls}
+                    initial="hidden"
+                    variants={{
+                        visible: { opacity: 1, scale: 1, transition: { duration: 0.5 , delay:0.3 } },
+                        hidden: { opacity: 0, scale: 0.8 }
+                      }}
+                >
                     <img src={cloud} alt="cloudImg" srcset="" /> <br /> <br />
 
                     <span className="cdH">Visionary investor</span>
@@ -48,17 +106,27 @@ function SectionTwo() {
                     <li className="li">
                     You're strategizing for future generations and building your retirement nest egg.
                     </li>
-                </div>
+                </motion.div>
 
-                <div className="cad">
+                <motion.div className="cad"
+                
+                     
+                    ref={ref}
+                    animate={controls}
+                    initial="hidden"
+                    variants={{
+                        visible: { opacity: 1, scale: 1, transition: { duration: 0.5 , delay:0.5 } },
+                        hidden: { opacity: 0, scale: 0.8 }
+                      }}
+                >
                     <img src={cloud} alt="cloudImg " srcset="" /> <br />
 
                     <span className="cdH">Improve Your Monthly income</span>
                     
                     <li className="li">Aim to cut down debt and dodge market ups and downs? Opt for a steadier, more dependable income stream</li>
-                </div>
+                </motion.div>
 
-            </div>
+            </motion.div>
         </div>
       
     </section>
