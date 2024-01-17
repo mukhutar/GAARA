@@ -29,7 +29,9 @@ function Section() {
 
         <div className="sectionHero">
         <header className='nav'>
-                <img src={icon} alt="comapany's logo" srcset="" />
+                <Link className='listItem' to='/'>
+                    <img src={icon} alt="comapany's logo" srcset="" />
+                </Link>
                 <ul>
 
                 <li >

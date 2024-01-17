@@ -28,7 +28,9 @@ function Section6A() {
     <section className='Section6A'>
       <div className='Hero_section '>
           <motion.header className='nav'>
-         <img src={icon} alt="comapany's logo" srcset="" />
+              <Link className='listItem' to='/'>
+                <img src={icon} alt="comapany's logo" srcset="" />
+            </Link>
         <motion.ul>
 
             <li >

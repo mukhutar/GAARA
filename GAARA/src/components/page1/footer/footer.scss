@@ -30,7 +30,9 @@
     position: relative;
     bottom: 0.3em;
     display: flex;
-    justify-content: space-around;
+    gap: 10px;
+    
+    // justify-content: space-around;
     justify-items: center;
     align-items: center;
 
@@ -41,31 +43,54 @@
     // }
 
     @include mobile{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-align: start;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+        
+        
     }
 
     .footer_img{
-        img{
+        .footer_logo{
             object-fit: cover;
             position: relative;
             bottom: 2.5em;
+            left: 5em;
+
+            @include mobile{
+                bottom: 0;
+                left: 0;
+            }
         }
     }
 
     .footer-links{
+        margin-left: 13%;
+       
+
+        @include mobile{
+            margin-top: 40px;
+            height: 2vh;
+            position: relative;
+            bottom: 2em;
+            right: 0.5em;
+
+            
+        }
         h3{
             color: rgba(255, 255, 255, 0.50);
             font-family: 'Noto Sans JP', sans-serif;
-            font-size: 30px;
+            font-size: 25px;
             font-style: normal;
             font-weight: 700;
             line-height: 158.789%;
             position: relative;
             bottom: 1em;
+
+            @include mobile{
+                font-size: 17px;
+            }
         }
 
         ul{
@@ -85,6 +110,10 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 158.789%;
+
+                    @include mobile{
+                        font-size: 16px;
+                    }
                 }
 
                 .footer_ancho:hover{
@@ -113,6 +142,7 @@
         @include mobile{
             position: relative;
             top: 0.1em;
+            left: 1.4em;
         }
     }
 

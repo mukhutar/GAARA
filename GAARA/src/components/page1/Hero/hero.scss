@@ -214,7 +214,7 @@ h4 > span{
 hr{
     width: 335px;
     position: relative;
-    top: 10.5em;
+    top: 14.5em;
     height: 1px;
     opacity: 0.4;
 }
@@ -237,7 +237,7 @@ hr{
     font-weight: 300;
     line-height: normal;
     position: relative;
-    top: 4em;
+    top: 7em;
     left: 4em;
 }
 
@@ -245,7 +245,7 @@ hr{
     display: flex;
     align-items: center;
     position: relative;
-    top: 9em;
+    top: 13em;
 }
 
 @media screen and (max-width: 768px) {
@@ -268,10 +268,10 @@ hr{
     display: none;
 }
 
-.nav > img{
+.Hero_logo{
    margin: auto;
    position: relative;
-   left: 5rem;
+   left: 15rem;
 } 
 
 h1{

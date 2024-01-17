@@ -8,7 +8,6 @@
     justify-items:center ;
     align-items: center;
     position: relative;
-    // bottom: 4em;
     margin: auto;
     gap: 20px;
 
@@ -72,11 +71,6 @@
         right: 5em;
         bottom: 4em;
 
-        @include mobile{
-            // text-align: center;
-        }
-        
-
         p{
             color: #0E5205;
             text-align: end;
@@ -87,8 +81,6 @@
                 position: relative;
                 left: 4em;
             }
-          
-          
 
             .spn{
                 color: #0E5205;
@@ -99,15 +91,10 @@
                 text-align: end;
 
                 @include mobile{
-                    font-size: 22px;
+                    font-size: 16px;
                     margin: auto;
                     text-align: center;
                 }
-
-
-                
-                
-
             }
 
             span{
@@ -121,7 +108,7 @@
 
                 @include mobile{
                     text-align: center;
-                    font-size: 30px;
+                    font-size: 25px;
                 }
             }
 
@@ -150,26 +137,21 @@
                 @include mobile{
                     position: relative;
                     left: 1em;
-                    text-align: center;
-                
-                    top: -1rem;
-                    right: 1em;
-                    // font-size: 25px;
-                    // margin: 50px 20px;
+                    text-align: center;                    
+                    bottom: 2.5em;
+                    width: 100%;
+                    font-size: 16px;
+                    margin: 50px 20px;
                 }
 
-            }
-
-         
+            }    
         }
 
         .btn{
             display: flex;
             justify-content: flex-end;
 
-
-
-              button{
+            button{
             border-radius: 40px;
             background:#0E5205;
             width: 180px;
@@ -185,27 +167,22 @@
             border: 1px solid   #0E5205;
             position: relative;
             right: 2em;
-            
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
             img{
                 color: white;
+                width: 22px;
+                margin-bottom: 4px;
             }
         }
 
-        button:hover{
-            transition: all 0.4s ease-in-out;
-            background-color: white;
-            color: #0E5205;
-            transform: translateX(2px);
-
+        button:hover  img{
+            transition: all 0.2s ease-in-out;
+            transform: translateX(5px);
         }
 
-        }
-
-     
-
-        
+        }    
     }
-    
-
 }

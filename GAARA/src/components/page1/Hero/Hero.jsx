@@ -32,7 +32,10 @@ function Hero() {
    <section className='section'>
       <div className='Hero_section '>
           <motion.header className='nav'>
-         <img src={icon} alt="comapany's logo" srcset="" />
+       
+         <Link className='listItem' to='/'>
+            <img className='Hero_logo' src={icon} alt="comapany's logo" srcset="" />
+         </Link>
         <motion.ul>
 
             <li >

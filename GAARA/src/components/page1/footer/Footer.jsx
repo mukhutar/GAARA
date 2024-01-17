@@ -15,7 +15,7 @@ function Footer() {
         <img src={footerEnv} alt="Env img" />
         <div className="main_footer">
             <div className="footer_img">
-                <img src={garalog} alt="" />
+                <img className='footer_logo' src={garalog} alt="" />
             </div>
 
             <div className="footer-links">

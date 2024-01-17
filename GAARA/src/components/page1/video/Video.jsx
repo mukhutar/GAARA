@@ -9,10 +9,10 @@ function Videosction() {
   return (
     <section className=' VideoContainer'>
         <div className="video">
-            <Video  loop  poster={thumb}>
-                <source src={Introvideo}  type="video/webm"/>
-
-            </Video>
+        <video controls width="100%" poster={thumb} height="auto">
+          <source src="/assets/introo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         </div>
 
       
