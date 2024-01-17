@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ImgSection.scss";
-import oldwoman from "/assets/oldWoman.png";
+// import oldwoman from "/assets/oldWoman.png";
 
 
 const ImgSection = () => {

@@ -93,7 +93,7 @@
             flex-shrink: 0;
             border-radius: 40px;
             border: 3px solid #FFF;
-            background: url("assets/gsrr.png");
+            background: url("/gsrr.png");
             margin-left: 10%;
 
             @include mobile{
@@ -137,7 +137,7 @@
             flex-shrink: 0;
             border-radius: 40px;
             border: 3px solid #FFF;
-            background: url("assets/gsrr.png");
+            background: url("/gsrr.png");
             @include mobile{
                 display: none;
             }
