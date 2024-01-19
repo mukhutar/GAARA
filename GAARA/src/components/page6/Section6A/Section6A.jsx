@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Section6A.scss";
 import footer5 from "/assets/Footer5.png";
-import icon from '/assets/GaaraFundWhitePNG1.png'
+import icon from '/assets/GaaraGreen.png'
 import Arrow from '/assets/Arrow.svg'
 import DropDown from "/assets/DropIcon.svg";
 import { Link } from 'react-router-dom';
@@ -29,7 +29,7 @@ function Section6A() {
       <div className='Hero_section '>
           <motion.header className='nav'>
               <Link className='listItem' to='/'>
-                <img src={icon} alt="comapany's logo" srcset="" />
+                <img className='Hero_logo' src={icon} alt="comapany's logo" srcset="" />
             </Link>
         <motion.ul>
 

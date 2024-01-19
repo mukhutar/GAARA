@@ -6,11 +6,11 @@
 
     @include mobile{
         max-width: 100%;
-        max-height:50vh ;
-         position: relative;
-         top: -5em;
+        max-height:100vh ;
+        position: relative;
+        top: -5em;
         margin: auto;
-        
+        margin-bottom: -95%;  
     }
 
     .text{
@@ -123,6 +123,7 @@
             max-width: 340px;
             position: relative;
             bottom: 2em;
+            
         }
     }
 }

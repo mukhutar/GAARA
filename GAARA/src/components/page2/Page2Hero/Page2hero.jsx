@@ -29,7 +29,7 @@ function Page2hero() {
         <div className="heropage2">
                 <header className='nav'>
                 <Link className='listItem' to='/'>
-                  <img src={icon} alt="comapany's logo" srcset="" />
+                  <img className='Hero_logo' src={icon} alt="comapany's logo" srcset="" />
                 </Link>
                 <ul>
 

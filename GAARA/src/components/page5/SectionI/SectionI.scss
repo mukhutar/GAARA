@@ -25,13 +25,14 @@
             bottom: 2em;
 
 
-            img{
-                margin-left: 5%;
+            .Hero_logo{
+                margin-left: 15%;
+                margin-top:20%;
 
                 @include mobile{
                     width: 170px;
                     position: relative;
-                    left: 11em;
+                    left: 14em;
                 }
 
                 // @include  tablet{
@@ -112,7 +113,7 @@
                             display: none;
                             position: absolute;
                             left: 55%;
-                            top:4.3em;
+                            top:4em;
                             z-index: 9;
                             border-radius: 15px;
                             
@@ -174,6 +175,7 @@
         background-position: center;
         background-size: cover;
         height: 40vh;
+        margin-bottom: 260px;
         position: relative;
         top: 12em;
 
@@ -183,6 +185,8 @@
         }
 
         img{
+            position: relative;
+            top: 5em;
                @include mobile {
             width: 100%;
             background-position: center;
@@ -244,6 +248,7 @@
                 text-align: start;
                 position: relative;
                 bottom: 4.2em;
+                font-size: 15px;
 
             }
         }

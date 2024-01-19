@@ -201,6 +201,8 @@ button > img{
 .page6Texts{
     display: flex;
     justify-content: space-around;
+    // gap: 80px;
+    // margin-left: 12%;
     justify-items: center;
     
 
@@ -238,6 +240,8 @@ p > span{
 .contct{
     display: flex;
     flex-direction: column;
+    position: relative;
+    right: 1em;
    
 
 }

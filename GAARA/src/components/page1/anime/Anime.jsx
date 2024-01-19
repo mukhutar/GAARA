@@ -12,7 +12,6 @@ import plant from '/assets/plant.png'
 import ParagraphSection from './ParagraphSection';
 function Anime() {
 
-    // state for countup animation
 
     const [counterOn , setCountOn] = useState(false)
 
@@ -63,7 +62,6 @@ function Anime() {
           transition={{
             duration: 20,
             repeat: Infinity,
-            // repeatDelay: 1,
            
           }}
            >
@@ -78,8 +76,7 @@ function Anime() {
           transition={{ ease: 'ease', duration: 10 ,  repeatDelay:2 }}
          >
           <ParagraphSection title={sections[currentIndex].title} paragraph={sections[currentIndex].paragraph} />
-       
-          {/* {paragraphs[currentIndex]} */}
+      
       </motion.span>
 
         <div className="anime_img">
@@ -98,8 +95,8 @@ function Anime() {
 
              <h1>  
                 
-                {counterOn &&   <CountUp  className='countUp'  start={0} end= {59000977} duration={0.6} delay={1} /> } <br />
-                 Trees
+                {counterOn &&   <CountUp  className='countUp'  start={0} end= {18763} duration={0.6} delay={1} /> } <br />
+                 Trees+
              </h1>
            </div>
 
@@ -108,7 +105,7 @@ function Anime() {
              
              <h1>  
                 
-                {counterOn &&   <CountUp  className='countUp'  start={0} end={59000977} duration={0.7} delay={1} /> } <br />
+                {counterOn &&   <CountUp  className='countUp'  start={0} end={211083.75} duration={0.7} delay={1} /> } <br />
                 Kg of CO2
              </h1>
            </div>
@@ -118,7 +115,7 @@ function Anime() {
 
              <h1>  
                 
-                {counterOn &&   <CountUp  className='countUp'  start={0} end={59000977} duration={0.8} delay={1} /> } <br />
+                {counterOn &&   <CountUp  className='countUp'  start={0} end={11.72} duration={0.8} delay={1} /> } <br />
                 Hectares
              </h1>
            </div>
@@ -128,7 +125,7 @@ function Anime() {
 
              <h1>  
                 
-                {counterOn &&   <CountUp className='countUp' start={0} end={59000977} duration={0.9} delay={1} /> } <br />
+                {counterOn &&   <CountUp className='countUp' start={0} end={10} duration={0.9} delay={1} /> } <br />
                 Farmers
              </h1>
            </div>
@@ -138,7 +135,7 @@ function Anime() {
 
              <h1>  
                 
-                {counterOn &&   <CountUp className='countUp' start={0} end={59000977} duration={1} delay={1} /> } <br />
+                {counterOn &&   <CountUp className='countUp' start={0} end={1} duration={1} delay={1} /> } <br />
                 Countries
              </h1>
            </div>

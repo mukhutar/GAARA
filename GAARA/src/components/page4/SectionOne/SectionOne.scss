@@ -23,8 +23,9 @@
             bottom: 2em;
 
 
-            img{
-                margin-left: 5%;
+            .Hero_logo{
+                margin-left: 15%;
+                margin-top:20%;
 
                 @include mobile{
                     width: 170px;
@@ -102,7 +103,7 @@
                             display: none;
                             position: absolute;
                             left: 55%;
-                            top:4.3em;
+                            top:3.7em;
                             z-index: 999;
                             border-radius: 15px;
                             
@@ -185,8 +186,8 @@
                 bottom: 0.5em;
 
                 @include mobile{
-                    font-size: 30px;
-                    width: 420px;
+                    font-size: 25px;
+                    width: 300px;
 
                     top: 2em;
                     bottom: 0;
@@ -211,7 +212,7 @@
 
                 @include mobile{
                     margin: auto;
-                    max-width:100%;
+                    max-width:92%;
                     font-size: 25px;
                     top: 4em;
                     left: 0.4em;

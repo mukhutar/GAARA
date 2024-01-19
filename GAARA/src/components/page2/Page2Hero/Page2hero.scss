@@ -26,8 +26,9 @@
             bottom: 2em;
 
 
-            img{
-                margin-left: 5%;
+            .Hero_logo{
+                margin-left: 15%;
+                margin-top:20%;
 
                 @include mobile{
                     width: 170px;
@@ -233,7 +234,8 @@
             display: flex;
             gap: 10px;
             position: relative;
-            top: 14em;
+            top: 18.5em;
+            right: 0.2em;
 
             @include mobile{
                 display: flex;

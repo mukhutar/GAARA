@@ -30,7 +30,7 @@ function Section() {
         <div className="sectionHero">
         <header className='nav'>
                 <Link className='listItem' to='/'>
-                    <img src={icon} alt="comapany's logo" srcset="" />
+                    <img  className='Hero_logo'  src={icon} alt="comapany's logo" srcset="" />
                 </Link>
                 <ul>
 

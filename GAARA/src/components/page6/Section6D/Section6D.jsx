@@ -11,11 +11,11 @@ function Section6D() {
                 Let's Plant the Seeds of Success Together!
             </h3>
 
-            <img src={fruitTree} alt="" />
+          
         </div>
 
-        <div className="sec">
-            <img src={cardFruit} alt="" />
+        <div className="sec"> 
+        <img src={fruitTree} alt="" />
             <button>
             Schedule consultancy
             <img src={whiteArrw} alt="" />

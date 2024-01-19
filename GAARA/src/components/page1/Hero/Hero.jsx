@@ -1,6 +1,6 @@
 import React from 'react'
 import './hero.scss';
-import icon from '/assets/GaaraFundWhitePNG1.png'
+import icon from '/assets/GaaraGreen.png'
 import Arrow from '/assets/Arrow.svg'
 import parIcon1 from '/assets/partn1.png';
 import parIcon2 from '/assets/partn2.png';
@@ -33,9 +33,9 @@ function Hero() {
       <div className='Hero_section '>
           <motion.header className='nav'>
        
-         <Link className='listItem' to='/'>
-            <img className='Hero_logo' src={icon} alt="comapany's logo" srcset="" />
-         </Link>
+          <Link className='listItem' to='/'>
+                  <img className='Hero_logo' src={icon} alt="comapany's logo" srcset="" />
+            </Link>
         <motion.ul>
 
             <li >

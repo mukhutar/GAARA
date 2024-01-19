@@ -27,7 +27,7 @@ function SectionOne() {
           <div className="heropage4">
                 <header className='nav5'>
                 <Link className='listItem' to='/'>
-                    <img src={icon} alt="comapany's logo" srcset="" />
+                    <img  className='Hero_logo'  src={icon} alt="comapany's logo" srcset="" />
                 </Link>
                 <ul>
 
@@ -85,13 +85,8 @@ function SectionOne() {
             Sustain and Earn Keep Your Forests Standing and Profit with Innovative Carbon Forestry Models.
             </span>
           </section>
-
-     
+          
         </div>
-
-
-      
-      
     </section>
   )
 }

@@ -25,7 +25,7 @@ function Section3() {
                     <p>
                    <span className="bold_text"> Resilience to Climate Change </span> <br /> Tree planting increase biodiversity and can help mitigate the effects of climate change on the farmer's land, safeguarding their agricultural productivity.
                     </p>
-                </div>
+                </div> 
             </div>
 
             <div className="rightSide">
@@ -36,9 +36,9 @@ function Section3() {
 
               <div className="Side_text">
                 <p>
-                <span className="bold_text">Steady Income Stream </span> <br /> The sale of carbon credits from the trees planted can offer a regular and additional income source for the family, which can be particularly valuable during off-seasons or poor harvests.
+                <span className="bold_text">Steady Income Stream </span> <br />  The sale of carbon credits from the trees planted can offer a regular and additional income source for the family, which can be particularly valuable during off-seasons or poor harvests.
                 </p>
-              </div>
+              </div> <br />
 
               
               <div className="side_Img">

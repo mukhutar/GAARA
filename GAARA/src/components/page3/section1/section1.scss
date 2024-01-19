@@ -18,7 +18,7 @@
         background-position: center;
         height: 104vh;
         max-width:100%;
-        overflow-x: hidden;
+        // overflow-x: hidden;
     }
 
     
@@ -31,13 +31,14 @@
             align-items: center;
             position: relative;
             bottom: 2em;
-            img{
-                margin-left: 5%;
-
+            .Hero_logo{
+                margin-left: 15%;
+                margin-top:20%;
+                
                 @include mobile{
                     position: relative;
                     margin: auto;
-                    left: 6em;
+                    left: 13em;
                     width: 170px;
                 }
 
@@ -204,7 +205,7 @@
                 // }
 
                 @include mobile{
-                    font-size: 35px;
+                    font-size: 30px;
                     text-align: center;
                     position: relative;
                     right:1em;
@@ -226,7 +227,7 @@
                 width: 379px;
                 height: 157px;
                 flex-shrink: 0;
-                margin-left: 490px;
+                margin-left: 440px;
 
                
                 
