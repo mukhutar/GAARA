@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Section6A.scss";
-import footer5 from "/assets/Footer5.png";
+import footer5 from "/assets/FooterWhite.png";
 import icon from '/assets/GaaraGreen.png'
 import Arrow from '/assets/Arrow.svg'
 import DropDown from "/assets/DropIcon.svg";

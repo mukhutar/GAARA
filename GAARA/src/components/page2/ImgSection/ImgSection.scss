@@ -154,6 +154,7 @@
                 justify-items: center;
                 flex-direction: column;
                 
+                
                 .info_number{
                     width: 197.022px;
                     height: 42.607px;
@@ -168,8 +169,9 @@
                     line-height: normal;
                     position: relative;
                     bottom: 1.7em;
-                    left: 1.2em;
+                    // left: 1.2em;
                     transition: all 0.2s ease-in;
+                   
                 }
 
                 .info_text{
@@ -185,6 +187,7 @@
                     font-weight: 400;
                     text-align: center;
                     line-height: 132%;
+                    
                     
                     @include mobile{
                         font-size: 28px;
@@ -242,12 +245,12 @@
             .imgCard:hover .more_details{
                 opacity: 1;
                 background: linear-gradient(to right ,transparent ,#0b4204) ;
-                width: 80%;
+                width: 100%;
                border-radius: 4px;
                 height: 399px;
                 position: relative;
                 bottom: 7.5em;
-                left: 2.9em;
+                // left: 2.9em;
                 transform: translateX(10px);
                 outline: none;
                 border-radius: 10px;
@@ -418,7 +421,7 @@
                         line-height: normal;
                         position: relative;
                         bottom: 1.7em;
-                        left: 1.2em;
+                        // left: 1.2em;
                         transition: all 0.2s ease-in;
                     }
     
@@ -484,12 +487,12 @@
                 .imgCardA:hover .more_details{
                     opacity: 1;
                     background: linear-gradient(to right ,transparent ,#0b4204) ;
-                    width: 80%;
+                    width: 100%;
                    border-radius: 4px;
                    height: 596.779px;
                    position: relative;
                     bottom: 7.5em;
-                    left: 2.9em;
+                    // left: 2.9em;
                     transform: translateX(10px);
                     outline: none;
                     border-radius: 10px;
@@ -662,7 +665,7 @@
                         line-height: normal;
                         position: relative;
                         bottom: 1.7em;
-                        left: 1.2em;
+                        // left: 1.2em;
                         transition: all 0.2s ease-in;
                     }
     
@@ -728,12 +731,12 @@
                 .imgCardB:hover .more_details{
                     opacity: 1;
                     background: linear-gradient(to right ,transparent ,#0b4204) ;
-                    width: 80%;
+                    width: 100%;
                    border-radius: 4px;
                    height: 496.779px;
                    position: relative;
                     bottom: 7.5em;
-                    left: 2.9em;
+                    // left: 2.9em;
                     transform: translateX(10px);
                     outline: none;
                     border-radius: 10px;

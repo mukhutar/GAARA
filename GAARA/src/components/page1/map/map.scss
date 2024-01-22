@@ -74,6 +74,7 @@
         p{
             color: #0E5205;
             text-align: end;
+            font-size: 10px;
 
             @include mobile{
                 text-align: center;
@@ -85,7 +86,7 @@
             .spn{
                 color: #0E5205;
                 font-family: 'Noto Sans JP', sans-serif;
-                font-size: 29px;
+                font-size: 22px;
                 font-weight: 300;
                 line-height: normal;
                 text-align: end;
@@ -101,7 +102,7 @@
                 color: #0E5205;
                 text-align: right;
                 font-family: 'Noto Sans JP', sans-serif;
-                font-size: 30px;
+                font-size: 25px;
                 font-style: normal;
                 font-weight: 900;
                 line-height: normal;
@@ -114,8 +115,10 @@
 
             h2{
                 position: relative;
-                right: 1em;
+                right: 4em;
                 bottom: 2em;
+                font-size: 12px;
+              
 
                 @include mobile{
                     text-align: center;
@@ -127,11 +130,11 @@
             }
 
             .pargraph{
-                font-size: 22px;
+                font-size: 18px;
                 text-align: end;
                 font-weight: 390;
                 position: relative;
-                right: 1em;
+                right: 2.5em;
                 bottom: 3em;
 
                 @include mobile{

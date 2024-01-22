@@ -35,7 +35,7 @@ function Footer() {
                 </ul>
             </div>
 
-            <div className="footer-links">
+            {/* <div className="footer-links">
                 <h3 className='link_tittle'>FARMERS</h3>
                 <ul>
                     <li>
@@ -50,7 +50,7 @@ function Footer() {
                         <Link className="footer_ancho" to="/">Contact Us </Link>
                     </li>
                 </ul>
-            </div>
+            </div> */}
 
 
             <div className="footer-links">

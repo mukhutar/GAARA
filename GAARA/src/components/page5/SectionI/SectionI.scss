@@ -213,13 +213,18 @@
             color: #0E5205;
 
             font-family: 'Noto Sans JP', sans-serif;
-            font-size: 53px;
+            font-size: 45px;
             font-style: normal;
             font-weight: 900;
             line-height: normal;
             width: 552px;
             height: 215px;
             flex-shrink: 0;
+
+            @include Laptop{
+                font-size: 40px;
+               
+            }
 
             @include mobile{
                 font-size: 33px;
@@ -235,11 +240,12 @@
             text-align: justify;
             text-shadow: 0px 4px 100px #FFF;
             font-family: 'Noto Sans JP', sans-serif;
-            font-size: 22px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
             margin-right: 10%;
+            width: 85%;
 
            
 
