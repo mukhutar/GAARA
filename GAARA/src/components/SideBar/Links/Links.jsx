@@ -75,7 +75,7 @@ const Links = ({ closeSidebar }) => {
         
 
           <li>
-              <Link className='activeLink'  onClick={closeSidebar} href="#">About Us</Link>
+              <Link className='activeLink'  onClick={closeSidebar} to="/about us">About Us</Link>
           </li> <br />
 
           <li>

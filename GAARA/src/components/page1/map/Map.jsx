@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
+import lottie from 'lottie-web';
 import "./map.scss";
 import map from "/assets/map.png"
 import Arrow from '/assets/whiteArrow.svg'

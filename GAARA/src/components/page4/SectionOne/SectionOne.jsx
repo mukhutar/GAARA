@@ -66,7 +66,7 @@ function SectionOne() {
              
 
                 <li>
-                    <Link className='activeLink' to="">About Us</Link>
+                    <Link className='activeLink' to = "/about us">About Us</Link>
                 </li>
 
                 <li>

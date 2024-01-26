@@ -9,6 +9,7 @@ import ProductItem4 from './Pages/Home/ProductItem4'
 import ProductItem5 from './Pages/Home/ProductItem5'
 
 import SideBar from "./components/SideBar/SideBar"
+import AboutUs from './Pages/Home/AboutUs'
 
 
 
@@ -23,7 +24,7 @@ function App(){
         <Route path='/product/Carbon foresty leasing' element={<ProductItem3/>}/>
         <Route path='/product/Famers digital monital' element={<ProductItem4/>}/>
         <Route path='/product/agribussiness consulting' element={<ProductItem5/>}/>
-
+        <Route path='/about us' element={<AboutUs/>}/>
       </Routes>
 
       

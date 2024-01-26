@@ -72,7 +72,7 @@ function Hero() {
            
 
             <li>
-                <Link className='activeLink' href="#">About Us</Link>
+                <Link className='activeLink' to='/about us'>About Us</Link>
             </li>
 
             <li>

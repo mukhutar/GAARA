@@ -67,3 +67,40 @@ function CardA() {
 }
 
 export default CardA
+
+
+
+
+// import React, { useEffect, useRef } from 'react';
+// import lottie from 'lottie-web';
+// import animationData from './data.json';
+//  import './card.scss';
+
+
+// const  CardA = () => {
+//   const animationContainer = useRef(null);
+
+//   useEffect(() => {
+//     if (animationContainer.current) {
+//       const anim = lottie.loadAnimation({
+//         container: animationContainer.current,
+//         renderer: 'svg',
+//         loop: true,
+//         autoplay: true,
+//         animationData: animationData, 
+//       });
+
+//       return () => anim.destroy();
+//     }
+//   }, [animationData]); 
+
+//   return (
+//     <div className='africa' ref={animationContainer} style={{ width: '100%', height: '100%' }}>
+//     </div>
+//   );
+// }; 
+
+// export default CardA;
+
+
+

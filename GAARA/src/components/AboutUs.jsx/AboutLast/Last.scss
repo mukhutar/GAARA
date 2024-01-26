@@ -1,0 +1,82 @@
+@import "../../../App.scss";
+.Last{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    justify-items: center;
+    margin-top: 15%;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        // height: 80vh;
+        position: relative;
+        margin-top: 150%;
+        margin-bottom: -410%;
+
+    }
+
+    .Last_paragraph{
+        width: 600px;
+        height: 747px;
+        color: #0E5205;
+        text-align: justify;
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px;
+        position: relative;
+        top:5em;
+
+        @include mobile{
+            width: 80%;
+            position: relative;
+            left:2.5em;
+            font-size: 15px;
+        }
+
+        .boldest{
+            color: #0E5205;
+            font-family: "Roboto Flex", sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 118.182%;
+        }   
+        .Lbold{
+            font-family: "Roboto Flex";
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .Sbold{
+            color: #0E5205;
+            font-family: "Roboto Flex";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+    .Last_img{
+        img{
+            object-fit: cover;
+            width: 473px;
+            height: 614px;
+
+            @include mobile{
+                margin-top: 120px;
+                width: 90%;
+                position: relative;
+                left: 1.2em;
+            }
+        }
+    }
+
+}

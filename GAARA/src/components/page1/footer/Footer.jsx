@@ -35,23 +35,6 @@ function Footer() {
                 </ul>
             </div>
 
-            {/* <div className="footer-links">
-                <h3 className='link_tittle'>FARMERS</h3>
-                <ul>
-                    <li>
-                        <Link className="footer_ancho" to="/">About us </Link>
-                    </li>
-
-                    <li>
-                        <Link className="footer_ancho" to="/">Career </Link>
-                    </li>
-
-                    <li>
-                        <Link className="footer_ancho" to="/">Contact Us </Link>
-                    </li>
-                </ul>
-            </div> */}
-
 
             <div className="footer-links">
             <h3 className='link_tittle'>FARMERS</h3>
