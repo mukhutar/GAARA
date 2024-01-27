@@ -29,7 +29,7 @@ function Body() {
                             <p className="box_heading">
                             <span className="box_span">{counterOn && <CountUp start={0} end={350420000} duration={0.6} delay={1}/>} +</span> <br /> <br />
                             Tress <br />
-                            <span className='box_span2'> {counterOn && <counterUp start={0} end={95} duration={0.6} delay={1}/> }  %</span> <br />
+                            <span className='box_span2'> {counterOn && <CountUp start={0} end={95} duration={0.6} delay={1}/> }  %</span> <br />
                             Survived <br />
                             <Link className='box_link'  to= "">Learn more</Link>
                             </p>  

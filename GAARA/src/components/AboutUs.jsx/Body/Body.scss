@@ -68,6 +68,11 @@
         justify-content: center;
         justify-content: center;
         margin-top: 2%;
+
+        @include mobile{
+            margin: auto;
+            width: 90%;
+        }
         
         
         section{
@@ -84,8 +89,10 @@
                 width: 25%;
 
                 @include mobile{
-                    padding: 50px;
+                    width: auto;
                 }
+
+                
 
                 .box_heading{
                     color: #0E5205;
@@ -97,7 +104,7 @@
                     line-height: normal;
 
                     @include mobile{
-                        font-size: 18px;
+                        font-size: 15px;
                     }
                    .box_span{
                         color: #0E5205;
@@ -109,7 +116,9 @@
                         line-height: normal;
                         
                         @include mobile{
-                            font-size: 20px;
+                            font-size: 15px;
+                            position: relative;
+                            right: 10px;
                         }
 
                     
@@ -125,7 +134,8 @@
                         line-height: normal;
 
                         @include mobile{
-                            font-size: 18px;
+                            font-size: 16px;
+                           
                         }
 
                     }
@@ -140,6 +150,10 @@
                         text-decoration-line: underline;
                         position: relative;
                         top: 1em;
+
+                        @include mobile{
+                            font-size: 12px;
+                        }
                     }
 
                 }
@@ -157,6 +171,12 @@
                 position: relative;
                 right: 4em;
 
+                @include mobile{
+                    right: 0;
+                    width: auto;
+                }
+
+
                 .box_heading{
                     color: #0E5205;
 
@@ -168,7 +188,7 @@
                     line-height: normal;
 
                     @include mobile{
-                        font-size: 18px;
+                        font-size: 15px;
                     }
                   
                    .box_span{
@@ -182,7 +202,7 @@
 
                             
                         @include mobile{
-                            font-size: 20px;
+                            font-size: 15px;
                         }
                         
                         
@@ -198,6 +218,11 @@
                             position: relative;
                             top: 0.1em;
                             right: 0.4em;
+
+                            @include mobile{
+                                right: 0;
+                                font-size: 12px;
+                            }
                             
                         }
 
@@ -212,6 +237,10 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
+
+                        @include mobile{
+                            font-size: 16px;
+                        }
                    
 
                     }
@@ -226,6 +255,10 @@
                         text-decoration-line: underline;
                         position: relative;
                         top: 1em;
+
+                        @include mobile{
+                            font-size: 12px;
+                        }
                     }
 
                 }
@@ -243,6 +276,13 @@
                 right: 2em;
                 border-right: 1px solid #0E5205;
 
+                @include mobile{
+                    height: 225px;
+                    right: 0;
+                    margin: 0;
+                    width: auto;
+                }
+
                 .box_heading{
                     color: #0E5205;
 
@@ -254,7 +294,7 @@
                     line-height: normal;
 
                     @include mobile{
-                        font-size: 18px;
+                        font-size: 15px;
                     }
                     
                    .box_span{
@@ -267,7 +307,7 @@
                         line-height: normal;
                             
                         @include mobile{
-                            font-size: 20px;
+                            font-size: 15px;
                         }
                        
 
@@ -277,12 +317,17 @@
                             font-size: 20px;
                             font-style: normal;
                             font-weight: 600;
+                            background-color: #0E5205;
                             line-height: normal;
                             // margin-left: 72%;
                             position: relative;
                             top: 0.4em;
                             left: 0em;
-                            
+
+                            @include mobile{
+                                font-size: 32px;
+                            }
+  
                         }
                     }
 
@@ -294,6 +339,10 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
+
+                        @include mobile{
+                            font-size: 16px;
+                        }
 
                     }
                     .box_link{
@@ -307,6 +356,10 @@
                         text-decoration-line: underline;
                         position: relative;
                         top: 1em;
+
+                        @include mobile{
+                            font-size: 12px;
+                        }
                     }
 
                 }
@@ -334,6 +387,11 @@
                 width: 25%;
                 border-top: 1px solid #0E5205;
 
+                @include mobile{
+                    width: auto;
+                    
+                }
+
                 .box_heading{
                     color: #0E5205;
 
@@ -345,7 +403,7 @@
                     line-height: normal;
 
                     @include mobile{
-                        font-size: 18px;
+                        font-size: 15px;
                     }
 
                    .box_span{
@@ -359,7 +417,7 @@
 
                             
                         @include mobile{
-                            font-size: 20px;
+                            font-size: 15px;
                         }
                     }
 
@@ -371,6 +429,10 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
+
+                        @include mobile{
+                            font-size: 16px;
+                        }
 
                     }
                     .box_link{
@@ -384,6 +446,10 @@
                         text-decoration-line: underline;
                         position: relative;
                         top: 1em;
+
+                        @include mobile{
+                            font-size: 12px;
+                        }
                     }
 
                 }
@@ -403,6 +469,11 @@
                 position: relative;
                 right: 4em;
 
+                @include mobile{
+                    right: 1.2em;
+                    width: auto;
+                }
+
 
                 .box_heading{
                     color: #0E5205;
@@ -415,7 +486,7 @@
                     line-height: normal;
 
                     @include mobile{
-                        font-size: 18px;
+                        font-size: 15px;
                     }
 
                    .box_span{
@@ -429,7 +500,7 @@
 
                             
                         @include mobile{
-                            font-size: 20px;
+                            font-size: 15px;
                         }
                     }
 
@@ -441,6 +512,10 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
+
+                        @include mobile{
+                            font-size: 16px;
+                        }
 
                     }
                     .box_link{
@@ -454,6 +529,10 @@
                         text-decoration-line: underline;
                         position: relative;
                         top: 1em;
+
+                        @include mobile{
+                            font-size: 12px;
+                        }
                     }
 
                 }
@@ -471,7 +550,13 @@
                 position: relative;
                 right: 2em;
                 border-top: 1px solid #0E5205;
-                border-right: 1px solid  #0E5205;;
+                border-right: 1px solid  #0E5205;
+
+                @include mobile{
+                    right: 0;
+                    width: auto;
+                   
+                }
 
 
                 .box_heading{
@@ -485,7 +570,7 @@
                     line-height: normal;
 
                     @include mobile{
-                        font-size: 18px;
+                        font-size: 15px;
                     }
 
                    .box_span{
@@ -499,7 +584,7 @@
 
                             
                         @include mobile{
-                            font-size: 20px;
+                            font-size: 15px;
                         }
                     }
 
@@ -511,6 +596,10 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
+
+                        @include mobile{
+                            font-size: 16px;
+                        }
 
                     }
                     .box_link{
@@ -524,6 +613,10 @@
                         text-decoration-line: underline;
                         position: relative;
                         top: 1em;
+
+                        @include mobile{
+                            font-size: 12px;
+                        }
                     }
 
                 }
@@ -537,3 +630,4 @@
 
 
 }
+
