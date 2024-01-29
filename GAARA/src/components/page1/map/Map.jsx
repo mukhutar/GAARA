@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
+import { motion, AnimatePresence } from 'framer-motion'; 
 import "./map.scss";
 import FormOne from "./formOne/formOne";
 import map from "/assets/map.png";

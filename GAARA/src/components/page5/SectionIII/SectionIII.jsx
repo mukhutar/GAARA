@@ -1,10 +1,23 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { motion , useAnimation} from "framer-motion";
+import { motion ,  AnimatePresence, useAnimation} from "framer-motion";
+import FormOne from "../../page1/map/formOne/formOne";
 import "./SectionIII.scss";
 import  cloud from"/assets/cloud.svg";
 import WhiteArrw from '/assets/ArrowWhite.svg';
 
 function SectionIII() {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = (e) => {
+    e.preventDefault()
+    
+    setShowPopup(true);
+  }
+
+  const closePopup = () => {
+    setShowPopup(false);
+  }
 
     const controls = useAnimation();
     const ref = useRef();
@@ -42,6 +55,29 @@ function SectionIII() {
     <section className=' Section5'>
 
         <h3 className='Section5Heading'>Why choose Us?</h3>
+
+        <AnimatePresence>
+        {showPopup && (
+          <motion.div 
+            className="popup-container"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            exit={{ opacity: 0 }} 
+            transition={{ duration: 0.3 }} 
+          >
+            <motion.div 
+              className="popup"
+              initial={{ scale: 0.5 }} 
+              animate={{ scale: 1 }} 
+              exit={{ scale: 0.5 }} 
+              transition={{ type: 'spring', stiffness: 300, damping: 25 }} 
+            >
+              <button className="close-btn" onClick={closePopup}>X</button>
+              <FormOne />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
         <motion.div className="Reasons">
             <motion.div className="Rone">
@@ -118,7 +154,7 @@ function SectionIII() {
             </motion.div>
         </motion.div>
 
-        <button className='GetInTouch'> Get in Touch
+        <button className='GetInTouch' onClick={openPopup}> Get in Touch
         
         <img className='Wicon' src={WhiteArrw} alt="" />
 

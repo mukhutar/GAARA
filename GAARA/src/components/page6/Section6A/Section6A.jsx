@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./Section6A.scss";
 import footer5 from "/assets/FooterWhite.png";
 import icon from '/assets/GaaraGreen.png'
 import Arrow from '/assets/Arrow.svg'
 import DropDown from "/assets/DropIcon.svg";
 import { Link } from 'react-router-dom';
-import {motion} from "framer-motion"
+import {motion , AnimatePresence } from "framer-motion"
+import FormOne from "../../page1/map/formOne/formOne";
 import whiteArrw from "/assets/ArrowWhite.svg";
 
 const AnimeHead = {
@@ -24,6 +25,19 @@ const AnimeHead = {
 
 
 function Section6A() {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = (e) => {
+    e.preventDefault()
+    
+    setShowPopup(true);
+  }
+
+  const closePopup = () => {
+    setShowPopup(false);
+  }
+
   return (
     <section className='Section6A'>
       <div className='Hero_section '>
@@ -90,11 +104,37 @@ function Section6A() {
         <img src={footer5} alt="" />
       </div>
 
+           
+      <AnimatePresence>
+        {showPopup && (
+          <motion.div 
+            className="popup-container"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            exit={{ opacity: 0 }} 
+            transition={{ duration: 0.3 }} 
+          >
+            <motion.div 
+              className="popup"
+              initial={{ scale: 0.5 }} 
+              animate={{ scale: 1 }} 
+              exit={{ scale: 0.5 }} 
+              transition={{ type: 'spring', stiffness: 300, damping: 25 }} 
+            >
+              <button className="close-btn" onClick={closePopup}>X</button>
+              <FormOne />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+
+
       <div className="page6Texts">
 
         <div className="p">
-          <p>
-          <span>Discover</span> the vibrant world of fruit tree farming with our <span>expert</span> Agribusiness Consultancy. Whether you're dreaming of <span>lush orchards</span> or are a fruit farming veteran, we're here to turn those <span>dreams </span>into <span>bountiful</span> realities.
+          <p> 
+          <span>Discover </span> the vibrant world of fruit tree farming with our <span>expert</span> Agribusiness Consultancy. Whether you're dreaming of <span>lush orchards</span> or are a fruit farming veteran, we're here to turn those <span>dreams </span>into <span>bountiful</span> realities.
           </p>
         </div>
         
@@ -102,15 +142,13 @@ function Section6A() {
 
           <h3>Embark on a Fruitful Journey!</h3>
 
-          <button>
+          <button onClick={openPopup}>
             Contact Us
             <img src={whiteArrw} alt="" />
           </button>
 
         </div>
-      </div>
-
-      
+      </div>     
     </section>
   )
 }
