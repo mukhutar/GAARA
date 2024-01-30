@@ -20,6 +20,8 @@
       align-items: center;
       justify-content: center;
       justify-items: center;
+      position: relative;
+      right: 1em;
 
       @include mobile{
         display: flex;
@@ -95,7 +97,7 @@
             flex-shrink: 0;
             border-radius: 40px;
             border: 3px solid #FFF;
-            background: url("/gsrr.png");
+            background: url("/env11.png");
             margin-left: 10%;
 
             @include mobile{
@@ -140,6 +142,29 @@
             border-radius: 40px;
             border: 3px solid #FFF;
             background: url("/gsrr.png");
+            object-fit: cover;
+            @include mobile{
+                display: none;
+            }
+
+
+            .imgContainer{
+                width: 436px;
+                height: 258px;
+                object-fit: cover;
+                border-radius: 40px;
+                background: rgba(14, 82, 5, 0.29);
+            }
+        }
+
+        .side_Img2{
+            width: 436px;
+            height: 258px;
+            flex-shrink: 0;
+            border-radius: 40px;
+            border: 3px solid #FFF;
+            background: url("/env22.png");
+            object-fit: cover;
             @include mobile{
                 display: none;
             }

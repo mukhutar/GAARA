@@ -1,7 +1,7 @@
-import React from 'react'
-import'./footer.scss';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';import'./footer.scss';
 import { Link } from 'react-router-dom';
-
+import FormOne from "./formOne/formOne";
 import footerEnv from "/assets/Footer.png";
 import tweeter from "/assets/tVector.svg";
 import insta from "/assets/iVector.svg";
@@ -10,8 +10,45 @@ import linkedin from "/assets/inVector.svg";
 import garalog from "/assets/garalog.png";
 
 function Footer() {
+
+
+    const [showPopup, setShowPopup] = useState(false);
+
+    const openPopup = (e) => {
+      e.preventDefault()
+      
+      setShowPopup(true);
+    }
+  
+    const closePopup = () => {
+      setShowPopup(false);
+    }
+  
   return (
     <section className='Footer'>
+           {/* and this animation tooo */}
+      <AnimatePresence>
+        {showPopup && (
+          <motion.div 
+            className="popup-container"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            exit={{ opacity: 0 }} 
+            transition={{ duration: 0.3 }} 
+          >
+            <motion.div 
+              className="popup"
+              initial={{ scale: 0.5 }} 
+              animate={{ scale: 1 }} 
+              exit={{ scale: 0.5 }} 
+              transition={{ type: 'spring', stiffness: 300, damping: 25 }} 
+            >
+              <button className="close-btn" onClick={closePopup}>X</button>
+              <FormOne />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
         <img src={footerEnv} alt="Env img" />
         <div className="main_footer">
             <div className="footer_img">
@@ -30,7 +67,7 @@ function Footer() {
                     </li>
 
                     <li>
-                        <Link className="footer_ancho" to="/">Contact Us </Link>
+                        <Link onClick={openPopup} className="footer_ancho" to="/">Contact Us </Link>
                     </li>
                 </ul>
             </div>
@@ -45,11 +82,11 @@ function Footer() {
                     </li>
 
                     <li>
-                        <Link className="footer_ancho" to="/">Career </Link>
+                        <Link  className="footer_ancho" to="/">Career </Link>
                     </li>
 
                     <li>
-                        <Link className="footer_ancho" to="/">Contact Us </Link>
+                        <Link onClick={openPopup} className="footer_ancho" to="/">Contact Us </Link>
                     </li>
                 </ul>
             </div>

@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "./SectionTwo.scss";
 import cloud from "/assets/cloud.svg";
+import newIcon1 from "/assets/newIcon1.svg";
+import newIcon2 from "/assets/newIcon2.svg";
+import newIcon3 from "/assets/newIcon3.svg";
 import { motion , useAnimation} from "framer-motion";
 
 
@@ -77,7 +80,7 @@ useEffect(() => {
                 
                 
                 >
-                    <img src={cloud} alt="cloudIMG" srcset="" /> <br /> <br />
+                    <img className="New" src={newIcon1} alt="cloudIMG" srcset="" /> <br /> <br />
 
                     <span className="cdH">
                     Forward-Thinking
@@ -99,7 +102,7 @@ useEffect(() => {
                         hidden: { opacity: 0, scale: 0.8 }
                       }}
                 >
-                    <img src={cloud} alt="cloudImg" srcset="" /> <br /> <br />
+                    <img className="NewIcon" src={newIcon2} alt="cloudImg" srcset="" /> <br /> <br />
 
                     <span className="cdH">Visionary investor</span>
                     
@@ -119,7 +122,7 @@ useEffect(() => {
                         hidden: { opacity: 0, scale: 0.8 }
                       }}
                 >
-                    <img src={cloud} alt="cloudImg " srcset="" /> <br />
+                    <img className="NewIcon" src={newIcon3} alt="cloudImg " srcset="" /> <br />
 
                     <span className="cdH">Improve Your Monthly income</span>
                     

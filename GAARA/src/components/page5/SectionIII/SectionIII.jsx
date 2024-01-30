@@ -2,7 +2,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import { motion ,  AnimatePresence, useAnimation} from "framer-motion";
 import FormOne from "../../page1/map/formOne/formOne";
 import "./SectionIII.scss";
-import  cloud from"/assets/cloud.svg";
+import iconNew1 from "/assets/IconNew1.svg"
+import IconNew2 from "/assets/IconNew2.svg";
+import IconNew3  from  "/assets/IconNew3.svg";
+import IconNew4 from "/assets/IconNew4.svg";
 import WhiteArrw from '/assets/ArrowWhite.svg';
 
 function SectionIII() {
@@ -92,7 +95,7 @@ function SectionIII() {
                       }}
 
                 >
-                    <img className='Ricon' src={cloud} alt="cloud" />
+                    <img className='Ricon' src={iconNew1} alt="cloud" />
                     <h3 className='Rheading'>Innovative Technology</h3>
                     <li className='Rlist'>Our platform uses state-of-the-art technology to provide the most accurate and detailed insights into forest ecosystems.</li>
                 </motion.section>
@@ -108,7 +111,7 @@ function SectionIII() {
                       }}
 
                 >
-                    <img className='Ricon' src={cloud} alt="cloud"/>
+                    <img className='Riconn' src={IconNew3} alt="cloud"/>
                     <h3 className='Rheading'>Commitment to Sustainability</h3>
                     <li className='Rlist'>Our mission is to aid in the preservation and health of forests, contributing to global environmental sustainability efforts.</li>
                 </motion.section>
@@ -129,7 +132,7 @@ function SectionIII() {
                       }}
 
                        >
-                            <img className='Ricon' src={cloud} alt="cloud" />
+                            <img className='Ricon' src={IconNew2} alt="cloud" />
                             <h3 className='Rheading'>Customization</h3>
                             <li className='Rlist'>We understand that each forest is unique. Our services are tailored to meet the specific needs and goals of your forest.</li>
                         </motion.section>
@@ -145,7 +148,7 @@ function SectionIII() {
                       }}
 
                         >
-                            <img className='Ricon' src={cloud} alt="cloud"/>
+                            <img className='Ricon' src={IconNew4} alt="cloud"/>
                             <h3 className='Rheading'>Expert Support</h3>
                             <li className='Rlist'>Our team of experts is always available to provide guidance and support, ensuring you make the most of our platform.</li>
                         </motion.section>

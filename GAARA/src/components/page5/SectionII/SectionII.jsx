@@ -1,15 +1,14 @@
 import React from 'react'
 import "./SectionII.scss";
-import leaf from "/assets/leaf.png";
-import rightleaf from "/assets/leafright.png";
 import leaftree from "/assets/leaftree.png";
-
+import imgNew from "/assets/imgNew1.png";
+import imgNew2 from "/assets/imgNew2.png";
 function SectionII() {
   return (
     <section className='Page5II'>
 
         <div className="sideOne">          
-          <img className='Limage' src={leaf} alt="" srcset="" /> <br /> <br />
+          <img className='Limage' src={imgNew} alt="" srcset="" /> <br /> <br />
 
 
           <div className="textcontainer">
@@ -43,7 +42,7 @@ function SectionII() {
 
                </div>
 
-          <img className='Rimage' src={rightleaf} alt="" srcset="" />
+          <img className='Rimage' src={imgNew2} alt="" srcset="" />
         </div>
       
     </section>

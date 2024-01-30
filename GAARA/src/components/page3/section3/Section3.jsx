@@ -41,7 +41,7 @@ function Section3() {
               </div> <br />
 
               
-              <div className="side_Img">
+              <div className="side_Img2">
                  <div className="imgContainer"></div>
               </div>
 

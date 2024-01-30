@@ -2,6 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import "./Section6B.scss";
 import cloud from "/assets/cloud.svg";
 import { motion , useAnimation} from "framer-motion";
+import IconNew4 from "/assets/IconNew4.svg";
+import LastIcon1 from "/assets/lastIcon.svg";
+
 function Section6B() {
 
 const controls = useAnimation();
@@ -55,7 +58,7 @@ useEffect(() => {
                       }}
 
                     >
-                       <img src={cloud} alt="" />
+                       <img className='LastIcon' src={LastIcon1} alt="" />
                         <h3>Initial Assessment</h3>
                         <li>We begin with an in-depth analysis of your land, local climate, and soil conditions to identify the most suitable fruit tree varieties for your farm.</li>
                     </motion.div>
@@ -72,7 +75,7 @@ useEffect(() => {
                     
 
                     >
-                       <img src={cloud} alt="" />
+                       <img className='LastIcon' src={IconNew4} alt="" />
                         <h3>Implementation Support</h3>
                         <li>Our team guides you through the implementation of the plan, ensuring best practices in tree planting, care, and maintenance.</li>
                     </motion.div>
@@ -91,7 +94,7 @@ useEffect(() => {
                     
 
                     >
-                        <img src={cloud} alt="" />
+                        <img className='LastIcon' src={LastIcon1}  alt="" />
                         <h3>Customized Planning</h3>
                         <li>Based on the assessment, we develop a detailed cultivation plan, including tree spacing, irrigation strategies, and integrated pest management.</li>
                     </motion.div>
@@ -110,7 +113,7 @@ useEffect(() => {
                     
 
                     >
-                       <img src={cloud} alt="" />
+                       <img className='LastIcon' src={LastIcon1}  alt="" />
                         <h3>Ongoing Assistance</h3>
                         <li>We offer continuous support and advice to help you navigate challenges and optimize your orchard's performance.</li>
                     </motion.div>

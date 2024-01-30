@@ -3,6 +3,9 @@ import "./scrolly.scss"
 import leaf from "/assets/leaf.png"
 import leafright from "/assets/leafright.png"
 import leaftree from "/assets/leaftree.png"
+import env1 from "/assets/env1.png"
+import env2 from "/assets/env2.png"
+
 function Scrolly() {
   return (
     <section className='scrolly_section'>
@@ -13,7 +16,7 @@ function Scrolly() {
          
         </div>
 
-        <img className='item_img' src={leaf} alt="" />
+        <img className='item_img' src={env1} alt="" />
 
         <h2 className='item_text'>How?</h2>
         <p className='item_description'>
@@ -23,7 +26,7 @@ function Scrolly() {
         <div className="img_container">
         </div>   
         
-               <img className='item_img' src={leaf} alt="" />
+               <img className='item_img' src={env2} alt="" />
 
 
 
