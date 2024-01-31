@@ -1,5 +1,5 @@
 import React from 'react'
-import icon from '/assets/GaaraLogo.png'
+import icon from '/assets/GaaraLogo.webp'
 import Arrow from '/assets/WhiteArrow.svg'
 import DropDown from "/assets/greenDrop.svg";
 import { Link } from 'react-router-dom';

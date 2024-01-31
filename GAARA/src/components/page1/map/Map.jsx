@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion'; 
 import "./map.scss";
 import FormOne from "./formOne/formOne";
-import map from "/assets/map.png";
+import map from "/assets/map.webp";
 import Arrow from '/assets/whiteArrow.svg';
 
 function Map() {
@@ -55,7 +55,7 @@ function Map() {
         <p>
           <h2>
             <span>We Cultivate The Change.</span>
-            <span className="spn">Digital Loans Connect Farmers to Carbon Market <br />  Profits <br /></span>
+            <span className="spn">Digital Loans  <br />  Connect Farmers to Carbon Market Profits <br /></span>
             <br />  <br />
             <span className='pargraph'>
               Join GAARA’s forces to revolutionize the agricultural forestry for African smallholder farmers. Our digital tree loan program doesn't just boost harvest volumes it connects farmers to the burgeoning carbon market.

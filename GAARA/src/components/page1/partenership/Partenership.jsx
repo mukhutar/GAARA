@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Partnership.scss"
-import  bBClogo from '/assets/BBC-logo.png';
-import download from "/assets/download.png";
-import dw from "/assets/DW.png";
-import forbs from "/assets/forbs.png";
-import newTimes from "/assets/newTimes.png";
+import  bBClogo from '/assets/BBC-logo.webp';
+import download from "/assets/download.webp";
+import dw from "/assets/DW.webp";
+import forbs from "/assets/forbs.webp";
+import newTimes from "/assets/newTimes.webp";
 
 function Partenership() {
   return (

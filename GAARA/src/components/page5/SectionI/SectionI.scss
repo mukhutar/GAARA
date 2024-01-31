@@ -7,6 +7,7 @@
     flex-shrink: 0;
     background-image: url("/pg5bg.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 
     @include mobile{
@@ -30,7 +31,6 @@
                 margin-top:20%;
 
                 @include mobile{
-                    width: 170px;
                     position: relative;
                     left: 14em;
                 }
@@ -177,7 +177,7 @@
         height: 40vh;
         margin-bottom: 260px;
         position: relative;
-        top: 12em;
+        top: 14em;
 
         @include mobile{
             position: relative;
@@ -198,8 +198,11 @@
     }
 
     .page5texts{
-        margin-top: 13%;
-        margin-left: 10%;
+        margin-top: 17%;
+        position: relative;
+        top: 2em;
+        margin-left: 12%;
+       
 
         // @include tablet{
         //     margin: auto;
@@ -217,9 +220,8 @@
             font-style: normal;
             font-weight: 900;
             line-height: normal;
-            width: 552px;
-            height: 215px;
             flex-shrink: 0;
+            text-align: start;
 
             @include Laptop{
                 font-size: 40px;
@@ -231,6 +233,8 @@
                 width: 100%;
                 margin-top: 120px;
                 text-align: center;
+                position: relative;
+                bottom: 2em;
             }
         }
 
@@ -245,7 +249,7 @@
             font-weight: 400;
             line-height: normal;
             margin-right: 10%;
-            width: 85%;
+            width: 75%;
 
            
 

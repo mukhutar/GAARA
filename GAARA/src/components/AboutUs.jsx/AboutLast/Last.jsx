@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Last.scss"
-import otherOne from"/assets/otherOne.png"
+import otherOne from"/assets/otherOne.webp"
 
 function Last() {
   return (

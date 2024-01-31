@@ -1,67 +1,5 @@
-.rotating-words-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    position: relative;
-    max-width: 100%; 
-    max-height: 100vh;
-    overflow: hidden; 
-  }
-  
-  .rotating-word {
-  
-    animation: rotateWords 4s ease-in-out infinite;
-    position: relative;
-    max-width: 360px; 
-    max-height: 100vh;
-    overflow: hidden; 
-    right:4.7em;
-    bottom: 3em;
-    color: #0E5205;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 275;
-    line-height: normal;
-  }
-  
-  @keyframes rotateWords {
-    0%, 100% {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-  
-    10%, 90% {
-      opacity: 1;
-      transform: translateY(30px);
-      
-    }
-  
-    100% {
-      opacity: 0;
-      transform: translatY(100px);
-      transition-duration: 12s;
-    }
-  }
 
-  .img{
-    position: relative;
-    right: 15em;
-    
-  }
 
-  .h1{
-    position: relative;
-    bottom: 10em;
-    color: #0E5205;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    z-index: 5;
-  }
   
   .plants{
     display: flex;
@@ -79,10 +17,14 @@
   }
 
   .plant_img > img{
-    object-fit: cover;
-    width: 80px;
-    height: 78px;
-    flex-shrink: 0;
+
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+ 
   }
 
   .plant_img > h1{
@@ -90,9 +32,9 @@
 
     text-align: center;
      font-family: 'Noto Sans JP', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
   }
 

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';import'./footer.scss';
 import { Link } from 'react-router-dom';
 import FormOne from "./formOne/formOne";
-import footerEnv from "/assets/Footer.png";
+import footerEnv from "/assets/Footer.webp";
 import tweeter from "/assets/tVector.svg";
 import insta from "/assets/iVector.svg";
 import facebook from "/assets/fVector.svg";
 import linkedin from "/assets/inVector.svg";
-import garalog from "/assets/garalog.png";
+import garalog from "/assets/garalog.webp";
 
 function Footer() {
 

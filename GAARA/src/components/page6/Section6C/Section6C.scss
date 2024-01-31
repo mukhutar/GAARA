@@ -1,7 +1,6 @@
 @import "../../../App.scss";
 .Section6C{
     width: 100%;
-    margin-bottom: -100%;
     margin-top: 20px;
 
 
@@ -33,21 +32,14 @@
 
         }
     }
-    .svg{
-        object-fit: cover;
-        z-index: 3;
-        opacity: 999;
-
-        @include mobile{
-            background-position: center;
-            width: 100%;
-            // height: 100vh;
-        }
-    }
+   
     .Section6Sides{
         display: flex;
-        margin-top: -80%;
-        margin-left: 10%;
+        flex-direction: column;
+        
+        // margin-top: -80%;
+        // margin-left: 10%;
+    
 
         // @include tablet{
         //     display: flex;
@@ -61,7 +53,7 @@
             display: flex;
             flex-direction: column;
             margin: auto;
-            margin-top: -230%;
+            // margin-top: -230%;
 
            
         }
@@ -72,6 +64,8 @@
         }
 
         .Side{
+            margin: auto;
+            
             @include mobile{
                 display: flex;
                 flex-direction: column;
@@ -79,152 +73,14 @@
                 margin: auto;
 
             }
-            .img_container{
-                
-
-                .img1{
-                    width: 340px;
-                    height: 220px;
-                    flex-shrink: 0;
-                    border-radius: 25px 200px;
-                    position: relative;
-                    bottom: 28.5em;
-                    left: 10em;
-
-                    @include mobile{
-                        display: none;
-                    }
-                }
-
-                .border1{
-                    width: 419px;
-                    height: 317px;
-                    flex-shrink: 0;
-                    border-radius: 200px 25px;
-                    border: 2px solid #fff;
-                    position: relative;
-                    bottom: 15em;
-                    left: 10em;
-                    z-index: 2;
-                    @include mobile{
-                        display: none;
-                    }
-                }
-
-                .img2{
-                    width: 323px;
-                    height: 284px;
-                    flex-shrink: 0;
-                    border-radius: 200px 25px;
-                    position: relative;
-                    bottom: 30em;
-                    left: 7em;
-                    z-index: 2;
-
-                    @include mobile{
-                        display: none;
-                    }
-                
-                }
-
-                .border2{
-                    width: 277.296px;
-                    height: 209.792px;
-                    transform: rotate(-85.365deg);
-                    flex-shrink: 0;
-                    border-radius: 100px 25px;
-                    border: 2px solid #fff;
-                    position: relative;
-                    bottom: 42em;
-                    left: 28em;
-                    z-index: 2;
-
-                    @include mobile{
-                        display: none;
-                    }
-                }
-
-                .img3{
-                    width: 323px;
-                    height: 244px;
-                    flex-shrink: 0;
-                    border-radius: 25px 200px;
-                    position: relative;
-                    bottom: 22em;
-                    right: 2em;
-
-                    @include mobile{
-                        display: none;
-                    }
-                }
-
-                .border3{
-                    width: 419px;
-                    height: 317px;
-                    flex-shrink: 0; 
-                    border-radius: 200px 25px;
-                    border: 2px solid #fff;
-                    position: relative;
-                    top: 8em;
-                    z-index: 2;
-
-                    @include mobile{
-                        display: none;
-                    }
-                }
-
-                .img4{
-                    width: 313px;
-                    height: 314px;
-                    flex-shrink: 0;
-                    border-radius: 200px 25px;
-                    position: relative;
-                    right: 4em;
-                    bottom: 43em;
-
-                    @include mobile{
-                        display: none;
-                    }
-                }
-
-                .border4{
-                    width: 419px;
-                    height: 317px;
-                    flex-shrink: 0;
-                    border-radius: 200px 25px;
-                    border: 2px solid #fff;
-                    position: relative;
-                    right: 22em;
-                    bottom: 14em;
-                    z-index: 2;
-
-                    @include mobile{
-                        display: none;
-                    }
-                }
-
-                .borderN{
-                    width: 419px;
-                    height: 317px;
-                    transform: rotate(67.299deg);
-                    flex-shrink: 0;
-                    border-radius: 200px 25px;
-                    border: 2px solid #fff;
-                    position: relative;
-                    bottom: 41em;
-                    z-index: 2;
-
-                    @include mobile{
-                        display: none;
-                    }
-                }
-            }
+        //  continue
 
             .section_text1{
                 text-align: start;
                 position: relative;
-                bottom: 25em;
-                left: 1em;
+                margin:20px ;
+                // bottom: 25em;
+                right: 10em;
                 z-index: 2;
 
                
@@ -233,7 +89,7 @@
                     right: 0;
                     padding: 10px;
                     border:1px solid #0e52059f;
-                    width: 90%;
+                    // width: 90%;
                     margin: auto;
                     border-radius: 4px;
                    
@@ -249,6 +105,7 @@
                     font-weight: 900;
                     line-height: normal;
                     text-transform: uppercase;
+                    margin-bottom: 10px;
                 }
                 p{
                     color: #0E5205;
@@ -257,14 +114,21 @@
                     font-size: 15px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 125%;
+                    line-height: 22px;
+
+                    img{
+                        width: 7%;
+                        position: relative;
+                        top: 0.4em;
+                    }
                 }
             }
 
             .section_text2{
                 position: relative;
-                bottom: 20em;
-                right: 2em;
+                // bottom: 20em;
+                right: 18em;
+                top: 3em;
                 z-index: 2;
 
               
@@ -275,7 +139,7 @@
                     border-radius: 4px;
                     position: relative;
                     right: 0;
-                    bottom: 27em;
+                    // bottom: 27em;
                     padding: 10px;
                     width: 90%;
                     margin: auto;
@@ -290,6 +154,7 @@
                     font-weight: 900;
                     line-height: normal;
                     text-transform: uppercase;
+                    margin-bottom: 10px;
 
                 }
 
@@ -300,15 +165,21 @@
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 125%;
+                    line-height: 22px;
+
+                    img{
+                        width: 7%;
+                        position: relative;
+                        top: 0.4em;
+                    }
                 }
 
             }
 
             .section_text3{
                 position: relative;
-                bottom: 8em;
-                left: 8em;
+                // bottom: 8em;
+                left: 10em;
 
                 @include mobile{
                     background: #0e52057c;
@@ -316,7 +187,7 @@
                     border-radius: 4px;
                     position: relative;
                     left: 0;
-                    bottom: 12em;
+                    // bottom: 12em;
                     padding: 10px;
                     width: 90%;
                     margin: auto;
@@ -333,6 +204,7 @@
                     font-weight: 900;
                     line-height: normal;
                     text-transform: uppercase;
+                    margin-bottom: 10x;
 
                 }
 
@@ -343,14 +215,20 @@
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 125%;
+                    line-height: 22px;
+                    img{
+                        width: 7%;
+                        position: relative;
+                        top: 0.4em;
+                    }
                 }
             }
 
             .section_text4{
                 position: relative;
-                bottom:54em;
-                left: 10em;
+                // bottom:54em;
+                left: 4em;
+                top: 8em;
 
                 // @include tablet{
                 //     bottom: 50em;
@@ -359,7 +237,7 @@
                 @include mobile{
                     position: relative;
                     left: 0;
-                    bottom: 50em;
+                    // bottom: 50em;
                     padding: 10px;
                     border:1px solid #0e52059f;
                     width: 90%;
@@ -379,6 +257,7 @@
                     font-weight: 900;
                     line-height: normal;
                     text-transform: uppercase;
+                    margin-bottom: 10px;
 
                 }
 
@@ -389,7 +268,14 @@
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 125%;
+                    line-height: 22px;
+                    
+
+                    img{
+                        width: 7%;
+                        position: relative;
+                        top: 0.4em;
+                    }
                 }
 
             }

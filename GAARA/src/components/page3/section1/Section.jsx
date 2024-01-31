@@ -1,7 +1,7 @@
 import React from 'react'
-import icon from '/assets/GaaraLogo.png'
+import icon from '/assets/GaaraLogo.webp'
 import Arrow from '/assets/WhiteArrow.svg'
-import bottom from '/assets/Bottom.png'
+import bottom from '/assets/Bottom.webp'
 import DropDown from "/assets/greenDrop.svg";
 import { Link } from 'react-router-dom';
 import "./section1.scss";

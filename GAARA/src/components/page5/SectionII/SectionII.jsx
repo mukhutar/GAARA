@@ -1,8 +1,8 @@
 import React from 'react'
 import "./SectionII.scss";
 import leaftree from "/assets/leaftree.png";
-import imgNew from "/assets/imgNew1.png";
-import imgNew2 from "/assets/imgNew2.png";
+import imgNew from "/assets/imgNew1.webp";
+import imgNew2 from "/assets/imgNew2.webp";
 function SectionII() {
   return (
     <section className='Page5II'>

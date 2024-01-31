@@ -1,19 +1,17 @@
 import React from 'react'
 import "./scrolly.scss"
-import leaf from "/assets/leaf.png"
-import leafright from "/assets/leafright.png"
-import leaftree from "/assets/leaftree.png"
-import env1 from "/assets/env1.png"
-import env2 from "/assets/env2.png"
+// import leaf from "/assets/leaf.webp"
+import leafright from "/assets/leafright.webp"
+import leaftree from "/assets/leaftree.webp"
+import env1 from "/assets/env1.webp"
+import env2 from "/assets/env2.webp"
 
 function Scrolly() {
   return (
     <section className='scrolly_section'>
       <div className='items'>
 
-        <div className="img_container"> 
-        
-         
+        <div className="img_container">   
         </div>
 
         <img className='item_img' src={env1} alt="" />
@@ -27,8 +25,6 @@ function Scrolly() {
         </div>   
         
                <img className='item_img' src={env2} alt="" />
-
-
 
       </div>
 

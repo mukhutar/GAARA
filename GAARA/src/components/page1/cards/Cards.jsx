@@ -1,5 +1,5 @@
 import React from 'react'
-import personImg from '/assets/person.png'
+import personImg from '/assets/person.webp'
 import "./card.scss"
 import { BsQuote} from "react-icons/bs";
 

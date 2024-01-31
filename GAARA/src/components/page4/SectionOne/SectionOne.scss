@@ -4,8 +4,9 @@
 
      background-image: url("/assets/page4bg.png");
      object-fit: cover;
-     background-size: contain;
+     background-size: cover;
      background-position: center;
+     background-repeat: no-repeat;
      height: 100vh;
 
      @include mobile{
@@ -28,9 +29,9 @@
                 margin-top:20%;
 
                 @include mobile{
-                    width: 170px;
+                   
                     position: relative;
-                    left: 12em;
+                    left: 14em;
                 }
             }
 

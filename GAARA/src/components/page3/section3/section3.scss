@@ -98,7 +98,10 @@
             border-radius: 40px;
             border: 3px solid #FFF;
             background: url("/env11.png");
-            margin-left: 10%;
+            // margin-left: 10%;
+            background-position: center;
+            
+            
 
             @include mobile{
                 display: none;
@@ -142,6 +145,7 @@
             border-radius: 40px;
             border: 3px solid #FFF;
             background: url("/gsrr.png");
+            background-position: center;
             object-fit: cover;
             @include mobile{
                 display: none;
@@ -164,6 +168,7 @@
             border-radius: 40px;
             border: 3px solid #FFF;
             background: url("/env22.png");
+            background-position: center;
             object-fit: cover;
             @include mobile{
                 display: none;

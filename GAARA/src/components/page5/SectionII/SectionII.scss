@@ -40,13 +40,15 @@
       
         .Rimage{
             position: relative;
-            bottom: 12em;
+            bottom: 11.5em;
+            left: 4em;
             object-fit: cover;
 
            @include mobile{
             // margin: auto;
             position: relative;
             bottom: 4em;
+            left: 0;
            }
 
 
@@ -57,19 +59,20 @@
             position: relative;
             bottom: 6em;
             object-fit: cover;
+            left: 1em;
 
             @include mobile{
             margin: auto;
             bottom: 0;
             width: 350px;
-            height: 220px;
+            // height: 220px;
           
            }
         }
 
         .textcontainer {
             position: relative;
-            bottom: 3em;
+            bottom: 5em;
 
             @include mobile{
                 margin: auto;
@@ -94,6 +97,7 @@
                     font-size: 18px;
                     text-align: start;
                     width: 100%;
+                    bottom: 0;
                     
                 }
             }
@@ -104,11 +108,12 @@
                 font-size: 15px;
                 font-style: normal;
                 font-weight: 300;
-                line-height: 125%;
+                line-height: 23px;
                 width: 433px;
                 height: 202px;
                 flex-shrink: 0;
                 margin: 20px;
+                
 
               
 
@@ -121,11 +126,12 @@
                 li{
                     color: #0E5205;
 
-                    font-family: Inter;
+                    font-family: Inter ,sans-serif;
                     font-size: 20px;
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: 500;
                     line-height: 125%;
+                    text-align: justify;
 
                     @include mobile {
                         margin: 2px;
@@ -163,16 +169,18 @@
             }
 
             p{
+                
                 color: #0E5205;
                 font-family: Inter , sans-serif;
                 font-size: 15px;
                 font-style: normal;
                 font-weight: 300;
-                line-height: 125%;
+                line-height: 23px;
                 width: 433px;
                 height: 202px;
                 flex-shrink: 0;
                 margin: 20px;
+                
 
               
 
@@ -185,11 +193,12 @@
                 li{
                     color: #0E5205;
 
-                    font-family: Inter;
+                    font-family: Inter ,sans-serif;
                     font-size: 20px;
                     font-style: normal;
-                    font-weight: 700;
-                    line-height: 125%;
+                    font-weight: 500;
+                    line-height: 23px;
+                    text-align: justify;
 
                     @include mobile {
                         margin: 2px;

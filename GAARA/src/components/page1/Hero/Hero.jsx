@@ -1,11 +1,11 @@
 import React from 'react'
 import './hero.scss';
-import icon from '/assets/GaaraGreen.png'
+import icon from '/assets/GaaraGreen.webp'
 import Arrow from '/assets/Arrow.svg'
-import parIcon1 from '/assets/partn1.png';
-import parIcon2 from '/assets/partn2.png';
-import parIcon3 from '/assets/partner3.png';
-import parIcon4 from '/assets/partn4.png';
+import parIcon1 from '/assets/partn1.webp';
+import parIcon2 from '/assets/partn2.webp';
+import parIcon3 from '/assets/partner3.webp';
+import parIcon4 from '/assets/partn4.webp';
 import DropDown from "/assets/DropIcon.svg";
 import { Link } from 'react-router-dom';
 import {motion} from "framer-motion"

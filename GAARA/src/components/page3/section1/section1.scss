@@ -37,9 +37,7 @@
                 
                 @include mobile{
                     position: relative;
-                    margin: auto;
-                    left: 13em;
-                    width: 170px;
+                    left: 14em;
                 }
 
                 // @include tablet{
@@ -174,6 +172,7 @@
         }  
         
         .sectionBody{
+         
           
             @include mobile{
                 display: flex;
@@ -247,7 +246,8 @@
 
             img{
                 position: relative;
-                top:8em;
+                top:12em;
+          
 
                 @include iphone12{
                     top: 12em;
@@ -265,6 +265,7 @@
                     background-size: cover;
                     object-fit: contain;
                     max-width: 100%;
+                    top: 5.4em;
                 }
             }
             

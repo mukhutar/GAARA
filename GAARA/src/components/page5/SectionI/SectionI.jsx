@@ -1,10 +1,10 @@
 import React from 'react'
-import icon from '/assets/GaaraLogo.png'
+import icon from '/assets/GaaraLogo.webp'
 import Arrow from '/assets/WhiteArrow.svg'
 import DropDown from "/assets/greenDrop.svg";
 import { Link } from 'react-router-dom';
 import "./SectionI.scss"
-import bg from "/assets/pg5Bbg.png";
+import bg from "/assets/pg5Bbg.webp";
 
 import {motion} from "framer-motion"
 
@@ -84,7 +84,8 @@ function SectionI() {
         </div> 
 
         <div className="page5texts">
-            <motion.h3 variants={AnimeHead } initial="hidden" animate="show" className='page5H'>Virtual Forest & Impact Analytics</motion.h3>
+            <motion.h3 variants={AnimeHead } initial="hidden" animate="show" className='page5H'>Virtual Forest & <br /> Impact Analytics</motion.h3> <br /> <br />
+
 
             <p className='page5P'>Latest digital technology  to revolutionize how we interact with and understand our forests. Our innovative platform is designed for forest owners, environmental agencies, and nature enthusiasts who are committed to preserving and enhancing the health of forest.</p>
         </div>

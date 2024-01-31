@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Section6A.scss";
-import footer5 from "/assets/FooterWhite.png";
-import icon from '/assets/GaaraGreen.png'
+import footer5 from "/assets/FooterWhite.webp";
+import icon from '/assets/GaaraGreen.webp'
 import Arrow from '/assets/Arrow.svg'
 import DropDown from "/assets/DropIcon.svg";
 import { Link } from 'react-router-dom';
