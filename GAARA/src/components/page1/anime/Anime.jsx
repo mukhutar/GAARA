@@ -1,6 +1,6 @@
 import './Anime.scss';
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import ScrollTrigger from 'react-scroll-trigger';
 import CountUp from 'react-countup';
 import icon1 from "/assets/tree1.svg"
@@ -8,6 +8,7 @@ import icon2 from "/assets/tree2.svg"
 import icon3 from "/assets/tree3.svg"
 import icon4 from "/assets/tree4.svg"
 import icon5 from "/assets/tree5.svg"
+import NewScreen from "/assets/NewScreen.webp"
 
 function Anime() {
 
@@ -22,6 +23,10 @@ function Anime() {
    <section className='hell'>
 
 {/* new section in this place */}
+
+<div className="newSection">
+   <img src={NewScreen} alt="" />
+</div>
 
 
      <ScrollTrigger onEnter= {() => setCountOn(true)} onExit ={() => setCountOn(false)}

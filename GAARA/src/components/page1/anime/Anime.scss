@@ -6,8 +6,11 @@
     // justify-content: space-around;
     align-items: center;
     justify-items: center;
-    margin-left: 18%;
+    margin-left: 20%;
     gap: 120px;
+    // margin-top: 10%;
+    position: relative;
+    top: 4em;
   }
 
   .plants > .plant_img{
@@ -38,6 +41,11 @@
     line-height: normal;
   }
 
+  .newSection{
+    display: flex;
+    justify-content: center;
+  }
+
   h1 > .countUp{
     color: #0E5205;
     text-align: center;
@@ -48,68 +56,12 @@
     line-height: normal;
   }
 
-  .rotating_paragraph{
-    font-size: 20px;
-  }
-
+ 
   @media screen and (max-width: 768px) {
 
-    .rotating-words-container{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      height: 100vh;
-    }
+  
 
-    .img{
-      display: flex;
-      justify-items: center;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      position: relative;
-      right: 1em;
-      display: none;
-      
-    }
     
-    .img > .rotate_Img{
-
-      width: 320px;
-      height: 320px;
-      object-fit: contain;
-      position: relative;
-      bottom: 2em;
-      right: 9em;
-    }
-
-    .rotating-word{
-      margin: auto;
-      z-index: 999;
-      font-size: 28px;
-      font-weight: 400;
-      max-width: 90%; 
-      text-align: center;
-      position: relative;
-      left: 1px;
-      bottom: 1em;
-    }
-
-    .rotating-word > h1{
-     font-size: 30px;
-     font-weight: 600;
-     position: relative;
-     top: 2em;
-     text-decoration: underline;
-    }
-    .anime_img > img{
-      height: 52vh;
-      background-position: center;
-      object-fit: cover;
-      width: 100%;
-    }
 
     .plants{
       display: grid;
@@ -146,24 +98,18 @@
     .h1{
       margin-bottom: 120%;  
     }
+
+    .newSection > img{
+      width: 100%;
+      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   @media screen and (max-width:414px){
 
-    .rotating-words-container{
-      margin-bottom: 1em;
-    }
-
-    .rotating-word{
-      margin-bottom: -220px;
-    }
-
-   .anime_img > img{
-    position: relative;
-    top: 2em;
-    
-
-   }
+  
   }
 
   // @media screen  and (max-width:1024px){

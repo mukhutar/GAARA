@@ -73,7 +73,7 @@ export default CardA
 
 // import React, { useEffect, useRef } from 'react';
 // import lottie from 'lottie-web';
-// import animationData from './data.json';
+// import animationData from './Africasimp.json';
 //  import './card.scss';
 
 

@@ -27,7 +27,7 @@
     .card{
         border-radius: 60px;
            width: 30%;
-           height: 60vh;
+           height: 60%;
             border-top: 3px solid #0E5205;
             border-bottom: 3px solid #0E5205;
             display: flex;
@@ -140,6 +140,11 @@
 
         }
     }
+}
+
+.africa{
+    position: relative;
+    bottom: 3em;
 }
 
 @media screen and (max-width:414px){
