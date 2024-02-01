@@ -3,7 +3,7 @@ import './Video.scss';
 import {DefaultPlayer as Video} from 'react-html5video'
 import 'react-html5video/dist/styles.css';
 import Introvideo from "/assets/introo.mp4";
-import thumb from '/assets/thumb.png';
+import thumb from '/assets/thumb.webp';
 
 function Videosction() {
   return (
