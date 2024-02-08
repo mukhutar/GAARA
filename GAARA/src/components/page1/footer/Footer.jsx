@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';import'./footer.scss';
 import { Link } from 'react-router-dom';
 import FormOne from "./formOne/formOne";
@@ -10,22 +10,49 @@ import linkedin from "/assets/inVector.svg";
 import garalog from "/assets/garalog.webp";
 
 function Footer() {
+  const [showPopup, setShowPopup] = useState(false);
+   const [blurBackground, setBlurBackground] = useState(false);
 
+ 
+   useEffect(() => {
+    const handleKeyDown = (e) => {
+      // here i am  Preventing  scrolling using arrow keys when popup is open
+      if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        e.preventDefault();
+      }
+    };
 
-    const [showPopup, setShowPopup] = useState(false);
-
-    const openPopup = (e) => {
-      e.preventDefault()
-      
-      setShowPopup(true);
+    //  i am adding  event listener for keydown when popup is open to prevent scrolling using arrow keys
+    if (showPopup) {
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = 'hidden'; 
+    } else {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
     }
-  
-    const closePopup = () => {
-      setShowPopup(false);
-    }
+
+    // Cleanup function
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
+    };
+  }, [showPopup]);
+
+  const openPopup = (e) => {
+    e.preventDefault()
+    
+    setShowPopup(true);
+    setBlurBackground(true);
+  }
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setBlurBackground(false);
+  }
+
   
   return (
-    <section className='Footer'>
+    <section className= 'Footer'>
            {/* and this animation tooo */}
       <AnimatePresence>
         {showPopup && (
@@ -45,12 +72,12 @@ function Footer() {
             >
               <button className="close-btn" onClick={closePopup}>X</button>
               <FormOne />
-            </motion.div>
+            </motion.div> 
           </motion.div>
         )}
       </AnimatePresence>
         <img src={footerEnv} alt="Env img" />
-        <div className="main_footer">
+        <div className= {`main_footer ${blurBackground ? 'blur' : ''}`} >
             <div className="footer_img">
                 <img className='footer_logo' src={garalog} alt="" />
             </div>

@@ -11,15 +11,43 @@ import WhiteArrw from '/assets/ArrowWhite.svg';
 function SectionIII() {
 
   const [showPopup, setShowPopup] = useState(false);
+  const [blurBackground, setBlurBackground] = useState(false);
+
+ 
+   useEffect(() => {
+    const handleKeyDown = (e) => {
+      // here i am  Preventing  scrolling using arrow keys when popup is open
+      if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        e.preventDefault();
+      }
+    };
+
+    //  i am adding  event listener for keydown when popup is open to prevent scrolling using arrow keys
+    if (showPopup) {
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = 'hidden'; 
+    } else {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
+    }
+
+    // Cleanup function
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
+    };
+  }, [showPopup]);
 
   const openPopup = (e) => {
     e.preventDefault()
     
     setShowPopup(true);
+    setBlurBackground(true);
   }
 
   const closePopup = () => {
     setShowPopup(false);
+    setBlurBackground(false);
   }
 
     const controls = useAnimation();
@@ -82,7 +110,7 @@ function SectionIII() {
         )}
       </AnimatePresence>
 
-        <motion.div className="Reasons">
+        <motion.div className={`Reasons ${ blurBackground ? 'blur' : ''}`}>
             <motion.div className="Rone">
                 <motion.section 
                 
@@ -97,7 +125,7 @@ function SectionIII() {
                 >
                     <img className='Ricon' src={iconNew1} alt="cloud" />
                     <h3 className='Rheading'>Innovative Technology</h3>
-                    <li className='Rlist'>Our platform uses state-of-the-art technology to provide the most accurate and detailed insights into forest ecosystems.</li>
+                    <li className='Rlist'> <span className="textlist">Our platform uses state-of-the-art technology to provide the</span> most accurate and detailed insights into forest ecosystems.</li>
                 </motion.section>
 
                 <motion.section 
@@ -113,7 +141,7 @@ function SectionIII() {
                 >
                     <img className='Riconn' src={IconNew3} alt="cloud"/>
                     <h3 className='Rheading'>Commitment to Sustainability</h3>
-                    <li className='Rlist'>Our mission is to aid in the preservation and health of forests, contributing to global environmental sustainability efforts.</li>
+                    <li className='Rlist'><span className="textlist">Our mission is to aid in the preservation and health of forests,</span> contributing to global environmental sustainability efforts.</li>
                 </motion.section>
 
             </motion.div>
@@ -134,7 +162,7 @@ function SectionIII() {
                        >
                             <img className='Ricon' src={IconNew2} alt="cloud" />
                             <h3 className='Rheading'>Customization</h3>
-                            <li className='Rlist'>We understand that each forest is unique. Our services are tailored to meet the specific needs and goals of your forest.</li>
+                            <li className='Rlist'><span className="textlist">We understand that each forest is unique. Our services are</span> tailored to meet the specific needs and goals of your forest.</li>
                         </motion.section>
 
                         <motion.section 
@@ -150,7 +178,7 @@ function SectionIII() {
                         >
                             <img className='Ricon' src={IconNew4} alt="cloud"/>
                             <h3 className='Rheading'>Expert Support</h3>
-                            <li className='Rlist'>Our team of experts is always available to provide guidance and support, ensuring you make the most of our platform.</li>
+                            <li className='Rlist'><span className="textlist">Our team of experts is always available to provide guidance</span> and support, ensuring you make the most of our platform.</li>
                         </motion.section>
 
 

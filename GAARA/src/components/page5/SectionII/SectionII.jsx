@@ -14,9 +14,9 @@ function SectionII() {
           <div className="textcontainer">
             <h3> Impact API for Forest Owners</h3>
            <p>
-           <li> Seamless Integration:</li> Effortlessly connect our Impact API with your digitals for easy data management.
-           <li> Real-Time Data Access:</li> Instantly monitor diverse forest metrics like tree health.
-            <li>Customizable Metrics:</li> Tailor your tracking to meet specific forest management goals.
+           <li> <span className='li_text'>Seamless Integration</span></li> Effortlessly connect our Impact API with your digitals for easy data management.
+           <li> <span className='li_text'>Real-Time Data Access</span></li> Instantly monitor diverse forest metrics like tree health.
+          <li><span className='li_text'>Customizable Metrics</span></li> Tailor your tracking to meet specific forest management goals.
 
            </p>
 
@@ -35,8 +35,8 @@ function SectionII() {
               <div className="textcontainerr">
                   <h3>Virtual Forest Experience</h3>
                     <p>
-                       <li>Immersive Visualization:</li> Experience your forest virtually with detailed satellite imagery.
-                        <li>Real-Time Monitoring:</li> Keep track of forest health and environmental changes with instant data updates."
+                       <li><span className="li_text">Immersive Visualization</span></li> Experience your forest virtually with detailed satellite imagery.
+                        <li><span className="li_text">Real-Time Monitoring</span></li> Keep track of forest health and environmental changes with instant data updates."
 
                     </p>
 

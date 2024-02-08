@@ -113,6 +113,7 @@
                 height: 202px;
                 flex-shrink: 0;
                 margin: 20px;
+
                 
 
               
@@ -132,6 +133,11 @@
                     font-weight: 500;
                     line-height: 125%;
                     text-align: justify;
+
+                    .li_text{
+                        position: relative;
+                        right: 0.8em;
+                    }
 
                     @include mobile {
                         margin: 2px;
@@ -199,6 +205,12 @@
                     font-weight: 500;
                     line-height: 23px;
                     text-align: justify;
+
+                    
+                .li_text{
+                    position: relative;
+                    right: 0.8em;
+                }
 
                     @include mobile {
                         margin: 2px;

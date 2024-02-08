@@ -39,30 +39,67 @@ function FormOne() {
       <div className="form_elements">
         <div className="form_content">
           <form ref={form} onSubmit={sendEmail} >
-            <label htmlFor="firstName">First Name</label><br />
-            <input type="text" name="firstName" placeholder="Enter your first name"required /><br />
 
-            <label htmlFor="lastName">Last Name</label><br />
-            <input type="text" name="lastName" placeholder="Enter your last name"  required /><br />
+            <div className="input_flds">
+            <div className="input_container">
+              <div className="input">
+                  <label htmlFor="firstName">First Name</label><br /> 
+                  <input type="text" name="firstName" placeholder="Enter your first name"required /><br />
 
-            <label htmlFor="email">Work Email</label><br />
-            <input type="email" name="email" placeholder="Enter your email"  required /><br />
+                </div>
+              
+              <div className="input">
+                <label htmlFor="lastName">Last Name</label><br />
+                  <input type="text" name="lastName" placeholder="Enter your last name"  required /><br />
 
-            <label htmlFor="message">Message</label><br />
-            <textarea name="message" placeholder="Enter your message"  required cols="30" rows="10"></textarea><br />
+              </div>
+           </div>
+            
+           
+           <div className="input_container">
+             
+              
+              <div className="input">
+                <label htmlFor="message">Message</label><br />
+                  <textarea name="message" placeholder="Enter your message"  required cols="20" rows="5"></textarea><br />
 
-            <label htmlFor="organization">Organization</label><br />
-            <input type="text" name="organization" placeholder="Enter your organization"  required /><br />
+              </div>
 
-            <label htmlFor="position">Position</label><br />
-            <input type="text" name="position" placeholder="Enter your position"  required /><br />
+               <div className="input">
+                  <label htmlFor="email">Work Email</label><br />
+                  <input type="email" name="email" placeholder="Enter your email"  required /><br />
 
+                </div>
+           
+           </div>
+
+           <div className="input_container">
+              <div className="input">
+                  <label htmlFor="organization">Organization</label><br />
+                    <input type="text" name="organization" placeholder="Enter your organization"  required /><br />
+
+              </div>
+              
+              <div className="input">
+                <label htmlFor="position">Position</label><br />
+                  <input type="text" name="position" placeholder="Enter your position"  required /><br />
+
+              </div>
+
+           </div>
+
+
+
+           
+            </div> <br />
+           
             <button type='submit'>Go green</button>
           </form>
-        </div>
-        <div className="form_img">
+          
+        </div> 
+        {/* <div className="form_img">
           <img src={leafIcon} alt="Leaf Icon" />
-        </div>
+        </div> */}
       </div>
 
       {message && (

@@ -109,6 +109,11 @@
                     margin: 5px;
                     flex-shrink: 0;
 
+                    .textlist{
+                        position: relative;
+                        right: 074em;
+                    }
+
                   
                     @include mobile{
                         width: 310px;
@@ -134,9 +139,9 @@
     .horizontalline{
         background-color: #0E5205;
         width: 1px;
-        height: 80vh;
+        height: 79vh;
         position: relative;
-        bottom: 32em;
+        bottom: 31em;
         left: 73.8em;
 
         @include Laptop{

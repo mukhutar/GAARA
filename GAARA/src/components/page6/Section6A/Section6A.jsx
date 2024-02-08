@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect } from 'react';
 import "./Section6A.scss";
 import footer5 from "/assets/FooterWhite.webp";
 import icon from '/assets/GaaraGreen.webp'
@@ -27,20 +27,48 @@ const AnimeHead = {
 function Section6A() {
 
   const [showPopup, setShowPopup] = useState(false);
+    const [blurBackground, setBlurBackground] = useState(false);
+
+ 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // here i am  Preventing  scrolling using arrow keys when popup is open
+      if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        e.preventDefault();
+      }
+    };
+
+    //  i am adding  event listener for keydown when popup is open to prevent scrolling using arrow keys
+    if (showPopup) {
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = 'hidden'; 
+    } else {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
+    }
+
+    // Cleanup function
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
+    };
+  }, [showPopup]);
 
   const openPopup = (e) => {
     e.preventDefault()
     
     setShowPopup(true);
+    setBlurBackground(true);
   }
 
   const closePopup = () => {
     setShowPopup(false);
+    setBlurBackground(false);
   }
 
   return (
     <section className='Section6A'>
-      <div className='Hero_section '>
+      <div className={`Hero_section  ${ blurBackground ? 'blur' : ''}`}>
           <motion.header className='nav'>
               <Link className='listItem' to='/'>
                 <img className='Hero_logo' src={icon} alt="comapany's logo" srcset="" />

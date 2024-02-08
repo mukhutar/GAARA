@@ -84,11 +84,11 @@ useEffect(() => {
 
                     <span className="cdH">
                     Forward-Thinking
-                    </span>
+                    </span> <br />
 
-                    <li className="li">
-                    You're exploring innovative income opportunities from your existing forest.
-                    </li>
+                    <div className="li">
+                    <span className='dot'>.</span>You're exploring innovative income opportunities from your existing forest.
+                    </div>
                 </motion.div>
 
                 <motion.div className="cad"
@@ -106,9 +106,9 @@ useEffect(() => {
 
                     <span className="cdH">Visionary investor</span>
                     
-                    <li className="li">
-                    You're strategizing for future generations and building your retirement nest egg.
-                    </li>
+                    <div className="li">
+                    <span className='dot'>.</span>You're strategizing for future generations and building your retirement nest egg.
+                    </div>
                 </motion.div>
 
                 <motion.div className="cad"
@@ -126,7 +126,7 @@ useEffect(() => {
 
                     <span className="cdH">Improve Your Monthly income</span>
                     
-                    <li className="li">Aim to cut down debt and dodge market ups and downs? Opt for a steadier, more dependable income stream</li>
+                    <div className="li"><span className='dot'>.</span>Aim to cut down debt and dodge market ups and downs? Opt for a steadier, more dependable income stream</div>
                 </motion.div>
 
             </motion.div>

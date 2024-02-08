@@ -110,8 +110,7 @@
     }
 
     .sec{
-        position: relative;
-        right: 10em;
+      
 
         @include mobile{
             display: flex;

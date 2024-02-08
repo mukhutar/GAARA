@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion'; 
 import "./map.scss";
 import FormOne from "./formOne/formOne";
@@ -7,15 +7,43 @@ import Arrow from '/assets/whiteArrow.svg';
 
 function Map() {
   const [showPopup, setShowPopup] = useState(false);
+   const [blurBackground, setBlurBackground] = useState(false);
+
+ 
+   useEffect(() => {
+    const handleKeyDown = (e) => {
+      // here i am  Preventing  scrolling using arrow keys when popup is open
+      if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        e.preventDefault();
+      }
+    };
+
+    //  i am adding  event listener for keydown when popup is open to prevent scrolling using arrow keys
+    if (showPopup) {
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = 'hidden'; 
+    } else {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
+    }
+
+    // Cleanup function
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
+    };
+  }, [showPopup]);
 
   const openPopup = (e) => {
     e.preventDefault()
     
     setShowPopup(true);
+    setBlurBackground(true);
   }
 
   const closePopup = () => {
     setShowPopup(false);
+    setBlurBackground(false);
   }
 
   return (
@@ -45,7 +73,7 @@ function Map() {
       </AnimatePresence>
     
 
-    <div className="MapContaine">
+    <div className={`MapContaine ${blurBackground ? 'blur' : ''}`}>
     <div className="map">
         <h2>Partner <br /> with <br /> Us</h2>
         <img src={map} alt="african map" />
