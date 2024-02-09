@@ -15,15 +15,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>01</span>
                     </div>  
-                        <h4 className="front_text">Request Loan</h4>
+                        <h4 className="front_text"> Sign Up</h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
-                            </p>
+                            Register easily through *801*11#. Quick setup for smallholder farmers to access our services.                            </p>
                         </div>
                </div>
 
@@ -36,15 +35,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>02</span>
                     </div>  
-                        <h4 className="front_text">Agent Field visit</h4>
+                        <h4 className="front_text">Request Loan</h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
-                            </p>
+                            Apply for a tree planting loan using the *801*11#. A straightforward application process to get you started.                            </p>
                         </div>
                </div>
             </div>
@@ -56,15 +54,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>03</span>
                     </div>  
-                        <h4 className="front_text">Upload Docs</h4>
+                        <h4 className="front_text"> Agent Field Visit</h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
-                            </p>
+                            A green agent will visit your farm to assess and verify your tree planting needs, ensuring personalized support.                            </p>
                         </div>
                </div>
 
@@ -78,15 +75,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>04</span>
                     </div>  
-                        <h4 className="front_text">Prepare land </h4>
+                        <h4 className="front_text">Upload Documents </h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
-                            </p>
+                            Submit required documents digitally with our agent's help using the Eco Forest App, simplifying the paperwork process.                            </p>
                         </div>
                </div>
 
@@ -100,15 +96,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>05</span>
                     </div>  
-                        <h4 className="front_text">Plant Trees</h4>
+                        <h4 className="front_text"> Prepare Land</h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
-                            </p>
+                            Get expert advice on land preparation for tree planting, ensuring your farm is ready for a green transformation.                            </p>
                         </div>
                </div>
 
@@ -122,14 +117,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>06</span>
                     </div>  
-                        <h4 className="front_text">Digital recording</h4>
+                        <h4 className="front_text"> Plant Trees</h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
+                            We provide saplings and planting guidance. Our green agents support you in adopting the best planting techniques.
                             </p>
                         </div>
                </div>
@@ -144,14 +139,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>07</span>
                     </div>  
-                        <h4 className="front_text">Regural Update</h4>
+                        <h4 className="front_text">Digital Recording</h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
+                            Monitor your trees' growth digitally, enabling efficient farm management and progress tracking.
                             </p>
                         </div>
                </div>
@@ -166,15 +161,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>08</span>
                     </div>  
-                        <h4 className="front_text">Record Harvest</h4>
+                        <h4 className="front_text"> Update</h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
-                            </p>
+                            Use the USSD platform to keep your loan and tree growth information current, ensuring ongoing support.                            </p>
                         </div>
                </div>
 
@@ -188,14 +182,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>09</span>
                     </div>  
-                        <h4 className="front_text">Loan Payback</h4>
+                        <h4 className="front_text">Record Harvest</h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
+                            Document your harvest digitally. This data helps us tailor future support for sustained success.
                             </p>
                         </div>
                </div>
@@ -209,15 +203,14 @@ const ImgSection = () => {
                     <div className="card_number">
                             <span className='number'>10</span>
                     </div>  
-                        <h4 className="front_text">Request Loan</h4>
+                        <h4 className="front_text">Pay Back</h4>
 
                         <div className="more_details">
                             <span className="info_number">
                                 *801*11#
                             </span>
                             <p className="info_text">
-                            Get started with a simple dial! Farmers, register for your unique ID now by calling.
-                            </p>
+                            Repay your loan via mobile money, with flexible terms aligned to your harvesting cycle for ease and convenience.                            </p>
                         </div>
                </div>
             </div>

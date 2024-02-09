@@ -11,7 +11,7 @@ import garalog from "/assets/garalog.webp";
 
 function Footer() {
   const [showPopup, setShowPopup] = useState(false);
-   const [blurBackground, setBlurBackground] = useState(false);
+ 
 
  
    useEffect(() => {
@@ -42,12 +42,10 @@ function Footer() {
     e.preventDefault()
     
     setShowPopup(true);
-    setBlurBackground(true);
   }
 
   const closePopup = () => {
     setShowPopup(false);
-    setBlurBackground(false);
   }
 
   
@@ -77,9 +75,13 @@ function Footer() {
         )}
       </AnimatePresence>
         <img src={footerEnv} alt="Env img" />
-        <div className= {`main_footer ${blurBackground ? 'blur' : ''}`} >
+        <div className= 'main_footer'>
             <div className="footer_img">
-                <img className='footer_logo' src={garalog} alt="" />
+             
+                <Link className="footer_ancho" to="/">  
+                   <img className='footer_logo' src={garalog} alt="" />
+                
+                 </Link>
             </div>
 
             <div className="footer-links">
