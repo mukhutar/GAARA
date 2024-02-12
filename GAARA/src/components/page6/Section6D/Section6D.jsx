@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Section6D.scss";
-import fruitTree from "/assets/fruit.svg"
+import fruitTree from "/assets/las.svg"
 import whiteArrw from "/assets/ArrowWhite.svg"
 import FormTwo from "../Section6D/formTwo/formTwo"
 import {motion , AnimatePresence } from "framer-motion"

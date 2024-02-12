@@ -35,9 +35,9 @@
                     left: 14em;
                 }
 
-                // @include tablet{
-                //     left: 34em;
-                // }
+                @include tablet{
+                    left: 34em;
+                }
             }
 
             ul{
@@ -193,12 +193,12 @@
                 font-weight: 900;
                 line-height: normal;
 
-                // @include tablet{
-                //     position: relative;
-                //     top: 2em;
-                //     font-size: 120px;
+                @include tablet{
+                    position: relative;
+                    top: 2em;
+                    font-size: 120px;
 
-                // }
+                }
 
                 @include mobile{
                     text-align: center;
@@ -215,11 +215,11 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                // @include tablet{
-                //      font-size: 60px;
-                //      position: relative;
-                //      top: 12em;
-                // }
+                @include tablet{
+                     font-size: 60px;
+                     position: relative;
+                     top: 12em;
+                }
 
 
                 @include mobile{
@@ -241,6 +241,11 @@
                 margin: auto; 
             }
 
+            @include tablet{
+              left: 2.5em;
+              top: 25em;
+
+            }
 
             .word1{
                 width: 101px;
@@ -320,6 +325,8 @@
                     font-size: 30px;
                     right: 2.7em;
                  }
+
+               
             }
 
 

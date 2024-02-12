@@ -19,7 +19,8 @@ function Home() {
       <CardA/>
       <Map/>
       <Cards/>
-      <Partenership/>
+      {/* it will be added later */}
+      {/* <Partenership/> */}
       <Footer/>
     </div>
   )

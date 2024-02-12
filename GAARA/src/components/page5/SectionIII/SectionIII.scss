@@ -4,13 +4,15 @@
     height: 90vh;
     width: 100%;
 
-    // @include tablet{
-    //     margin-top: -120%;
-    //     position: relative;
-    //     bottom: 35em;
-    //     right: 1em;
+    @include tablet{
+        // margin-top: -120%;
+        position: relative;
+        bottom: 100em;
+        right: 1em;
+        margin-bottom: 130%;
 
-    // }
+
+    }
 
   
 
@@ -245,12 +247,12 @@
 
         .Rone{
 
-            // @include tablet{
-            //     display: flex;
-            //     flex-direction: column;
-            //     gap: 10px;
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
              
-            // }
+            }
 
             
             
@@ -268,6 +270,10 @@
                 box-shadow: 0px 0px 20px 1px #0e520556; 
                
 
+              }
+
+              @include tablet{
+                height: 22vh;
               }
 
                 .Rheading{
@@ -291,6 +297,10 @@
                     .textlist{
                         position: relative;
                         right: 1em;
+
+                        @include mobile{
+                            right: 0;
+                        }
                     }
                 }
 
@@ -300,6 +310,11 @@
                     border: 1px solid #0E5205;
                     padding: 18px;
                     border-radius: 50%;
+
+                    @include tablet{
+                        width: 9%;
+                        height: 55px;
+                    }
                     
                 }
                 
@@ -309,6 +324,11 @@
                     border: 1px solid #0E5205;
                     padding: 15px;
                     border-radius: 50%;
+
+                    @include tablet{
+                        width: 9%;
+                        height: 55px;
+                    }
                 }
             }
 
@@ -345,6 +365,10 @@
         @include mobile{
             position: relative;
             top: 2em;
+        }
+        @include tablet{
+            position: relative;
+            top: -2em;
         }
 
        .Wicon{

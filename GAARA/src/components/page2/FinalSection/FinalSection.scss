@@ -20,13 +20,13 @@
         margin-bottom: -1220px;
     }
 
-    // @include tablet{
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     object-fit: cover;
+    @include tablet{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
 
-    // }
+    }
 
     .FinalSectionText{
      
@@ -45,10 +45,10 @@
             bottom: 1.5em;
             left: 1em;
 
-            // @include tablet{
-            //     position: relative;
-            //     top: 1em;
-            // }
+            @include tablet{
+                position: relative;
+                top: 1em;
+            }
 
 
             @include mobile{
@@ -81,12 +81,12 @@
             top: 5em;
             right: 1.5em;
 
-            // @include tablet{
-            //     position: relative;
-            //     top: 10em;
-            //     margin-top: 180px;
-            //    text-align: start;
-            // }
+            @include tablet{
+                position: relative;
+                top: 10em;
+                margin-top: 180px;
+               text-align: start;
+            }
 
             @include mobile{
                 height: 100vh;

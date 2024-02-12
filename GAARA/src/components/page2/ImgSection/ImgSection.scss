@@ -14,6 +14,8 @@
     bottom: 14em;
     outline: none;
 
+   
+
     @include mobile{
         display: flex;
         flex-wrap: wrap;
@@ -24,6 +26,11 @@
         left: 0;
         height: auto;
     }
+
+    @include tablet{
+      margin-top: 60%;
+    }
+
     
    
     
@@ -33,14 +40,13 @@
         align-items: center;
         justify-items: center;
         gap: 120px;
-     
-
+      
         .imgCard{
             width: 89.034px;
             height: 396.779px;
             margin: 5px;
             position: relative;
-            background: url("/oldWoman.webp");
+            background: url("/press.webp");
             background-position: center;
             background-size: cover;
             object-fit: cover;
@@ -50,20 +56,20 @@
             box-shadow: 0px 7px 10px  rgba(0,0,0,0.5);
             transition: 0.5s ease-in-out;
 
-            // @include tablet{
-            //     // height: 500px;
-            //     width: 80%;
-            // }
+            @include tablet{
+                // height: 500px;
+                width: 80%;
+            }
 
             .oter{
                 background-color: #0e52058a;
                 height: 396.779px;
                 border-radius: 15px;
 
-                // @include tablet{
-                //     // height: 500px;
-                //     width: 100%;
-                // }
+                @include tablet{
+                    // height: 500px;
+                    width: 100%;
+                }
                 .card_number{
                     background-color: white;
                     border: 1px solid #0e5205a4;
@@ -77,12 +83,12 @@
                     left: 1.2em;
                     bottom: 1em;
 
-                    // @include tablet{
-                    //     position: relative;
-                    //     left: 17em;
-                    //     padding: 20px;
+                    @include tablet{
+                        position: relative;
+                        left: 17em;
+                        padding: 20px;
                         
-                    // }
+                    }
                     
                     .number{
                         color: #0E5205;
@@ -116,12 +122,12 @@
                     justify-content: center;
                     justify-items: center;
 
-                    // @include tablet{
-                    //     position: relative;
-                    //     left: 1.5em;
-                    //     top: 1.8em;
+                    @include tablet{
+                        position: relative;
+                        left: 1.5em;
+                        top: 1.8em;
                         
-                    // }
+                    }
                 }
 
 
@@ -212,10 +218,10 @@
                 margin-left: 5px;
                 z-index: 9;
 
-                // @include tablet{
-                //     position: relative;
-                //     right: 2em;
-                // }
+                @include tablet{
+                    position: relative;
+                    right: 2em;
+                }
 
                 @include mobile{
                     width: 120%;
@@ -256,11 +262,11 @@
                 border-radius: 10px;
                 overflow: hidden;
 
-                // @include tablet{
-                //     position: absolute;
-                //     bottom: 0.2em;
-                //     width: 96%;
-                // }
+                @include tablet{
+                    position: absolute;
+                    bottom: 0.2em;
+                    width: 96%;
+                }
             }
             .imgCard:hover .card_number {
                 position: relative;
@@ -270,9 +276,9 @@
                 width: 80px;
                 height: 80px;
 
-                // @include tablet{
-                //     left: 20em;
-                // }
+                @include tablet{
+                    left: 20em;
+                }
             }
             .imgCard:hover .front_text{
                 opacity: 0;
@@ -291,7 +297,7 @@
                 height: 596.779px;
                 margin: 5px;
                 position: relative;
-                background: url("/oldWoman.webp");
+                background: url("/Process.webp");
                 background-position: center;
                 background-size: cover;
                 object-fit: cover;
@@ -302,18 +308,18 @@
                 box-shadow: 0px 7px 10px  rgba(0,0,0,0.5);
                 transition: 0.5s ease-in-out;
 
-                // @include tablet{
-                //     width: 80%;
-                // }
+                @include tablet{
+                    width: 80%;
+                }
 
                 .oter{
                     background-color: #0e52058a;
                     height: 596.779px;
                     border-radius: 15px;
 
-                    // @include tablet{
-                    //     width: 100%;
-                    // }
+                    @include tablet{
+                        width: 100%;
+                    }
 
                     .card_number{
                         background-color: white;
@@ -328,12 +334,12 @@
                         left: 1.2em;
                         bottom: 1em;
 
-                        // @include tablet{
-                        //     position: relative;
-                        //     left: 17em;
-                        //     padding: 20px;
+                        @include tablet{
+                            position: relative;
+                            left: 17em;
+                            padding: 20px;
                             
-                        // }
+                        }
                         
                         .number{
                             color: #0E5205;
@@ -368,12 +374,12 @@
                         justify-items: center;
 
                         
-                    // @include tablet{
-                    //     position: relative;
-                    //     left: 1.5em;
-                    //     top: 1.8em;
+                    @include tablet{
+                        position: relative;
+                        left: 1.5em;
+                        top: 1.8em;
                         
-                    // }
+                    }
 
                         @include mobile{
                             position: relative;
@@ -455,10 +461,10 @@
                     margin-left: 5px;
                     z-index: 9;
 
-                    // @include tablet{
-                    //     position: relative;
-                    //     right: 2em;
-                    // }
+                    @include tablet{
+                        position: relative;
+                        right: 2em;
+                    }
     
                     @include mobile{
                         width: 120%;
@@ -498,11 +504,11 @@
                     border-radius: 10px;
                     overflow: hidden;
 
-                    // @include tablet{
-                    //     position: absolute;
-                    //     bottom: 0.2em;
-                    //     width: 96%;
-                    // }
+                    @include tablet{
+                        position: absolute;
+                        bottom: 0.2em;
+                        width: 96%;
+                    }
                 }
                 .imgCardA:hover .card_number {
                     position: relative;
@@ -512,9 +518,9 @@
                     width: 80px;
                     height: 80px;
 
-                    // @include tablet{
-                    //     left: 22em;
-                    // }
+                    @include tablet{
+                        left: 22em;
+                    }
                 }
                 .imgCardA:hover .front_text{
                     opacity: 0;
@@ -534,7 +540,7 @@
                 height: 496.779px;
                 margin: 5px;
                 position: relative;
-                background: url("/oldWoman.webp");
+                background: url("/press.webp");
                 background-position: center;
                 background-size: cover;
                 object-fit: cover;
@@ -544,17 +550,17 @@
                 box-shadow: 0px 7px 10px  rgba(0,0,0,0.5);
                 transition: 0.5s ease-in-out;
 
-                // @include tablet{
-                //     width: 80%;
-                // }
+                @include tablet{
+                    width: 80%;
+                }
                 .oter{
                     background-color: #0e52058a;
                     height: 496.779px;
                     border-radius: 15px;
 
-                    // @include tablet{
-                    //     width: 100%;
-                    // }
+                    @include tablet{
+                        width: 100%;
+                    }
 
                     .card_number{
                         background-color: white;
@@ -569,12 +575,12 @@
                         left: 1.2em;
                         bottom: 1em;
 
-                        // @include tablet{
-                        //     position: relative;
-                        //     left: 17em;
-                        //     padding: 20px;
+                        @include tablet{
+                            position: relative;
+                            left: 17em;
+                            padding: 20px;
                             
-                        // }
+                        }
                         
                         .number{
                             color: #0E5205;
@@ -608,12 +614,12 @@
                         justify-content: center;
                         justify-items: center;
 
-                    //       @include tablet{
-                    //         position: relative;
-                    //         left: 1.5em;
-                    //         top: 1.8em;
+                          @include tablet{
+                            position: relative;
+                            left: 1.5em;
+                            top: 1.8em;
                         
-                    // }
+                    }
 
                         @include mobile{
                             position: relative;
@@ -699,10 +705,10 @@
                     margin-left: 5px;
                     z-index: 9;
 
-                    // @include tablet{
-                    //     position: relative;
-                    //     right: 2em;
-                    // }
+                    @include tablet{
+                        position: relative;
+                        right: 2em;
+                    }
     
                     @include mobile{
                         width: 120%;
@@ -742,11 +748,11 @@
                     border-radius: 10px;
                     overflow: hidden;
 
-                    // @include tablet{
-                    //     position: absolute;
-                    //     bottom: 0.2em;
-                    //     width: 96%;
-                    // }
+                    @include tablet{
+                        position: absolute;
+                        bottom: 0.2em;
+                        width: 96%;
+                    }
                 }
                 .imgCardB:hover .card_number {
                     position: relative;
@@ -756,9 +762,9 @@
                     width: 80px;
                     height: 80px;
 
-                        // @include tablet{
-                        //     left: 22em;
-                        // }
+                        @include tablet{
+                            left: 22em;
+                        }
                 }
                 .imgCardB:hover .front_text{
                     opacity: 0;

@@ -21,9 +21,9 @@
                 bottom: 1.5em;
             }
 
-            // @include tablet{
-            //     left: 34em;
-            // }
+            @include tablet{
+                left: 34em;
+            }
         }
 
         ul{

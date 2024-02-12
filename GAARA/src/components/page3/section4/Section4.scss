@@ -13,11 +13,11 @@
     justify-items: center;
     margin-bottom: -120%;
 
-    // @include tablet{
-    //     margin-top: -120%;
-    //     position: relative;
+    @include tablet{
+        margin-top: -120%;
+        position: relative;
 
-    // }
+    }
 
     @include mobile{
         max-width: 100%;
@@ -94,10 +94,10 @@
                 font-weight: 400;
                 line-height: 145.8%;
 
-                // @include tablet{
-                //    width:1024px;
+                @include tablet{
+                   width:1024px;
                     
-                //  }  
+                 }  
 
                 @include mobile{
                     margin: auto;

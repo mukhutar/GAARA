@@ -40,9 +40,9 @@
                     left: 14em;
                 }
 
-                // @include tablet{
-                //     left: 17em;
-                // }
+                @include tablet{
+                    left: 17em;
+                }
             }
 
             ul{
@@ -199,11 +199,11 @@
                 
                 }
 
-                // @include tablet{
-                //     font-size: 120%;
-                //     position: relative;
-                //     top: 8em;
-                // }
+                @include tablet{
+                    font-size: 120%;
+                    position: relative;
+                    top: 8em;
+                }
 
                 @include mobile{
                     font-size: 30px;
@@ -232,10 +232,10 @@
 
                
                 
-                // @include tablet{
-                //     position: relative;
-                //     top: 10em;
-                // }
+                @include tablet{
+                    position: relative;
+                    top: 10em;
+                }
                 @include mobile{
                     font-size: 15px;
                     position: relative;
@@ -254,11 +254,11 @@
                 }
 
 
-                // @include tablet{
-                //     position: relative;
-                //     top:26.5em;
+                @include tablet{
+                    position: relative;
+                    top:26.5em;
 
-                // }
+                }
 
                 @include mobile{
                     width: 99%;

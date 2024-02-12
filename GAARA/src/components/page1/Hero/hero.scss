@@ -400,52 +400,53 @@ hr{
  
     
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles for landscape orientation on tablets */
 
-// @media screen and (max-width:1024px) {
-//     .Hero_section{
-//         height: 110vh;
-//         background-color: #0e52059d;
-//         background-size: 50% auto;
-//     }
+    .Hero_section{
+        height: 110vh;
+        background-color: #0e52059d;
+        background-size: 50% auto;
+    }
 
        
-//    .section{
-//     width: 105%;
-//     background-size:cover;
-//     background-position: center;
-//     height: 100vh;
-//    }
+   .section{
+    width: 105%;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+   }
 
-//     .nav > img{
-//        position: relative;
-//        left: 15em;
+    .nav > img{
+       position: relative;
+       left: 15em;
 
-//     }
+    }
 
-//     h1{
-//         font-size: 50px;
-//     }
+    h1{
+        font-size: 50px;
+    }
 
-//     h4{
-//         margin-top: 60px;
-//         font-size: 30px;
-//         margin-left: 50px;
-//     }
+    h4{
+        margin-top: 60px;
+        font-size: 30px;
+        margin-left: 50px;
+    }
 
-//     hr{
-//         width: 310px;
-//         opacity: 1;
-//         position: relative;
-//         top: 21em;
+    hr{
+        width: 310px;
+        opacity: 1;
+        position: relative;
+        top: 21em;
 
-//     }
+    }
 
     
-//         .Hero_section > .changed{
-//             position: relative;
-//             top: 16em;
-//         }
-// }
+        .Hero_section > .changed{
+            position: relative;
+            top: 16em;
+        }
+}
 
 
 

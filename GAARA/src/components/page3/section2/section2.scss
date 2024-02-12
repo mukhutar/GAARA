@@ -112,13 +112,13 @@
         line-height: normal;
         margin-top: 2%;
 
-        // @include tablet {
-        //     border: 1px solid #0E5205 ;
-        //     height: auto;
-        //     padding: 30px;
-        //     width: 100%;
-        //     border-radius: 3px 80px;
-        // }
+        @include tablet {
+            border: 1px solid #0E5205 ;
+            height: auto;
+            padding: 30px;
+            width: 100%;
+            border-radius: 3px 80px;
+        }
 
         @include mobile{
             max-width: 340px;
