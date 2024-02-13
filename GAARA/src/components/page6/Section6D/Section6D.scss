@@ -117,6 +117,7 @@
         @include mobile{
             display: flex;
             flex-direction: column;
+            margin: auto;
           
 
         }
@@ -128,7 +129,7 @@
             @include mobile{
                 right: 0;
                 bottom: 0;
-                 left: 10em;
+                 left: 0em;
                 
             }
         }
@@ -161,7 +162,7 @@
                 bottom: 0;
                 margin: auto;
                 top: 2em;
-                left: 6.5em;
+                left: 0em;
                 max-width: 302px;
 
                 
