@@ -1,7 +1,7 @@
 import React, { useState , useRef } from 'react';
 import leafIcon from '/Assets/leaf-icon.png';
 import formFooter from '/Assets/formFooter.svg';
-import './formOne.css';
+import './formOne.scss';
 import emailjs from '@emailjs/browser';
 
 function FormOne() {

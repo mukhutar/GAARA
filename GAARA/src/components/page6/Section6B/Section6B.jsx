@@ -120,7 +120,7 @@ useEffect(() => {
                 </div>
 
        </motion.section>
-                      <div className='horizontalline'></div>
+                      {/* <div className='horizontalline'></div> */}
 
     </section>
   )

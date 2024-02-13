@@ -33,6 +33,7 @@
         top: 0;
         left: 12em;
         z-index: 999;
+        
     
         @include mobile{
             bottom: 55em;
@@ -43,7 +44,8 @@
             .popup2{
                 .close-btn{
                     position: relative;
-                    left: 58em;
+                    // left: 58em;
+                    margin-left: 82%;
                     top: 1em;
                     height: 30px;
                     width: 30px;

@@ -1,34 +1,31 @@
-
+@import "../../../../App.scss";
 
 .form_container{
     width: 70%;
-    height: auto;
+    height: 80vh;
     border-radius: 8%;
     background-color: #E7EEE6;
     margin: auto;
     z-index: 999;
+
+    @include mobile{
+        height: auto;
+    }
+
+    
    
 }
 
-.form_container > .form_header{
-    width: 28%;
-    height: 50px;
-    background-color: #0E5205;
-    border-top-left-radius: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
 .form_header > h3{
-    color: #ffffff;
+    color: #0E5205;
     font-family: "Lato-Black", Helvetica;
     font-size: 15px;
     font-weight: 900;
     letter-spacing: 0;
     line-height: normal;
-    transform: rotate(2deg);
+    margin-left: 10%;
+    position: relative;
+    top: 1em;
 }
 
 .form_container > .form_elements{
@@ -82,7 +79,7 @@ input::placeholder{
       font-size: 15px; 
       font-family: Montserrat ,sans-serif; 
       font-weight: 300; 
-      word-wrap: break-word"
+      word-wrap: "break-word";
 }
 form > textarea{
     background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(196, 196, 196, 0.1) 100%);
@@ -149,7 +146,7 @@ form> button{
     left: 20em;
     font-size: 20px;
     opacity: 0.90;
-    border: 1px #0C5303 solid"
+    border: 1px #0C5303 solid;
 }
 
 .message{

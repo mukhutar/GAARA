@@ -14,7 +14,7 @@ function Cards() {
                 
             <section className='Wrapper'>
             
-            <div className="cardII">
+            <div className="card">
                 <img src={personImg} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
@@ -48,8 +48,8 @@ function Cards() {
             </div>
 
 
-            <div className="cardII">
-                <img src={personImg} alt="personImg" />
+            <div className="card">
+                <img src={personImg2} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
                     <p>
@@ -72,37 +72,37 @@ function Cards() {
             </div>
 
 
-            <div className="cardII">
-                <img src={personImg} alt="personImg" />
+            <div className="card">
+                <img src={personImg2} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
                     <p>
                     This initiative accelerates our people’s behavior change. They now understand the importance of planting trees. This increased their commitment to environmental protection                    </p>
 
-                    <h3 >Donath MUKASHAYA <span>Farmer, Rwanda</span></h3>
+                    <h3 >Donath MUKASHAYA <span>Leader, Rwanda</span></h3>
                 </div>
             </div>
 
 
-            <div className="cardI">
+            <div className="card">
                 <img src={personImg} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
                     <p>
                     I have been facilitating to get agriculture inputs for over 8 years but it was hard to get a comprehensive solution for farmers to have access to tree planting facilities.                     </p>
 
-                    <h3 >Donath MUKASHAYA <span>Farmer, Rwanda</span></h3>
+                    <h3 >Donath MUKASHAYA <span>Agriculture facilitator, Rwanda</span></h3>
                 </div>
             </div>
 
-            <div className="cardII">
-                <img src={personImg2} alt="personImg" />
+            <div className="card">
+                <img src={personImg} alt="personImg" />
                 <div className="info">
                     <span><BsQuote className='quote_icon'/></span>
                     <p>
                     For me, it’s an opportunity to serve the community while assisting farmers to get and manage their loans.                       </p>
 
-                    <h3 >Donath MUKASHAYA <span>Farmer, Rwanda</span></h3>
+                    <h3 >Donath MUKASHAYA <span>Agent , Rwanda</span></h3>
                 </div>
             </div>
 </section>

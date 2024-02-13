@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import "./Section6D.scss";
 import fruitTree from "/assets/las.svg"
 import whiteArrw from "/assets/ArrowWhite.svg"
@@ -8,6 +8,30 @@ import {motion , AnimatePresence } from "framer-motion"
 function Section6D() {
 
   const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // here i am  Preventing  scrolling using arrow keys when popup is open
+      if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        e.preventDefault();
+      }
+    };
+
+    //  i am adding  event listener for keydown when popup is open to prevent scrolling using arrow keys
+    if (showPopup) {
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = 'hidden'; 
+    } else {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
+    }
+
+    // Cleanup function
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = ''; 
+    };
+  }, [showPopup]);
 
   const openPopup = (e) => {
     e.preventDefault()

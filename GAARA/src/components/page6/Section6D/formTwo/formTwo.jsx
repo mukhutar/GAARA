@@ -2,7 +2,7 @@ import React, { useState , useRef } from 'react';
 import leafIcon from '/Assets/leaf-icon.png';
 import formFooter from '/Assets/formFooter.svg';
 import emailjs from '@emailjs/browser';
-import './formTwo.css'
+import './formTwo.scss'
 
 function FormTwo() {
 

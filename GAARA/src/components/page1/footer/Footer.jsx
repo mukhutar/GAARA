@@ -122,7 +122,7 @@ function Footer() {
 
             <div className="footer_icons">
                 <Link to='/'><img src={tweeter} alt="tweeterIcon" /></Link>
-               <Link to="/"> <img src={insta} alt="tweeterIcon" /></Link>
+               <Link to="https://www.instagram.com/gaarafund?igsh=MWRhMjM1cDRyOTI4Yg=="> <img src={insta} alt="tweeterIcon" /></Link>
                <Link to="/"> <img src={facebook} alt="facebookIcon" /></Link>
                <Link to="/"> <img src={linkedin} alt="LinkedIcon" /></Link>
                 

@@ -37,8 +37,8 @@
 
     .sectionCards{
         display: flex;
-        // justify-content: space-around;
-        margin-left: 10%;
+        justify-content: center;
+        align-items: center;
         justify-items: center;
 
         @include mobile{

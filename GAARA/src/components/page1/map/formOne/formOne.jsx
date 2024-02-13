@@ -1,7 +1,7 @@
 import React, { useState , useRef } from 'react';
 import leafIcon from '/Assets/leaf-icon.png';
 import formFooter from '/Assets/formFooter.svg';
-import './formOne.css';
+import './formOne.scss';
 import emailjs from '@emailjs/browser';
 
 function FormOne() {
@@ -33,9 +33,9 @@ function FormOne() {
 
   return (
     <div className='form_container'>
-      <div className="form_header">
-        <h3>Let's Get Started</h3>
-      </div>
+     
+        <h3 className='form_txt'>Let's Get Started</h3>
+   
       <div className="form_elements">
         <div className="form_content">
           <form ref={form} onSubmit={sendEmail} >

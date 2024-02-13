@@ -46,7 +46,7 @@
             height: 396.779px;
             margin: 5px;
             position: relative;
-            background: url("/press.webp");
+            background: url("/Process.webp");
             background-position: center;
             background-size: cover;
             object-fit: cover;
@@ -212,10 +212,11 @@
 
 
           .imgCard:hover{ 
-                transform: translateX(20px);
+                // transform: translateX(20px);
                 border-radius: 10px;
                 width: 300px;
                 margin-left: 5px;
+                // margin-right: 15px;
                 z-index: 9;
 
                 @include tablet{
@@ -237,10 +238,11 @@
                 display: block;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient( #0E5205  );
+                // background: linear-gradient( #0E5205  );
                 z-index: 2;
                 transition: 0.5s all;
                 opacity: 0;  
+                margin-right: 5px;
             }
 
             .imgCard:before{
@@ -455,7 +457,7 @@
             }
     
               .imgCardA:hover{ 
-                    transform: translateX(20px);
+                    // transform: translateX(20px);
                     border-radius: 10px;
                     width: 300px;
                     margin-left: 5px;
@@ -699,7 +701,7 @@
             }
     
               .imgCardB:hover{ 
-                    transform: translateX(20px);
+                    // transform: translateX(20px);
                     border-radius: 10px;
                     width: 300px;
                     margin-left: 5px;
